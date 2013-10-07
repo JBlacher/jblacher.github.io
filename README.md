@@ -1,2 +1,2 @@
-JBlacher.github.io
+jblacher.github.io
 ==================
