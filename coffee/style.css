@@ -50,13 +50,17 @@ table {
 
 
 /*CSS starts here*/
+
+body {
+	background-color: #fff;
+}
 h1 {
 	font-family: arial;
 	font-size: 40px;
 }
 
 p {
-	font-family: serif;
+	font-family: times;
 }
 
 a {
@@ -68,6 +72,7 @@ a {
 	display: block;
 	width: 50px;
 	text-align: center;
+
 }
 
 #titleCursive {
@@ -90,16 +95,20 @@ a {
 
 #top_menu {
 	background-color: #230B03;
+	text-align: center;
 
 }
+
 
 #top_menu li {
 	color: #CEBB99;
 	font-family: times;
-	font-size: :16px;
+	font-size: 18px;
 	text-decoration: none; 
 	display: inline;
-	padding: 20px 0px 20px 0px;
+	margin-left: 20px;
+	margin-right:  20px
+	
 }
 
 .content_header {
@@ -119,5 +128,6 @@ a {
 	font-family: times;
 	color: #CEBB99;
 	background-color: #230B03;
+	text-align: center;
 }
 
