@@ -56,7 +56,7 @@ html {
 body {
 	margin: 0 auto;
 	background: url('../img/img_header_background.jpg') no-repeat center center fixed;
-	font-family: "Lato", Helvetica, Arial;
+	font-family: "Lato:900", Helvetica, Arial;
 	font-size: 1em;
 
 }
@@ -113,7 +113,7 @@ body {
 }
 .category_header_text {
 	display: block;
-	font-family: 'Avenir', Helvetica, Arial;
+	font-family: 'Nunito', Helvetica, Arial;
 	font-size: 2.5em;
 	color: Gray;
 	text-transform: uppercase;
@@ -141,9 +141,6 @@ body {
 
 .about {
 	display: inline-block;
-
-	
-
 }
 
 .about_pic {
@@ -243,7 +240,7 @@ body {
 
 .portfolio_category_header_text {
 	color: #505050;
-	font-family: "Lato", Helvetica, Arial;
+	font-family: "Lato:900", Helvetica, Arial;
 
 }
 
