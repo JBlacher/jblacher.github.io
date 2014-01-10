@@ -155,6 +155,7 @@ body {
 
 .summary {
 	display: inline-block;
+	font-family: "Avenir", Helvetica, Arial;
 	vertical-align: top;
 	min-width: 300px;	
 	max-width: 700px ;
@@ -241,6 +242,7 @@ body {
 
 .portfolio_category_header_text {
 	color: #505050;
+	font-family: "Gotham Rounded", Helvetica, Arial;
 
 }
 
