@@ -55,7 +55,7 @@ html {
 
 body {
 	margin: 0 auto;
-	background: url('../img/_img_header_background.jpg') no-repeat center center fixed;
+	background: url('../img/img_header_background.jpg') no-repeat center center fixed;
 	font-family: "Gotham Rounded", Helvetica, Arial;
 	font-size: 1em;
 
@@ -292,55 +292,3 @@ body {
 
 
 
-/* Smartphones (portrait and landscape) ----------- */
-2	@media only screen
-3	and (min-device-width : 320px)
-4	and (max-device-width : 480px) {
-5	/* Styles */
-6	}
-7	/* Smartphones (landscape) ----------- */
-8	@media only screen
-9	and (min-width : 321px) {
-10	/* Styles */
-11	}
-12	/* Smartphones (portrait) ----------- */
-13	@media only screen
-14	and (max-width : 320px) {
-15	/* Styles */
-16	}
-17	/* iPads (portrait and landscape) ----------- */
-18	@media only screen
-19	and (min-device-width : 768px)
-20	and (max-device-width : 1024px) {
-21	/* Styles */
-22	}
-23	/* iPads (landscape) ----------- */
-24	@media only screen
-25	and (min-device-width : 768px)
-26	and (max-device-width : 1024px)
-27	and (orientation : landscape) {
-28	/* Styles */
-29	}
-30	/* iPads (portrait) ----------- */
-31	@media only screen
-32	and (min-device-width : 768px)
-33	and (max-device-width : 1024px)
-34	and (orientation : portrait) {
-35	/* Styles */
-36	}
-37	/* Desktops and laptops ----------- */
-38	@media only screen
-39	and (min-width : 1224px) {
-40	/* Styles */
-41	}
-42	/* Large screens ----------- */
-43	@media only screen
-44	and (min-width : 1824px) {
-45	/* Styles */
-46	}
-47	/* iPhone 4 ----------- */
-48	@media
-49	only screen and (-webkit-min-device-pixel-ratio : 1.5),
-50	only screen and (min-device-pixel-ratio : 1.5) {
-51	/* Styles */
-52	}
