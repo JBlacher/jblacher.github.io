@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------End Reset-------------------*/
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0 auto;
+	background: url('../img/_img_header_background.jpg') no-repeat center center fixed;
+	font-family: "Gotham Rounded", Helvetica, Arial;
+	font-size: 1em;
+
+}
+
+#wrapper {
+	text-align: left;
+}
+
+
+
+/*---------------------Navigation------------------*/
+.subMenu {
+	text-align: right;
+	background-color: white;
+	padding: 20px 50px 5px 0px;
+	width: 100%;
+	position:fixed;top:0px;left:0;right:0;
+	z-index: 10;
+
+	-webkit-box-shadow: 5px 5px 3px #101010;
+	-moz-box-shadow: 5px 5px 3px #101010;
+	-o-box-shadow: 5px 5px 3px #101010;
+	box-shadow: 5px 5px 3px #101010;
+}
+
+.subMenu ul {
+	list-style: none;
+}
+
+.subMenu li {
+	display: inline;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-right: 50px;
+}
+
+.subMenu li a {
+	text-decoration: none;
+	color: black;	
+}
+/*--------------------- End Navigation------------------*/
+
+
+
+
+
+
+
+/*---------------------About Me------------------*/
+.category_header {
+	display: block;
+	padding: 25px 0px 25px 75px;
+	text-align: left;
+}
+.category_header_text {
+	display: block;
+	font-family: 'Avenir', Helvetica, Arial;
+	font-size: 2.5em;
+	color: Gray;
+	text-transform: uppercase;
+}
+
+.pages {
+	position: relative;
+	margin-top: 600px;
+	background-color: white;
+	width: 100%;
+	padding-bottom: 50px;
+
+
+	-webkit-box-shadow: 5px 5px 3px #101010;
+	-moz-box-shadow: 5px 5px 3px #101010;
+	-o-box-shadow: 5px 5px 3px #101010;
+	box-shadow: 5px 5px 3px #101010;
+}
+
+.about_container {
+	display: block;
+	max-width: 100%;
+	background: url('../img/about_background.jpg') no-repeat center center ;
+}
+
+.about {
+	display: inline-block;
+
+	
+
+}
+
+.about_pic {
+	display: inline-block;
+	padding:25px 50px 0px 100px;
+	max-width: 150px;
+	max-width: 340px;
+}
+
+.summary {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 300px;	
+	max-width: 700px ;
+	line-height: 1.2em;
+	padding-top: 25px;
+	color: white;
+	}
+
+.welcome {
+	text-transform: uppercase;
+	font-family: "Avenir", Helvetica, Arial;
+	font-size: 2em;
+	color: white;
+	padding: 10px 5px 10px 5px;
+	background-color: black;
+}
+
+.touch {
+	font-family: "Avenir", Helvetica, Arial;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	padding-top: 25px;
+}
+
+.social {
+	display: inline;
+	list-style: none;
+	padding: 0px 10px 0px 10px;
+}
+
+.social li {
+	display: inline;
+	list-style: none;
+	padding: 0px 10px 0px 10px;
+}
+
+
+/*--------------------- End About Me------------------*/
+/*---------------------Start Portfolio------------------*/
+
+.portfolio_pics_container {
+	text-align: center;
+	padding: 50px 0px 20px 0px;
+
+}
+
+#portfolio_graphic {
+	text-align: center;
+	display: block;
+	padding: 25px 0px 50px 0px;
+	background: url('../img/portfolio_background.jpg') no-repeat center center ;
+}
+
+.portfolio_category_pic {
+	display: inline-block;
+	padding: 0px 18px 5px 18px;
+
+
+	-webkit-box-shadow: 5px 5px 3px #101010;
+	-moz-box-shadow: 5px 5px 3px #101010;
+	-o-box-shadow: 5px 5px 3px #101010;
+	box-shadow: 5px 5px 3px #101010;
+
+	-webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+     transition: all .2s ease;
+
+}
+
+.portfolio_category_pic:hover {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+}
+
+.portfolio_category_pic:active {
+	-webkit-box-shadow: 2px 2px 1px #101010;
+	-moz-box-shadow: 2px 2px 1px #101010;
+	-o-box-shadow: 2px 2px 1px #101010;
+	box-shadow: 2px 2px 1px #101010;
+}
+
+.portfolio_category_header_text {
+	color: #505050;
+
+}
+
+.experience {
+	font-family: "Avenir", Helvetica, Arial;
+	font-size: 1.5em;
+	color: #505050;
+	text-transform: uppercase;
+	padding: 50px 0px 20px 75px;
+}
+
+.experience_pic {
+	text-align: center;
+}
+
+/* ---------------blog starts----------------------*/
+
+.page_header_container {
+	text-align: center;
+}
+
+.blog_interest li {
+	display: inline;
+	padding: 0px 30px 0px 30px;
+
+}
+
+.blog_interest {
+	padding: 30px 0px 30px 0px;
+
+}
+.
+.contact {
+	width:100%;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+.contact p {
+	text-align: center;
+	display: inline;
+	padding: 20px 0px 10px 150px;
+
+}
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+2	@media only screen
+3	and (min-device-width : 320px)
+4	and (max-device-width : 480px) {
+5	/* Styles */
+6	}
+7	/* Smartphones (landscape) ----------- */
+8	@media only screen
+9	and (min-width : 321px) {
+10	/* Styles */
+11	}
+12	/* Smartphones (portrait) ----------- */
+13	@media only screen
+14	and (max-width : 320px) {
+15	/* Styles */
+16	}
+17	/* iPads (portrait and landscape) ----------- */
+18	@media only screen
+19	and (min-device-width : 768px)
+20	and (max-device-width : 1024px) {
+21	/* Styles */
+22	}
+23	/* iPads (landscape) ----------- */
+24	@media only screen
+25	and (min-device-width : 768px)
+26	and (max-device-width : 1024px)
+27	and (orientation : landscape) {
+28	/* Styles */
+29	}
+30	/* iPads (portrait) ----------- */
+31	@media only screen
+32	and (min-device-width : 768px)
+33	and (max-device-width : 1024px)
+34	and (orientation : portrait) {
+35	/* Styles */
+36	}
+37	/* Desktops and laptops ----------- */
+38	@media only screen
+39	and (min-width : 1224px) {
+40	/* Styles */
+41	}
+42	/* Large screens ----------- */
+43	@media only screen
+44	and (min-width : 1824px) {
+45	/* Styles */
+46	}
+47	/* iPhone 4 ----------- */
+48	@media
+49	only screen and (-webkit-min-device-pixel-ratio : 1.5),
+50	only screen and (min-device-pixel-ratio : 1.5) {
+51	/* Styles */
+52	}

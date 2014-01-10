@@ -62,13 +62,13 @@ table {
 }
 
 body {
-	width: 960px;
+	width: 100%; min-width: 450px; max-width: 960px;
 	padding: 20px;
 }
 
 
 h3 {
-	font-size:30px;
+	font-size: 1.875em;
 }
 
 h3 {
@@ -82,14 +82,14 @@ h6, p, ul, li {
 }
 
 h6 {
-	font-size: 12px;
+	font-size: .750em;
 	font-weight: bold;
 }
 
 
 p, ul, li {
 
-	font-size: 16px;
+	font-size: 1em;
 }
 
 li {
@@ -106,16 +106,19 @@ a {
 }
 
 #logo {
-	font-family: 'league_gothicregular';
-	font-size: 100px;
+	font: 6.25em 'league_gothicregular';
 	text-transform: uppercase;
 	display: block;
-	padding-top: 20px 0px 0px 0px;
+	position: relative;
+	top: 20px;
+
+
 }
 
 #top_menu {
 	float: right;
-	padding: 80px 0px 0px 0px;
+	position: relative;
+	top: 105px;
 }
 
 #top_menu ul li {
@@ -132,8 +135,8 @@ a {
 }
 
 #sidebar {
-	width: 240px;
-	float:left;
+	width: 100%; min-width: 120px; max-width: 240px;
+	float: left;
 	padding: 30px 20px 20px 20px;
 }
 
@@ -144,7 +147,7 @@ a {
 
 .content {
 	font-family: arial;
-	width: 623px;
+	width: 100%; min-width: 450px; max-width: 623px;
 	float: left;
 	padding: 40px 0px 0px 50px;
 }
@@ -164,7 +167,8 @@ a {
 #footer {
 	clear: both;
 	font-family: arial;
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: bold;
+	width: 100%; min-width: 450px; max-width: 960px;
 }
 

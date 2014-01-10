@@ -177,7 +177,7 @@ a {
 
 .articleWrap {
 	margin:0 auto;
-	max-width: 780px;
+	width: 100%; margin: auto; min-width: 450px; max-width: 780px;
 }
 /*----------------------------------------- footer-------------------------------------*/
 #footer {

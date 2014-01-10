@@ -1,32 +1,234 @@
-
-
 <!DOCTYPE html>
 <html>
-<head>
-	<title>
-		James Blacher: From Graphics to Coding
-	</title>
-</head>
+  <head>
+    <title>The James Blacher Experience</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/slimbox2.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/slimbox2.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.smint.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function() {
+          $('.subMenu').smint({
+            'scrollSpeed' : 1000
+        });
+      });
 
-<body>
-		<h2>James Blacher</h2>
 
-		<img src="http://i1092.photobucket.com/albums/i415/Turbocharged77/Untitled-1.jpg" alt="IT's ME!"/>
+    </script>
+    <script type="text/javascript" src="http://jblacher.tumblr.com/api/read/json"></script> 
+  </ head>
 
-		<p>Hello, my name is <b>James Blacher</b>, and I am a freelance graphic artist working in the city of Chicago.</p>
 
-		<h3>Then and Now</h3>
+  <body>
+    
+<!-- /////////////////////      Start Navigation /////////////////////    -->
 
-		<p>I started my career working freelance for a small production 
-			company that turned into a fulltime<br />job where I got to wear 
-			many hats. Originally hired to do 3d modeling and animation, my 
-			job soon<br />grew to include graphic arts, flash web design, 
-			print design, and motion graphics. Like most graphic<br />artist 
-			out there our job has expanded to learning markup and coding 
-			languages. Im looking forward<br />to a new challenge as a front 
-			end developer.
-		</p>
+        <nav class="subMenu">   
+            <ul>
+                <li><a href="#" id="about">about</a></li>
+                <li><a href="#" id="portfolio">portfolio</a></li>
+                <li><a href="#" id="blog">blog</a></li>
+                <li><a href="#" id="contact">contact</a></li>
+            </ul>
+        </nav> 
+      </div> 
+<!-- /////////////////////      End Navigation   /////////////////////    -->
+<!-- /////////////////////      About Me  /////////////////////    -->
+    <div id="wrapper">
+        <div class="about pages">
+          <header class="category_header">
+            <h2 class="category_header_text">About Me</h2>
+          </header>
 
-</body>
+          <article class="about_container">
+            <div class="about_pic">
+              <img src="./img/jblacher_profile_1.jpg" alt="profile picture 1" width="340px" height="340px" >
+            </div>
 
+
+            <div class="summary">
+              <h2 class="welcome">Welcome To My Portfolio</h2>
+              <br />
+                <p>As a 6 year visual designer living and working in Chicago, IL, my adventure through the world of traditional and digital design has given me experience in the areas of 3d modeling/animation, interactive, print, web, illustration, and most recently UX/UI and front-end development. While I have specific programs that I prefer, I can be given any media tool and find a way to be creative with it to visually communicate with others. The ability to draw with pencil and paper will always be my greatest asset, The deeper I dive 
+                into the digital realm, the more I ways I find to use traditional drawing skills </p><br />
+
+                <p>Working within small to midsized groups with other programmers and designers is where I excel. I seek out people with better skill than I have and absorb all the information they can spare until their talent becomes mine. </p>
+                <br />
+                
+                <h3 class="touch"> Keep in touch with me</h3>
+
+              <div class="social">
+                <ul>
+                  <li><a href=""><img src="./img/_icon_fb.png"></a></li>
+                  <li><a href="https://twitter.com/JamesBlacher"><img src="./img/_icon_twt.png"></a></li>
+                  <li><a href="http://www.linkedin.com/in/jblacher"><img src="./img/_icon_link.png"></a></li>
+                  <li><a href="mailto:jblacher@gmail.com"><img src="./img/_icon_email.png"></a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+<!-- /////////////////////      End About Me   /////////////////////    -->
+<!-- /////////////////////      Start Porfolio  /////////////////////    -->
+        <div class="portfolio pages">
+
+          <header class="category_header">
+            <h2 class="category_header_text">Portfolio</h2>
+          </header>
+
+          <div id="portfolio_graphic">
+            <img src="./img/_img_portfolio_pic.jpg" alt="I build Your dreams" width="1200px" height="536px">
+          </div>
+
+          <article class="portfolio_pics_container">
+            <div class="portfolio_category_pic">
+              <a href="./img/UX_Img_1.jpg"><img src="./img/thumb_img_portfolio_UX.jpg" alt="portfolio picture 1" width="200px" height="240px"></a>
+
+              <a href="./img/UX_Img_2.jpg" rel="lightbox-UX" alt="UX picture 2"></a>
+              <a href="./img/UX_Img_3.jpg" rel="lightbox-UX" alt="UX picture 3"></a>
+              <a href="./img/UX_Img_4.jpg" rel="lightbox-UX" alt="UX picture 4"></a>
+              <a href="./img/UX_Img_5.jpg" rel="lightbox-UX" alt="UX picture 5"></a>
+
+              <h3 class="portfolio_category_header_text">UX/UI Design</h3>
+            </div>
+
+<!--////////////////////////////////////////////////Interactive Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+            <div class="portfolio_category_pic">
+              <a href="./img/IA_Img_1.jpg" rel="lightbox-IA"><img src="./img/thumb_img_portfolio_IA.jpg" alt="portfolio picture 2" width="200px" height="240px"></a>
+
+              <a href="./img/IA_Img_2.jpg" rel="lightbox-IA" alt="IA picture 2"></a>
+              <a href="./img/IA_Img_3.jpg" rel="lightbox-IA" alt="IA picture 3"></a>
+              <a href="./img/IA_Img_4.jpg" rel="lightbox-IA" alt="IA picture 4"></a>
+              <a href="./img/IA_Img_5.jpg" rel="lightbox-IA" alt="IA picture 5"></a>
+
+              <h3 class="portfolio_category_header_text">Interactive</h3>
+            </div>
+
+<!--////////////////////////////////////////////////ILLUSTRATION Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+            <div class="portfolio_category_pic">
+              <a href="./img/ILL_Img_01.jpg" rel="lightbox-Ill"><img src="./img/thumb_img_portfolio_ILL.jpg" alt="Illustration picture 1" width="200px" height="240px"></a>
+
+              <a href="./img/ILL_Img_02.jpg" rel="lightbox-Ill" alt="ILL picture 2"></a>
+              <a href="./img/ILL_Img_03.jpg" rel="lightbox-Ill" alt="ILL picture 3"></a>
+              <a href="./img/ILL_Img_04.jpg" rel="lightbox-Ill" alt="ILL picture 4"></a>
+              <a href="./img/ILL_Img_05.jpg" rel="lightbox-Ill" alt="ILL picture 5"></a>
+              <a href="./img/ILL_Img_06.jpg" rel="lightbox-Ill" alt="ILL picture 6"></a>
+              <a href="./img/ILL_Img_07.jpg" rel="lightbox-Ill" alt="ILL picture 7"></a>
+              <a href="./img/ILL_Img_08.jpg" rel="lightbox-Ill" alt="ILL picture 8"></a>
+              <a href="./img/ILL_Img_09.jpg" rel="lightbox-Ill" alt="ILL picture 9"></a>
+              <a href="./img/ILL_Img_10.jpg" rel="lightbox-Ill" alt="ILL picture 10"></a>
+              <a href="./img/ILL_Img_11.jpg" rel="lightbox-Ill" alt="ILL picture 11"></a>
+              <a href="./img/ILL_Img_12.jpg" rel="lightbox-Ill" alt="ILL picture 12"></a>
+              <a href="./img/ILL_Img_13.jpg" rel="lightbox-Ill" alt="ILL picture 13"></a>
+
+              <h3 class="portfolio_category_header_text">Illustration</h3>
+            </div>
+
+<!--////////////////////////////////////////////////LOGO Development Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+
+            <div class="portfolio_category_pic">
+              <a href="./img/LOGO_Img_1.jpg" rel="lightbox-logo"><img src="./img/thumb_img_portfolio_LOGO_4.jpg" alt="Logo picture 1" width="200px" height="240px"></a>
+
+              <a href="./img/LOGO_Img_2.jpg" rel="lightbox-logo" alt="Logo picture 2"></a>
+              <a href="./img/LOGO_Img_3.jpg" rel="lightbox-logo" alt="Logo picture 3"></a>
+              <a href="./img/LOGO_Img_4.jpg" rel="lightbox-logo" alt="Logo picture 4"></a>
+              <a href="./img/LOGO_Img_5.jpg" rel="lightbox-logo" alt="Logo picture 5"></a>
+
+              <h3 class="portfolio_category_header_text">Logo Design</h3>
+            </div>
+
+<!--////////////////////////////////////////////////Web Developments Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+            <div class="portfolio_category_pic">
+              <a href="./img/WEB_Img_01.jpg" rel="lightbox-web"> <img src="./img/thumb_img_portfolio_WEB_5.jpg" alt="web picture 1" width="200px" height="240px"</a>
+
+              <a href="./img/WEB_Img_02.jpg" rel="lightbox-web" alt="web picture 2"></a>
+              <a href="./img/WEB_Img_03.jpg" rel="lightbox-web" alt="web picture 3"></a>
+              <a href="./img/WEB_Img_04.jpg" rel="lightbox-web" alt="web picture 4"></a>
+              <a href="./img/WEB_Img_05.jpg" rel="lightbox-web" alt="web picture 5"></a>
+              <a href="./img/WEB_Img_06.jpg" rel="lightbox-web" alt="web picture 6"></a>
+              <a href="./img/WEB_Img_07.jpg" rel="lightbox-web" alt="web picture 7"></a>
+              <a href="./img/WEB_Img_08.jpg" rel="lightbox-web" alt="web picture 8"></a>
+
+
+              <h3 class="portfolio_category_header_text">Web Development</h3>
+            </div>
+          </article>
+
+          <article class="software">
+            <h2 class="experience">Experience</h2>
+            <div class="experience_pic"><img src="./img/experience.jpg" alt="Software and Experience" width="1200px" height="400px"></div>
+          </article>
+        </div>
+
+
+<!-- /////////////////////      End Portfolio    /////////////////////    -->
+<!-- /////////////////////      Start BLog     /////////////////////    -->
+        <div class="blog pages">
+
+          <header class="category_header">
+          <h2 class="category_header_text">Blog</h2>
+          </header>
+
+
+          <article class="page_header_container">
+            <div class="blog_pic">
+              <ul class="blog_interest">
+                <li>3D Animation</li>
+                <li>Cars</li>
+                <li>Design</li>
+                <li>Food</li>
+                <li>Games</li>
+                <li>Music</li>
+                <li>Science</li>
+                <li>Wellness</li>
+              </ul>
+            </div>
+
+            <div class="blog">
+              <a href="jblacher.tumblr.com"><img src="./img/blog_picture.jpg" alt= "blog picture 1" width="1000px" height="340px"></a>
+              
+
+            </div>
+
+            <div class="blog_pic">
+              <ul class="blog_interest">
+                <li>3D Animation</li>
+                <li>Cars</li>
+                <li>Design</li>
+                <li>Food</li>
+                <li>Games</li>
+                <li>Music</li>
+                <li>Science</li>
+                <li>Wellness</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+<!-- /////////////////////      Start Contact     /////////////////////    -->
+        <div class="contact pages">
+            
+            <header class="category_header">
+            <h2 class="category_header_text">Contact</h2>
+          </header>
+            <div class="contact">
+              <p>E. JBlacher@gmail.com</p>
+              <p>T. 708.331.3971</p>
+              <p> Currently living and working in Chicago, IL.</p>
+            </div>
+        </div>
+    </div>
+
+
+  </script>
+  </body>
 </html>
