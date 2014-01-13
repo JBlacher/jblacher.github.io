@@ -54,6 +54,7 @@ html {
 }
 
 body {
+
 	margin: 0 auto;
 	background: url('../img/img_header_background.jpg') no-repeat center center fixed;
 	font-family: "Lato:900", Helvetica, Arial;
@@ -73,7 +74,6 @@ body {
 	background-color: white;
 	padding: 20px 50px 5px 0px;
 	width: 100%;
-	position:fixed;top:0px;left:0;right:0;
 	z-index: 10;
 
 	-webkit-box-shadow: 5px 5px 3px #101010;
@@ -99,18 +99,12 @@ body {
 }
 /*--------------------- End Navigation------------------*/
 
-
-
-
-
-
-
-/*---------------------About Me------------------*/
 .category_header {
 	display: block;
-	padding: 25px 0px 25px 75px;
+	padding: 25px 0px 25px 10px;
 	text-align: left;
 }
+
 .category_header_text {
 	display: block;
 	font-family: 'Nunito', Helvetica, Arial;
@@ -135,19 +129,13 @@ body {
 
 .about_container {
 	display: block;
-	max-width: 100%;
 	background: url('../img/about_background.jpg') no-repeat center center ;
-}
-
-.about {
-	display: inline-block;
 }
 
 .about_pic {
 	display: inline-block;
-	padding:25px 50px 0px 100px;
-	max-width: 150px;
-	max-width: 340px;
+	padding:10px 0px 0px 20px;
+
 }
 
 .summary {
@@ -170,11 +158,13 @@ body {
 	background-color: black;
 }
 
+
 .touch {
 	font-family: "Nunito", Helvetica, Arial;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	padding-top: 25px;
+	color: white;
 }
 
 .social {
@@ -196,19 +186,17 @@ body {
 .portfolio_pics_container {
 	text-align: center;
 	padding: 50px 0px 20px 0px;
-
 }
 
 #portfolio_graphic {
 	text-align: center;
 	display: block;
 	padding: 25px 0px 50px 0px;
-	background: url('../img/portfolio_background.jpg') no-repeat center center ;
 }
 
 .portfolio_category_pic {
 	display: inline-block;
-	padding: 0px 18px 5px 18px;
+	padding: 0px 20px 5px 20px;
 
 
 	-webkit-box-shadow: 5px 5px 3px #101010;
@@ -245,6 +233,7 @@ body {
 	color: #505050;
 	font-family: "Lato:900", Helvetica, Arial;
 
+
 }
 
 .experience {
@@ -257,6 +246,7 @@ body {
 
 .experience_pic {
 	text-align: center;
+
 }
 
 /* ---------------blog starts----------------------*/
@@ -268,14 +258,19 @@ body {
 .blog_interest li {
 	display: inline;
 	padding: 0px 30px 0px 30px;
-
+	
 }
 
 .blog_interest {
 	padding: 30px 0px 30px 0px;
-
+	
 }
-.
+
+
+.blog_interest li a{
+	font-family: "Lato", Helvetica, Arial;
+	
+}
 .contact {
 	width:100%;
 	line-height: 1.5em;
@@ -289,9 +284,8 @@ body {
 
 }
 
-
-
-
-
-
+.row {
+	margin-top: 600px;
+}
+/* 1200px or Less */
 

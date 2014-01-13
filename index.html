@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The James Blacher Experience</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/slimbox2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slimbox2.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -25,13 +27,13 @@
     <script type="text/javascript" src="http://jblacher.tumblr.com/api/read/json"></script> 
   </head>
 
-
   <body>
+
+    <!-- /////////////////////      Start Navigation /////////////////////    -->
     
-<!-- /////////////////////      Start Navigation /////////////////////    -->
-      <div class="menuWrapper">
-        <nav class="subMenu">   
-            <ul>
+        <div class="fixed">
+          <nav class="subMenu">   
+              <ul>
                 <li><a href="#" id="about">about</a></li>
                 <li><a href="#" id="portfolio">portfolio</a></li>
                 <li><a href="#" id="blog">blog</a></li>
@@ -40,45 +42,48 @@
         </nav> 
       </div> 
 <!-- /////////////////////      End Navigation   /////////////////////    -->
-<!-- /////////////////////      About Me  /////////////////////    -->
-    <div id="wrapper">
-        <div class="about pages">
-          <header class="category_header">
-            <h2 class="category_header_text">About Me</h2>
-          </header>
 
-          <article class="about_container">
-            <div class="about_pic">
-              <img src="./img/jblacher_profile_1.jpg" alt="profile picture 1" width="340px" height="340px" >
-            </div>
+<div class="row about pages">
+<div class="large-16 columns">
+        
+        <header class="category_header">
+            <h2 class="category_header_text">About</h2>
+        </header>
 
+        <div class="large-16 about_container">
 
-            <div class="summary">
-              <h2 class="welcome">Welcome To My Portfolio</h2>
-              <br />
-                <p>As a 6 year visual designer living and working in Chicago, IL, my adventure through the world of traditional and digital design has given me experience in the areas of 3d modeling/animation, interactive, print, web, illustration, and most recently UX/UI and front-end development. While I have specific programs that I prefer, I can be given any media tool and find a way to be creative with it to visually communicate with others. The ability to draw with pencil and paper will always be my greatest asset, The deeper I dive 
-                into the digital realm, the more I ways I find to use traditional drawing skills. </p><br />
+              <div class="large-4 about_pic">
+                <img src="./img/jblacher_profile_1.jpg" alt="profile picture 1" width="340px" height="340px">
+              </div>
+
+              <div class="large-8 summary">
+                <h2 class="welcome">Welcome To My Portfolio</h2>
+                <br />
+                <p>As a 6 year visual designer living and working in Chicago, IL, my adventure through the world of traditional and digital design has given me experience in the areas of 3d modeling/animation, interactive, print, web, illustration, and most recently UX/UI and front-end development. While I have specific programs that I prefer, I can be given any media tool and find a way to be creative with it to visually communicate with others. The ability to draw with pencil and paper will always be my greatest asset, The deeper I dive into the digital realm, the more I ways I find to use traditional drawing skills. </p><br />
 
                 <p>Working within small to mid-sized groups with other programmers and designers is where I excel. I seek out people with better skill than I have and absorb all the information they can spare until their talent becomes mine. </p>
                 <br />
                 
                 <h3 class="touch"> Keep in touch with me</h3>
 
-              <div class="social">
-                <ul>
-                  <li><a href=""><img src="./img/icon_fb.png" alt="facebook link"></a></li>
-                  <li><a href="https://twitter.com/JamesBlacher"><img src="./img/icon_twt.png" alt="twitter link"></a></li>
-                  <li><a href="http://www.linkedin.com/in/jblacher"><img src="./img/icon_link.png" alt="LinkedIn link"></a></li>
-                  <li><a href="mailto:jblacher@gmail.com"><img src="./img/icon_email.png" alt="email link"></a></li>
-                </ul>
+                    <div class="social">
+                      <ul>
+                        <li><a href=""><img src="./img/icon_fb.png" alt="facebook link"></a></li>
+                        <li><a href="https://twitter.com/JamesBlacher"><img src="./img/icon_twt.png" alt="twitter link"></a></li>
+                        <li><a href="http://www.linkedin.com/in/jblacher"><img src="./img/icon_link.png" alt="LinkedIn link"></a></li>
+                        <li><a href="mailto:jblacher@gmail.com"><img src="./img/icon_email.png" alt="email link"></a></li>
+                      </ul>
+                    </div>
               </div>
-            </div>
-          </article>
-        </div>
+        </div>    
+      </div>
+      </div>
+    
+    <!-- /////////////////////      End ABout      /////////////////////    -->
 
-<!-- /////////////////////      End About Me   /////////////////////    -->
 <!-- /////////////////////      Start Porfolio  /////////////////////    -->
-        <div class="portfolio pages">
+      <div class="row portfolio pages">
+      <div class="large-16 columns">
 
           <header class="category_header">
             <h2 class="category_header_text">Portfolio</h2>
@@ -90,7 +95,7 @@
 
           <article class="portfolio_pics_container">
             <div class="portfolio_category_pic">
-              <a href="./img/UX_Img_1.jpg" rel="lightboxUX"><img src="./img/thumb_img_portfolio_UX.jpg" alt="portfolio picture 1" width="200px" height="240px"></a>
+              <a href="./img/UX_Img_1.jpg" rel="lightboxUX"><img src="./img/thumb_img_portfolio_UX.jpg" alt="portfolio picture 1" width="180px" height="240px"></a>
 
               <a href="./img/UX_Img_2.jpg" rel="lightboxUX"></a>
               <a href="./img/UX_Img_3.jpg" rel="lightboxUX"></a>
@@ -103,7 +108,7 @@
 <!--////////////////////////////////////////////////Interactive Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
             <div class="portfolio_category_pic">
-              <a href="./img/IA_Img_1.jpg" rel="lightboxIA"><img src="./img/thumb_img_portfolio_IA.jpg" alt="portfolio picture 2" width="200px" height="240px"></a>
+              <a href="./img/IA_Img_1.jpg" rel="lightboxIA"><img src="./img/thumb_img_portfolio_IA.jpg" alt="portfolio picture 2" width="180px" height="240px"></a>
 
               <a href="./img/IA_Img_2.jpg" rel="lightboxIA"></a>
               <a href="./img/IA_Img_3.jpg" rel="lightboxIA"></a>
@@ -116,7 +121,7 @@
 <!--////////////////////////////////////////////////ILLUSTRATION Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
             <div class="portfolio_category_pic">
-              <a href="./img/ILL_Img_01.jpg" rel="lightboxIll"><img src="./img/thumb_img_portfolio_ILL.jpg" alt="Illustration picture 1" width="200px" height="240px"></a>
+              <a href="./img/ILL_Img_01.jpg" rel="lightboxIll"><img src="./img/thumb_img_portfolio_ILL.jpg" alt="Illustration picture 1" width="180px" height="240px"></a>
 
               <a href="./img/ILL_Img_02.jpg" rel="lightboxIll"></a>
               <a href="./img/ILL_Img_03.jpg" rel="lightboxIll"></a>
@@ -138,7 +143,7 @@
 
 
             <div class="portfolio_category_pic">
-              <a href="./img/LOGO_Img_1.jpg" rel="lightboxlogo"><img src="./img/thumb_img_portfolio_LOGO_4.jpg" alt="Logo picture 1" width="200px" height="240px"></a>
+              <a href="./img/LOGO_Img_1.jpg" rel="lightboxlogo"><img src="./img/thumb_img_portfolio_LOGO_4.jpg" alt="Logo picture 1" width="180px" height="240px"></a>
 
               <a href="./img/LOGO_Img_2.jpg" rel="lightboxlogo"></a>
               <a href="./img/LOGO_Img_3.jpg" rel="lightboxlogo"></a>
@@ -149,7 +154,7 @@
 
 <!--////////////////////////////////////////////////Web Developments Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
             <div class="portfolio_category_pic">
-              <a href="./img/WEB_Img_01.jpg" rel="lightboxweb"> <img src="./img/thumb_img_portfolio_WEB_5.jpg" alt="web picture 1" width="200px" height="240px"</a>
+              <a href="./img/WEB_Img_01.jpg" rel="lightboxweb"> <img src="./img/thumb_img_portfolio_WEB_5.jpg" alt="web picture 1" width="180px" height="240px"></a>
 
               <a href="./img/WEB_Img_02.jpg" rel="lightboxweb"></a>
               <a href="./img/WEB_Img_03.jpg" rel="lightboxweb"></a>
@@ -169,11 +174,13 @@
             <div class="experience_pic"><img src="./img/experience.jpg" alt="Software and Experience" width="1200px" height="400px"></div>
           </article>
         </div>
-
-
-<!-- /////////////////////      End Portfolio    /////////////////////    -->
+        </div>
 <!-- /////////////////////      Start BLog     /////////////////////    -->
-        <div class="blog pages">
+    
+    <div class="row blog pages">
+      <div class="large-16 columns">
+
+          <div class="blog">
 
           <header class="category_header">
           <h2 class="category_header_text">Blog</h2>
@@ -194,11 +201,11 @@
               </ul>
             </div>
 
-            <div class="blog">
-              <a href="jblacher.tumblr.com"><img src="./img/blog_picture.jpg" alt= "blog picture 1" width="1000px" height="340px" ></a>
+
+              <a href="jblacher.tumblr.com"><img src="./img/blog_picture.jpg" alt= "blog picture 1" width="1000px" height="340px"></a>
               
 
-            </div>
+
 
             <div class="blog_pic">
               <ul class="blog_interest">
@@ -214,9 +221,16 @@
             </div>
           </article>
         </div>
+            
+        </div>
+    </div>
 
+<!-- /////////////////////      End Blog     /////////////////////    -->    
 <!-- /////////////////////      Start Contact     /////////////////////    -->
-        <div class="contact pages">
+
+    <div class="row contact pages">
+      <div class="large-16 columns">
+
             
             <header class="category_header">
             <h2 class="category_header_text">Contact</h2>
@@ -226,7 +240,18 @@
               <p>T. 708.331.3971</p>
               <p> Currently living and working in Chicago, IL.</p>
             </div>
-        </div>
-    </div>
+
+      </div>
+      </div>
+
+
+    
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
