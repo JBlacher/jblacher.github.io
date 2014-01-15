@@ -191,6 +191,7 @@ box-shadow:2px 2px 1px #101010;
 .portfolio_category_header_text {
 color:#505050;
 font-family:'Average', Helvetica, Arial, serif;
+font-weight: bold;
 }
 
 .experience {
