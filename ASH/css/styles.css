@@ -1,18 +1,5 @@
 
 
-.subMenu ul {
-	text-decoration: none; 
-	list-style: none;
-}
-
-.subMenu li {
-	display: inline-block;
-	}
-
-.subMenu a {
-	color: white;
-	}
-
 .title {
 	font-family: "Impact", Helvetica, Arial;
 	font-size: 40px;
@@ -36,19 +23,21 @@ h1 {
 	color: gray;
 }
 
-.about_background {
-	background-color: black;
-	max-width: 950px;
-	margin: 0 auto;
-	text-align: center;
+h2 {
+   display: none;
 }
 
+#container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+}
 
-
+/*
 .view {
    	display: inline-block;
-   	width: 300px;
-   	height: 200px;
+   	width: auto;
+   	height: auto;
    	margin: 2px;
    	border: 10px solid #fff;
    	overflow: hidden;
@@ -61,17 +50,14 @@ h1 {
    	background: #fff url(../images/bgimg.jpg) no-repeat center center;
 }
 .view .mask,.view .content {
-   width: 300px;
-   height: 200px;
-   position: absolute;
+   width: 100%;
+   height: auto;
+   position: relative;
    overflow: hidden;
    top: 0;
    left: 0;
 }
-.view img {
-   display: block;
-   position: relative;
-}
+
 .view h2 {
    text-transform: uppercase;
    color: #fff;
@@ -151,3 +137,60 @@ h1 {
    opacity: 1;
 }
 
+
+.photo01, .photo02, .photo03, .photo04  {
+
+}
+
+.photo05, .photo06, .photo07, {
+
+}
+
+.photo08, .photo09, .photo10, {
+
+
+}
+
+.box {
+   display: inline-block;
+   float:left;
+}*/
+
+
+ 
+/*Media Queries*/
+@media only screen and (max-width : 1199px),
+only screen and (max-device-width : 1199px){
+    #container {
+        width: 1000px;
+    }
+}
+ 
+ 
+@media only screen and (max-width : 999px),
+only screen and (max-device-width : 999px){
+    #container {
+        width: 800px;
+    }
+}
+ 
+@media only screen and (max-width : 799px),
+only screen and (max-device-width : 799px){
+    #container {
+        width: 600px;
+    }
+}
+ 
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+    #container {
+        width: 400px;
+    }
+}
+ 
+@media only screen and (max-width : 399px),
+only screen and (max-device-width : 399px){
+    #container {
+        width: 200px;
+    }
+}
