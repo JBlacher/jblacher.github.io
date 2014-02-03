@@ -13,7 +13,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 
 html {
 	overflow: auto;	
-
 }
 
 body {
@@ -26,7 +25,6 @@ body {
 	height: 100%;
 	background: url(../img/img_header_background.jpg) no-repeat center center fixed;
 	background-size: contain;
-
 }
 
 blockquote,q {
@@ -51,17 +49,30 @@ img {
 	height: auto;
 }
 
+ol,ul,.subMenu ul {
+	list-style:none;
+}
+
+video {
+	padding-left: 75px;
+	padding-right: 75px;
+	background-color: black;
+}
+
 #wrapper {
 	max-width: 100%
 }
 
+/* ----------------- Navigation ------------------- */
 .subMenu {
 	display: inline-block;
 	top:0;
+	left: 0;
+	position: fixed;
 	text-align:right;
 	background:url(../img/nav_bar.png) repeat fixed;
 	width: 100%;
-	z-index:5;
+	z-index:999;
 	padding: 10px 50px 20px 0;
 }
 
@@ -70,152 +81,191 @@ img {
 }
 
 .subMenu li {
-display:inline-block;
-font-size:125%;
-font-weight:bold;
-padding-right:50px;
+	display:inline-block;
+	font-size:125%;
+	font-weight:bold;
+	padding-right:50px;
 }
 
 .subMenu li a {
-text-decoration:none;
-color:#fff;
+	text-decoration:none;
+	color:#fff;
 }
 
 .subMenu a:hover {
-color: #909090;
+	color: #909090;
 }
 
+/* ----------------- End Navigation ------------------- */
+/* ----------------- End Bottom Navigation ------------------- */
+
+.bottomNav {
+	top:0;
+	text-align:right;
+	background-color: #303030;
+	width:100%;
+	z-index:5;
+	padding: 10px 50px 20px 0;
+}
+
+.bottomNav li {
+	display:inline;
+	font-size:100%;
+	font-weight:bold;
+	padding-right:50px;
+}
+
+.bottomNav li a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.bottomNav a:hover {
+	color: #909090;
+}
+/* ----------------- End Bottom Navigation ------------------- */
+/* ----------------- Start Page Headers ------------------- */
 .category_header {
-margin-top: 10px;
-display:block;
-text-align:left;
-padding:45px 0 25px 10px;
+	margin-top: 10px;
+	display:block;
+	text-align:left;
+	padding:45px 0 25px 10px;
 }
 
 .category_header_text {
-display:block;
-font-family:'Nunito', Helvetica, Arial, sans-serif;
-font-size:250%;
-color:Gray;
-text-transform:uppercase;
+	display:block;
+	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-size:250%;
+	color:Gray;
+	text-transform:uppercase;
 }
-
+/* ----------------- End Page Headers ------------------- */
+/* ----------------- Start Page Structure and Position ------------------- */
 .pages {
-position:relative;
-background-color:#FFF;
-width:100%;
-padding-bottom:50px;
--webkit-box-shadow:5px 5px 3px #101010;
--moz-box-shadow:5px 5px 3px #101010;
--o-box-shadow:5px 5px 3px #101010;
-box-shadow:5px 5px 3px #101010;
+	position:relative;
+	background-color:#FFF;
+	width:100%;
+	padding-bottom:50px;
+	-webkit-box-shadow:5px 5px 3px #101010;
+	-moz-box-shadow:5px 5px 3px #101010;
+	-o-box-shadow:5px 5px 3px #101010;
+	box-shadow:5px 5px 3px #101010;
 }
 
 .about {
-position:relative;
-top:600px;
+	position:relative;
+	top:600px;
 }
 
 .portfolio {
-position:relative;
-top:1200px;
+	position:relative;
+	top:1200px;
 }
 
 .blog {
-position:relative;
-top:2400px;
+	position:relative;
+	top:2400px;
 }
 
 .contact {
-position:relative;
-top:3000px;
-width:100%;
-line-height:150%;
-text-align:left;
+	position:relative;
+	top:3000px;
+	width:100%;
+	line-height:150%;
+	text-align:left;
 }
 
+.project_container {
+	background:url(../img/project_container.jpg) no-repeat center center;
+	background-size:cover;
+	padding: 10px 0 10px 0;
+}
+.page_pics {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.page_pics2 {
+	display: inline-block; 
+	vertical-align: top;
+	padding: 0 0 0 30px;
+}
+
+/* ----------------- End Page Structure and Positioning ------------------- */
+/* ----------------- Start About Page ------------------- */
 .about_container {
-display:block;
-background:url(../img/about_background.jpg) no-repeat center center;
-background-size: cover;
+	display:block;
+	background:url(../img/about_background.jpg) no-repeat center center;
+	background-size: cover;
 }
 
 .about_pic {
-display:inline-block;
-padding:10px 0 0 20px;
-width: auto;
+	display:inline-block;
+	padding:10px 0 0 20px;
+	width: auto;
 }
 
 .summary {
-display:inline-block;
-font-family:'Nunito', Helvetica, Arial, sans-serif;
-font-weight:bold;
-vertical-align:top;
-min-width: 40%;
-max-width: 60%;
-line-height:120%;
-padding:25px 0 0 40px;
-color:#FFF;
+	display:inline-block;
+	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	vertical-align:top;
+	max-width: 60%;
+	line-height:120%;
+	padding:25px 0 0 40px;
+	color:#FFF;
 }
 
 .welcome {
-text-transform:uppercase;
-font-family:'Nunito', Helvetica, Arial, sans-serif;
-font-size:200%;
-line-height: 100%;
-color: #fff;
-background-color: #000;
-padding:10px 5px;
-
+	text-transform: uppercase;
+	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-size:200%;
+	line-height: 100%;
+	color: #fff;
+	background-color: #000;
+	padding:10px 5px;
 }
-
-.touch {
-font-family:'Nunito', Helvetica, Arial, sans-serif;
-font-size:120%;
-text-transform:uppercase;
-padding-top:25px;
-color:#000;
-}
-
+/* ----------------- End About Page ------------------- */
+/* ----------------- Start Portfolio Page ------------------- */
 .portfolio_pics_container {
-text-align:center;
-padding:10px 0 20px 0;
+	text-align:center;
+	padding:10px 0 20px 0;
 }
-
 
 .portfolio_category_pic {
-display:inline-block;
--webkit-box-shadow:5px 5px 3px #101010;
--moz-box-shadow:5px 5px 3px #101010;
--o-box-shadow:5px 5px 3px #101010;
-box-shadow:5px 5px 3px #101010;
--webkit-transition:all .1s ease;
--moz-transition:all .1s ease;
--o-transition:all .1s ease;
--ms-transition:all .1s ease;
-transition:all .1s ease;
-padding:0 20px 5px;
+	display:inline-block;
+	position:relative;
+	-webkit-box-shadow:5px 5px 3px #101010;
+	-moz-box-shadow:5px 5px 3px #101010;
+	-o-box-shadow:5px 5px 3px #101010;
+	-webkit-transition:all .1s ease;
+	-moz-transition:all .1s ease;
+	-o-transition:all .1s ease;
+	-ms-transition:all .1s ease;
+	transition:all .1s ease;
+	box-shadow:5px 5px 3px #101010;
+	padding:0 20px 5px;
 }
 
 .portfolio_category_pic:hover {
-filter:grayscale(100%);
--webkit-filter:grayscale(100%);
--moz-filter:grayscale(100%);
--ms-filter:grayscale(100%);
--o-filter:grayscale(100%);
+	filter:grayscale(100%);
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	-ms-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
 }
 
 .portfolio_category_pic:active {
--webkit-box-shadow:2px 2px 1px #101010;
--moz-box-shadow:2px 2px 1px #101010;
--o-box-shadow:2px 2px 1px #101010;
-box-shadow:2px 2px 1px #101010;
+	-webkit-box-shadow:2px 2px 1px #101010;
+	-moz-box-shadow:2px 2px 1px #101010;
+	-o-box-shadow:2px 2px 1px #101010;
+	box-shadow:2px 2px 1px #101010;
 }
 
 .portfolio_category_header_text {
-color:#505050;
-font-family:'Average', Helvetica, Arial, serif;
-font-weight: bold;
+	color:#505050;
+	font-family:'Average', Helvetica, Arial, serif;
+	font-weight: bold;
 }
 
 .portPic1, .portPic2, .portPic3, .portPic4, .portPic5 {
@@ -223,58 +273,67 @@ font-weight: bold;
 }
 
 .experience {
-font-family:'Nunito', Helvetica, Arial, sans-serif;
-font-size:150%;
-color:#505050;
-text-transform:uppercase;
-padding:50px 0 20px 75px;
-}
-
-.blog_interest {
-padding: 30px 0;
-}
-
-
-.contact p {
-font-family:'Average', Helvetica, Arial, serif;
-font-weight: bold;
-text-align:center;
-display:inline;
-padding:20px 0 10px 150px;
-}
-
-ol,ul,.subMenu ul {
-list-style:none;
+	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-size:150%;
+	color:#505050;
+	text-transform:uppercase;
+	padding:50px 0 20px 75px;
 }
 
 .experience_pic,.page_header_container {
-text-align:center;
+	text-align:center;
+}
+/* ----------------- End Portfolio Page ------------------- */
+/* ----------------- Start Blog Page ------------------- */
+
+.blog_interest {
+	padding: 30px 0;
+}
+/* ----------------- End Blog Page ------------------- */
+/* ----------------- Start Contact Page ------------------- */
+.touch {
+	color:black;
+	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-size:120%;
+	text-transform:uppercase;
+	padding-bottom: 25px;
+}
+
+.contact_container {
+	background:url(../img/about_background.jpg) no-repeat center center;
+	background-size: cover;
+
+}
+.contact p {
+	font-family:'Average', Helvetica, Arial, serif;
+	font-weight: bold;
+	text-align:center;
+	display:inline;
+	padding:20px 0 10px 150px;
 }
 
 .social,.social li {
-display:inline;
-list-style:none;
-padding:0 10px;
+	display:inline;
+	list-style:none;
+	padding: 25px;
 }
-
+/* ----------------- End Contact Page ------------------- */
+/* ----------------- Start UX Page ------------------- */
 .UX_pics {
 	display: inline-block;
 	vertical-align: top;
 }
 
 .UX_pics2 {
-	display: inline; 
+	display: inline-block; 
 	vertical-align: top;
-	padding: 0 2px 0 30px;
+	padding: 0 0 0 30px;
 }
 
 .UX_pics img, .UX_pics2 img {
-	-webkit-box-shadow:3px 3px 1px #101010;
-	-moz-box-shadow:3px 3px 1px #101010;
-	-o-box-shadow:3px 3px 1px #101010;
-	box-shadow:3px 3px 1px #101010;
+	padding: 0 0 10px 0;
+	border: solid 1px;
 }
-
 
 .UX_summary  {
 	display: inline-block;
@@ -308,24 +367,7 @@ padding:0 10px;
 }
 
 .requirements li {
-
 	line-height: 150%;
-}
-
-.project_container {
-	background:url(../img/project_container.jpg) no-repeat center center;
-	padding: 10px 0 10px 0;
-}
-
-.center {
-	padding-left: 15px;
-}
-
-video {
-	padding-left: 75px;
-	padding-right: 75px;
-	background-color: black;
-	margin-left: 30px;
 }
 
 #toTheTop {
@@ -335,13 +377,11 @@ video {
 	background-color: black;
 	padding: 5px;
 	
-
 	-webkit-box-shadow:2px 2px 1px #101010;
 	-moz-box-shadow:2px 2px 1px #101010;
 	-o-box-shadow:2px 2px 1px #101010;
 	box-shadow:2px 2px 1px #101010;
 }
-
 
 #toTheTop:hover {
 	display: inline-block;
@@ -350,29 +390,4 @@ video {
 	-moz-box-shadow:2px 2px 1px #101010;
 	-o-box-shadow:2px 2px 1px #101010;
 	box-shadow:2px 2px 1px #101010;
-}
-
-.bottomNav {
-top:0;
-text-align:right;
-background-color: #303030;
-width:100%;
-z-index:5;
-padding: 10px 50px 20px 0;
-}
-
-.bottomNav li {
-display:inline;
-font-size:100%;
-font-weight:bold;
-padding-right:50px;
-}
-
-.bottomNav li a {
-text-decoration:none;
-color:#fff;
-}
-
-.bottomNav a:hover {
-color: #909090;
 }
