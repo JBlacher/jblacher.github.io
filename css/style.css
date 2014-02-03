@@ -72,7 +72,7 @@ video {
 	text-align:right;
 	background:url(../img/nav_bar.png) repeat fixed;
 	width: 100%;
-	z-index:999;
+	z-index:5;
 	padding: 10px 50px 20px 0;
 }
 
