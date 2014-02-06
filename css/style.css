@@ -16,7 +16,6 @@ html {
 }
 
 body {
-
 	line-height:1.2;
 	font-family:Average, Helvetica, Arial, serif;
 	font-size:1em;
@@ -58,6 +57,8 @@ video {
 	padding-right: 75px;
 	background-color: black;
 }
+
+
 
 #wrapper {
 	max-width: 100%
@@ -146,10 +147,10 @@ video {
 	background-color:#FFF;
 	width:100%;
 	padding-bottom:50px;
-	-webkit-box-shadow:5px 5px 3px #101010;
+	/*-webkit-box-shadow:5px 5px 3px #101010;
 	-moz-box-shadow:5px 5px 3px #101010;
 	-o-box-shadow:5px 5px 3px #101010;
-	box-shadow:5px 5px 3px #101010;
+	box-shadow:5px 5px 3px #101010;*/
 }
 
 .about {
@@ -178,7 +179,6 @@ video {
 .project_container {
 	background:url(../img/project_container.jpg) no-repeat center center;
 	background-size:cover;
-	padding: 10px 0 10px 0;
 }
 .page_pics {
 	display: inline-block;
@@ -249,32 +249,32 @@ video {
 }
 /* ----------------- End About Page ------------------- */
 /* ----------------- Start Portfolio Page ------------------- */
-.portfolio_pics_container {
-	padding:10px 0 20px 0;
-}
 
 .portfolio_category_pic {
 	display:inline-block;
 	position:relative;
-	-webkit-box-shadow:5px 5px 3px #101010;
+	/*-webkit-box-shadow:5px 5px 3px #101010;
 	-moz-box-shadow:5px 5px 3px #101010;
 	-o-box-shadow:5px 5px 3px #101010;
 
-	box-shadow:5px 5px 3px #101010;
-	padding:0 20px 5px;
-	opacity: 0.7;
+	box-shadow:5px 5px 3px #101010;*/
+	opacity: 0.5;
 }
 
 .portfolio_category_pic:hover {
 	opacity: 0.9;
+	-webkit-transition:1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	box-transition: 1s;
 	
 }
 
 .portfolio_category_pic:active {
-	-webkit-box-shadow:2px 2px 1px #101010;
+	/*-webkit-box-shadow:2px 2px 1px #101010;
 	-moz-box-shadow:2px 2px 1px #101010;
 	-o-box-shadow:2px 2px 1px #101010;
-	box-shadow:2px 2px 1px #101010;
+	box-shadow:2px 2px 1px #101010;*/
 }
 
 .portfolio_category_header_text {
@@ -283,8 +283,8 @@ video {
 	font-weight: bold;
 }
 
-.portPic1, .portPic2, .portPic3, .portPic4, .portPic5 {
-	padding-top: 4%;
+.portPic1, .portPic2, .portPic3, .portPic4, .portPic5, .portPic6 {
+	padding-top: 1%;
 }
 
 .experience {
@@ -292,7 +292,8 @@ video {
 	font-size:150%;
 	color:#505050;
 	text-transform:uppercase;
-	padding:50px 0 20px 75px;
+	padding:25px 0 20px 0px;
+	text-align: left;
 }
 
 .experience_pic,.page_header_container {
