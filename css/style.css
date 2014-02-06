@@ -182,13 +182,12 @@ video {
 }
 .page_pics {
 	display: inline-block;
-	vertical-align: top;
+
 }
 
 .page_pics2 {
 	display: inline-block; 
-	vertical-align: top;
-	padding: 0 0 0 30px;
+	vertical-align: top;	padding: 0 0 0 30px;
 }
 
 .page_summary  {
