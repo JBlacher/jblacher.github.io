@@ -43,10 +43,7 @@ html {
 	overflow-x:hidden;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
+
 
 ol,ul,.subMenu ul {
 	list-style:none;
@@ -85,7 +82,7 @@ video {
 	display:inline-block;
 	font-size:125%;
 	font-weight:bold;
-	padding-right:50px;
+	padding:0 2% 0 3%;
 }
 
 .subMenu li a {
@@ -182,12 +179,15 @@ video {
 }
 .page_pics {
 	display: inline-block;
+	max-width: 100%;
 
 }
 
 .page_pics2 {
 	display: inline-block; 
-	vertical-align: top;	padding: 0 0 0 30px;
+	vertical-align: top;	
+	padding: 0 0 0 30px;
+	max-width: 100%;
 }
 
 .page_summary  {
@@ -218,12 +218,13 @@ video {
 	display:block;
 	background:url(../img/about_background.jpg) no-repeat center center;
 	background-size: cover;
+	max-width: 100%;
 }
 
 .about_pic {
 	display:inline-block;
 	padding:10px 0 0 20px;
-	width: auto;
+	max-width: 100%;
 }
 
 .summary {
@@ -232,6 +233,7 @@ video {
 	font-weight:bold;
 	vertical-align:top;
 	max-width: 60%;
+	min-width: 30%;
 	line-height:120%;
 	padding:25px 0 0 40px;
 	color:#FFF;
@@ -268,13 +270,6 @@ video {
 	
 }
 
-.portfolio_category_pic:active {
-	/*-webkit-box-shadow:2px 2px 1px #101010;
-	-moz-box-shadow:2px 2px 1px #101010;
-	-o-box-shadow:2px 2px 1px #101010;
-	box-shadow:2px 2px 1px #101010;*/
-}
-
 .portfolio_category_header_text {
 	color:#505050;
 	font-family:'Average', Helvetica, Arial, serif;
@@ -283,6 +278,7 @@ video {
 
 .portPic1, .portPic2, .portPic3, .portPic4, .portPic5, .portPic6 {
 	padding-top: 1%;
+	max-width: 100%;
 }
 
 .experience {
@@ -336,17 +332,18 @@ video {
 .UX_pics {
 	display: inline-block;
 	vertical-align: top;
+	max-width: 100%;
 }
 
 .UX_pics2 {
 	display: inline-block; 
 	vertical-align: top;
 	padding: 0 0 0 30px;
+	max-width: 100%;
 }
 
 .UX_pics img, .UX_pics2 img {
 	padding: 0 0 10px 0;
-	border: solid 1px;
 }
 
 .UX_summary  {
@@ -355,11 +352,12 @@ video {
 	font-family: 'Average', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 500px;
+	line-height: 125%;
 }
 
 .UX_summary li {
 	padding: 4px;
-	line-height: 1.2em;
+	line-height: 125%;
 }
 
 .UX_summary2  {
@@ -369,6 +367,7 @@ video {
 	font-weight: bold;
 	vertical-align: top;
 	max-width: 500px;
+	line-height: 125%;
 }
 
 .requirements {
@@ -381,7 +380,7 @@ video {
 }
 
 .requirements li {
-	line-height: 150%;
+	line-height: 175%;
 }
 
 #toTheTop {
@@ -405,3 +404,102 @@ video {
 	-o-box-shadow:2px 2px 1px #101010;
 	box-shadow:2px 2px 1px #101010;
 }
+
+
+@media only screen and (max-width:640px) {
+/*   Home Page   */
+	#wrapper {
+		text-align: center;
+	}
+
+	.fixed {
+		text-align: center;
+	}
+	.subMenu {
+		text-align: center;	
+		padding-left: 5%;	
+	}
+
+	.subMenu li {
+		font-size: 90%;
+		padding-left:8%;	
+	}
+
+	.about_container {
+		text-align:center;	
+		min-width: 320px;	
+	}
+
+	.about_pic {
+		padding: 2%;
+	}
+
+	.summary {
+		text-align:left;
+		min-width: 340px;
+		padding:0;
+	}
+
+	.category_header_text {
+		text-align: center;
+	}
+
+	.welcome {
+		padding-top:;
+	}
+
+}
+
+
+/*  UX Page   */
+
+/*  Interactive Page   */
+
+.project_container {
+	min-width: 320px;
+}
+
+.page_pics {
+	min-width: 320px;
+	text-align: center;
+}
+
+.page_pics2 {
+	min-width: 320px;
+	text-align: center;
+	padding-left: 0px;
+}
+.page_summary {
+	padding:0;
+}
+.page_summary2 {
+	padding:0;
+}
+
+.page_pics {
+	min-width: 320px;
+	text-align: center;
+}
+
+.UX_pics2 {
+	min-width: 320px;
+	text-align: center;
+	padding-left: 0px;
+}
+.UX_summary {
+	min-width: 320px;
+	padding:0;
+}
+.UX_summary2 {
+	min-width: 320px;
+	padding:0;
+}
+.bottomNav {
+	text-align: left;
+	padding: 0;
+}
+/*  Illustration Page   */
+
+/*  Interactive Page   */
+
+/*  Illustration Page   */
