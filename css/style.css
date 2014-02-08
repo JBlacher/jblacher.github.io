@@ -55,6 +55,10 @@ video {
 	background-color: black;
 }
 
+footer {
+	width: 100%;
+}
+
 
 
 #wrapper {
@@ -91,7 +95,7 @@ video {
 }
 
 .subMenu a:hover {
-	color: #909090;
+	color: #FF9900;
 }
 
 /* ----------------- End Navigation ------------------- */
@@ -177,26 +181,28 @@ video {
 	background:url(../img/project_container.jpg) no-repeat center center;
 	background-size:cover;
 }
-.page_pics {
-	display: inline-block;
-	max-width: 100%;
 
+.page_pics {
+	display: inline-block;	
+	vertical-align: middle;
+	max-width: 100%;
 }
 
 .page_pics2 {
-	display: inline-block; 
-	vertical-align: top;	
-	padding: 0 0 0 30px;
+	display: inline-block; 	
+	vertical-align: middle;
 	max-width: 100%;
 }
 
 .page_summary  {
 	display: inline-block;
+	text-align:top;
 	padding-left: 50px;
 	font-family: 'Average', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 500px;
 }
+
 
 .page_summary li {
 	padding: 4px;
@@ -245,7 +251,7 @@ video {
 	font-size:200%;
 	line-height: 100%;
 	color: #fff;
-	background-color: #000;
+	background-color:##EAA508;
 	padding:10px 5px;
 }
 /* ----------------- End About Page ------------------- */
@@ -444,9 +450,6 @@ video {
 		text-align: center;
 	}
 
-	.welcome {
-		padding-top:;
-	}
 
 }
 
@@ -462,11 +465,14 @@ video {
 .page_pics {
 	min-width: 320px;
 	text-align: center;
+	vertical-align: top;
+	padding-right: 10px;
 }
 
 .page_pics2 {
 	min-width: 320px;
 	text-align: center;
+	vertical-align: top;
 	padding-left: 0px;
 }
 .page_summary {
@@ -496,7 +502,7 @@ video {
 }
 .bottomNav {
 	text-align: left;
-	padding: 0;
+	padding: 15px;
 }
 /*  Illustration Page   */
 
