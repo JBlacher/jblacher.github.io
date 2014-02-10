@@ -20,7 +20,7 @@
     <!-- JavaScript-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/slimbox2.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
     <script type="text/javascript" src="js/jquery.smint.js"></script>
     <script type="text/javascript">
@@ -30,14 +30,19 @@
         });
       });
     </script>
-    <script type="text/javascript" src="http://jblacher.tumblr.com/api/read/json"></script> 
+
+    <!--[if IE]>
+
+      <script src="js/columns.js"></script>
+
+    <![endif]-->   
+
   </head>
 
   <body>
   <div id="wrapper">
 
-    <!-- /////////////////////      Start Navigation      /////////////////////    -->
-    
+    <!-- /////////////////////      Start Navigation      /////////////////////    -->   
         <div class="fixed">
           <nav class="subMenu">   
               <ul>
@@ -49,7 +54,6 @@
           </nav> 
         </div> 
 <!-- /////////////////////      End Navigation   /////////////////////    -->
-
         <div class="row about pages">
         <div class="medium-12 large-12 columns">
         
@@ -66,16 +70,16 @@
               <div class="medium-8 large-8 summary">
                 <h2 class="welcome">Welcome To My Portfolio</h2>
                 <br />
-                <p>As a 6 year visual designer living and working in Chicago, IL, my adventure through the world of traditional and digital design has given me experience in the areas of 3d modeling/animation, interactive, print, web, illustration, and most recently UX/UI and front-end development. While I have specific programs that I prefer, I can be given any media tool and find a way to be creative with it to visually communicate with others. The ability to draw with pencil and paper will always be my greatest asset and the deeper I dive into the digital realm, the more ways I find to use traditional drawing skills. </p><br />
+                <p>As a 6 year visual designer living and working in Chicago, IL, my adventure through the world of traditional and digital design has given me experience in the areas of 3d modeling/animation, interactive, print, web, illustration, and most recently UX/UI and front-end development. While I have specific programs that I prefer, I can be given any media tool and find a way to be creative with it to visually communicate with others. I am able to quickly adapt to a company's key softwares. The ability to draw with pencil and paper will always be my greatest asset and the deeper I dive into the digital realm, the more ways I find to use traditional drawing skills. </p><br />
 
-                <p>I love to collaborate with other designers and developers for the mutual exchange in skills as I tend to absorb skills at a rapid rate. My primary focus is all things visual but I have gained more than enough all-around skills through personal and startup culture"figure it out" type situations to see a complete project through from concept to release by myself.</p>
+                <p>I love to collaborate with other designers and developers for the mutual exchange in skills as I tend to absorb skills at a rapid rate. My primary focus is visual design but I have gained more than enough all-around skills through personal projects and through startup culture "figure-it-out" type situations to complete the client side front-end development by myself.</p>
                 <br />
               </div>
         </div>    
         </div>
         </div>
     
-    <!-- /////////////////////      End ABout      /////////////////////    -->
+<!-- /////////////////////      End ABout      /////////////////////    -->
 
 <!-- /////////////////////      Start Porfolio  /////////////////////    -->
         <div class="row portfolio pages">
@@ -157,6 +161,9 @@
                 <a href="jblacher.tumblr.com"><img src="./img/blog_picture.jpg" alt= "blog picture 1"></a>
               </div> 
             </article>
+
+
+
           </div>    
         </div>
 
