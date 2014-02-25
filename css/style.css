@@ -43,7 +43,11 @@ html {
 	overflow-x:hidden;
 }
 
+h3 {
+	font-family: 'Nunito',Arial, Helvetica,sans-serif;
+	font-size: 200%
 
+}
 
 ol,ul,.subMenu ul {
 	list-style:none;
@@ -197,7 +201,6 @@ footer {
 .page_summary  {
 	display: inline-block;
 	text-align:top;
-	padding-left: 50px;
 	font-family: 'Average', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 500px;
@@ -209,14 +212,6 @@ footer {
 	line-height: 1.2em;
 }
 
-.page_summary2  {
-	display: inline-block;
-	padding-left: 5px;
-	font-family: 'Average', Helvetica, Arial, serif;
-	font-weight: bold;
-	vertical-align: top;
-	max-width: 500px;
-}
 
 /* ----------------- End Page Structure and Positioning ------------------- */
 /* ----------------- Start About Page ------------------- */
@@ -304,6 +299,10 @@ footer {
 
 .blog_interest {
 	padding: 30px 0;
+}
+
+.interest li {
+	display: inline;
 }
 /* ----------------- End Blog Page ------------------- */
 /* ----------------- Start Contact Page ------------------- */
