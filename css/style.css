@@ -17,7 +17,7 @@ html {
 
 body {
 	line-height:1.2;
-	font-family:Average, Helvetica, Arial, serif;
+	font-family: "Average Sans", Helvetica, Arial, serif;
 	font-size:1em;
 	margin:0 auto;
 	width: 100%;
@@ -152,10 +152,6 @@ footer {
 	background-color:#FFF;
 	width:100%;
 	padding-bottom:50px;
-	/*-webkit-box-shadow:5px 5px 3px #101010;
-	-moz-box-shadow:5px 5px 3px #101010;
-	-o-box-shadow:5px 5px 3px #101010;
-	box-shadow:5px 5px 3px #101010;*/
 }
 
 .about {
@@ -201,7 +197,7 @@ footer {
 .page_summary  {
 	display: inline-block;
 	text-align:top;
-	font-family: 'Average', Helvetica, Arial, serif;
+	font-family: 'Average Sans', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 500px;
 }
@@ -255,10 +251,6 @@ footer {
 .portfolio_category_pic {
 	display:inline-block;
 	position:relative;
-	/*-webkit-box-shadow:5px 5px 3px #101010;
-	-moz-box-shadow:5px 5px 3px #101010;
-	-o-box-shadow:5px 5px 3px #101010;
-	box-shadow:5px 5px 3px #101010;*/
 	opacity: 0.5;
 }
 
@@ -273,7 +265,7 @@ footer {
 
 .portfolio_category_header_text {
 	color:#505050;
-	font-family:'Average', Helvetica, Arial, serif;
+	font-family:'Average Sans', Helvetica, Arial, serif;
 	font-weight: bold;
 }
 
@@ -304,9 +296,43 @@ footer {
 .interest li {
 	display: inline;
 }
+
+.faq {
+	max-width: 100%;
+}
+
+.faq ul {
+	width: 100%;
+	text-align: center;
+}
+
+.faq div{
+	float: left;
+
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+	display: block;
+	width: 15%;
+	background-color: #626262;
+	height: 150px;
+	margin:10px;
+}
+
+.faq p {
+	vertical-align: middle;
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
+
+
+
 /* ----------------- End Blog Page ------------------- */
 /* ----------------- Start Contact Page ------------------- */
 .touch {
+	clear: both;
 	color:black;
 	font-family:'Nunito', Helvetica, Arial, sans-serif;
 	font-size:120%;
@@ -320,7 +346,7 @@ footer {
 
 }
 .contact p {
-	font-family:'Average', Helvetica, Arial, serif;
+	font-family:'Average Sans', Helvetica, Arial, serif;
 	font-weight: bold;
 	text-align:center;
 	display:inline;
@@ -334,29 +360,32 @@ footer {
 }
 /* ----------------- End Contact Page ------------------- */
 /* ----------------- Start UX Page ------------------- */
+
 .UX_pics {
 	display: inline-block;
 	vertical-align: top;
+	padding: 20px 0 20px 0;
 	max-width: 100%;
 }
 
 .UX_pics2 {
-	display: inline-block; 
+	display: inline-block;
 	vertical-align: top;
-	padding: 0 0 0 30px;
+	padding-top: 10px;
 	max-width: 100%;
 }
 
-.UX_pics img, .UX_pics2 img {
-	padding: 0 0 10px 0;
+.UX_pics2 img {
+	padding: 20px 20px 20px 0;
 }
+
 
 .UX_summary  {
 	display: inline-block;
 	padding-left: 50px;
-	font-family: 'Average', Helvetica, Arial, serif;
+	font-family: 'Average Sans', Helvetica, Arial, serif;
 	font-weight: bold;
-	max-width: 500px;
+	max-width: 700px;
 	line-height: 125%;
 }
 
@@ -365,19 +394,14 @@ footer {
 	line-height: 125%;
 }
 
-.UX_summary2  {
-	display: inline-block;
-	padding-left: 5px;
-	font-family: 'Average', Helvetica, Arial, serif;
-	font-weight: bold;
-	vertical-align: top;
-	max-width: 500px;
-	line-height: 125%;
+.UX_title {
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	font-size:24px;
 }
 
 .requirements {
 	position: relative;
-	font-family: 'Average', Helvetica, Arial, serif;
+	font-family: 'Average Sans', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 600px;
 	margin-left: 25px;
@@ -390,7 +414,7 @@ footer {
 
 #toTheTop {
 	display: inline-block;
-	font-family: 'Average', Helvetica, Arial, serif;
+	font-family: 'Average Sans', Helvetica, Arial, serif;
 	color: white;
 	background-color: black;
 	padding: 5px;
@@ -487,19 +511,7 @@ footer {
 	text-align: center;
 }
 
-.UX_pics2 {
-	min-width: 320px;
-	text-align: center;
-	padding-left: 0px;
-}
-.UX_summary {
-	min-width: 320px;
-	padding:0;
-}
-.UX_summary2 {
-	min-width: 320px;
-	padding:0;
-}
+
 .bottomNav {
 	text-align: left;
 	padding: 15px;
