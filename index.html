@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="keywords" content=" Chicago, UX/UI design, Graphic design, front-end developer, designer, 3d modelling and animation, HTML5, CSS">
     <meta name="description" content="The James Blacher Experience is a personal visual expression of my journey through the world of design ">
     <meta name="author" content="James Blacher">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>The James Blacher Experience</title>
 
     <!-- Stylesheet / CSS and fonts-->
@@ -28,7 +28,13 @@
           $('.subMenu').smint({
             'scrollSpeed' : 1000
         });
+
+        $("div.view").click(function(){
+            $("div.education_container").slideDown();
+        });
       });
+
+
     </script>
 
     <!--[if IE]>
@@ -72,7 +78,7 @@
                 <br />
                 <p>As a 6 year visual designer living and working in Chicago, IL, my adventure through the world of traditional and digital design has given me experience in the areas of 3d modeling/animation, interactive, print, web, illustration, and most recently UX/UI and front-end development. While I have specific programs that I prefer, I can be given any media tool and find a way to be creative with it to visually communicate with others. I am able to quickly adapt to a company's key softwares. The ability to draw with pencil and paper will always be my greatest asset and the deeper I dive into the digital realm, the more ways I find to use traditional drawing skills. </p><br />
 
-                <p>I love to collaborate with other designers and developers for the mutual exchange in skills as I tend to absorb skills at a rapid rate. My primary focus is visual design but I have gained more than enough all-around skills through personal projects and through startup culture "figure-it-out" type situations to complete the client side front-end development by myself.</p>
+                <p>I love to collaborate with other designers and developers for the mutual exchange in skills as I tend to absorb skills at a rapid rate. My primary focus is visual design but I have gained more than enough all-around skills through personal projects and through startup culture "figure-it-out-type" situations to complete the client side front-end development by myself.</p>
                 <br />
               </div>
         </div>    
@@ -150,39 +156,80 @@
 <!-- /////////////////////      Start BLog     /////////////////////    -->
     
         <div class="row blog pages">
-          <div class="large-12 columns text-center">
+        <div class="large-12 columns text-center">
 
             <header class="category_header">
-            <h2 class="category_header_text">Blog</h2>
+                <h2 class="category_header_text">Blog</h2>
             </header>
 
             <article class="page_header_container">
-              <div class="blog_pic">              
-                <a href="jblacher.tumblr.com"><img src="./img/blog_picture.jpg" alt= "blog picture 1"></a>
-              </div> 
+                <div class="blog_pic">              
+                  <img src="./img/blog_picture.jpg" alt="blog picture 1">
+                </div> 
 
-              <hr />
-                <h3>5 things to know about James Blacher</h3>
-              <hr />
+                <hr />
+                  <h3>5 things to know about James Blacher</h3>
+                <hr />
 
-            </article>
+                <div class="large-12 columns main text-center">
+
+                  <div class="view view-fifth">
+                      <img src="./img/blog_point_1.png" alt="point 1">
+                      <div class="mask">
+                          <h2>Education</h2>
+                      </div>
+                  </div>
+
+                  <div class="view view-fifth">
+                      <img src="./img/blog_point_2.png" alt="point 2">
+                      <div class="mask">
+                          <h2>TBA</h2>
+                      </div>
+                  </div>
+
+                  <div class="view view-fifth">
+                      <img src="./img/blog_point_3.png" alt="point 3">
+                      <div class="mask">
+                          <h2>Health & Wellness</h2>
+                      </div>
+                  </div>
+
+                  <div class="view view-fifth">
+                      <img src="./img/blog_point_4.png" alt="point 4">
+                      <div class="mask">
+                          <h2>PDR</h2>
+                      </div>
+                  </div>
+
+                  <div class="view view-fifth">
+                      <img src="./img/blog_point_5.png" alt="point 5">
+                      <div class="mask">
+                          <h2>Art & Design</h2>
+                      </div>
+                  </div>
 
 
+                  
 
-          </div>    
+
+                  </div>        
+              </div>
+              </article>
+
+        </div>    
         </div>
 
 <!-- /////////////////////      End Blog     /////////////////////    -->    
 <!-- /////////////////////      Start Contact     /////////////////////    -->
 
         <div class="row contact pages">
-          <div class="large-12 columns text-center">
+        <div class="large-12 columns text-center">
 
             <header class="category_header">
             <h2 class="category_header_text">Contact</h2>
             </header>
 
-            <div class="large-12 contact_container text-center">
+
 
             <div class="large-12 columns social text-center">
                 <h3 class="touch">Keep in touch with me</h3> 
@@ -192,10 +239,12 @@
                       <li><a href="mailto:jblacher@gmail.com"><img src="./img/icon_email.png" alt="email link" width="50" height="50"></a></li>
                     </ul>
             </div>
-            </div>
+
         </div>
         </div>
   </div>
+
+
     <script>
       $(document).foundation();
     </script>

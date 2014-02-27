@@ -184,19 +184,16 @@ footer {
 
 .page_pics {
 	display: inline-block;	
-	vertical-align: middle;
 	max-width: 100%;
 }
 
-.page_pics2 {
-	display: inline-block; 	
-	vertical-align: middle;
-	max-width: 100%;
+
+.page_pics img {
+	vertical-align: text-top;
 }
 
 .page_summary  {
 	display: inline-block;
-	text-align:top;
 	font-family: 'Average Sans', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 500px;
@@ -242,7 +239,7 @@ footer {
 	font-size:200%;
 	line-height: 100%;
 	color: #fff;
-	background-color:##EAA508;
+	background-color: #EAA508;
 	padding:10px 5px;
 }
 /* ----------------- End About Page ------------------- */
@@ -327,6 +324,128 @@ footer {
 }
 
 
+
+.view {
+	display: inline-block;
+   width: 190px;
+   height: 138px;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+   -moz-box-shadow: 1px 1px 2px #e6e6e6;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+   background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+.view .mask,.view .content {
+   width: 190px;
+   height: 138px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   position: relative;
+   font-size: 14px;
+   padding: 10px 20px 10px 0px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 40px 0 0 0;
+}
+
+
+.view-fifth img {
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.view-fifth .mask {
+   background-color: rgba(146,96,91,0.3);
+   -webkit-transform: translateX(-300px);
+   -moz-transform: translateX(-300px);
+   -o-transform: translateX(-300px);
+   -ms-transform: translateX(-300px);
+   transform: translateX(-300px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.view-fifth h2 {
+   background: rgba(255, 255, 255, 0.5);
+   color: #000;
+   -webkit-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+   -moz-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+   box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+.view-fifth p {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   color: #333;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+.view-fifth:hover .mask {
+   -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   transform: translateX(0px);
+}
+.view-fifth:hover img {
+   -webkit-transform: translateX(300px);
+   -moz-transform: translateX(300px);
+   -o-transform: translateX(300px);
+   -ms-transform: translateX(300px);
+   transform: translateX(300px);
+  }
+
+
+
+ .education_container {
+	display:block;
+	background:url(../img/about_background.jpg) no-repeat center center;
+	background-size: cover;
+	max-width: 100%;
+}
+
+.education_pic {
+	display:inline-block;
+	padding:10px 0 0 20px;
+}
+
+.education_pic img{
+	max-width: 90%;
+}
+.education_summary {
+	display:inline-block;
+	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	vertical-align:text-top;
+	max-width: 80%;
+	min-width: 30%;
+	line-height:120%;
+	padding:25px 0 0 40px;
+	color:#FFF;
+}
 
 
 /* ----------------- End Blog Page ------------------- */
