@@ -104,12 +104,11 @@ footer {
 /* ----------------- End Bottom Navigation ------------------- */
 
 .bottomNav {
-	top:0;
-	text-align:right;
+	text-align: center;
 	background-color: #303030;
 	width:100%;
 	z-index:5;
-	padding: 10px 50px 20px 0;
+	padding: 10px 0px 20px 0;
 }
 
 .bottomNav li {
@@ -615,12 +614,15 @@ footer {
 	.page_summary {
 		padding:0 5px 0 5px;
 	}
-
+	
+	.bottomNav {
+		text-align: center;
+		padding-left: 25px;
+	}
 
 	.bottomNav li{
 		display: block;
-		text-align: center;
-		padding: 5px 0 5px 20px;
+		padding:5px 0 5px 0;
 	}
 }
 
