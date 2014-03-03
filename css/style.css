@@ -154,22 +154,22 @@ footer {
 	padding-bottom:50px;
 }
 
-.about {
+#about {
 	position:relative;
 	top:600px;
 }
 
-.portfolio {
+#portfolio {
 	position:relative;
 	top:1200px;
 }
 
-.blog {
+#blog {
 	position:relative;
 	top:2400px;
 }
 
-.contact {
+#contact {
 	position:relative;
 	top:3000px;
 	width:100%;

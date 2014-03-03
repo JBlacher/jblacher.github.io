@@ -20,20 +20,25 @@
     <!-- JavaScript-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="js/jquery.smint.js"></script>
-    <script type="text/javascript">
-        $(document).ready( function() {
-          $('.subMenu').smint({
-            'scrollSpeed' : 1000
-        });
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script> 
+      <script>
+          $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-        $("div.view").click(function(){
-            $("div.education_container").slideDown();
-        });
-      });
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
 
-
-    </script>
+      </script>
 
 
   </head>
@@ -45,17 +50,17 @@
         <div class="fixed">
           <nav class="subMenu">   
               <ul>
-                <li><a href="#" id="about">about</a></li>
-                <li><a href="#" id="portfolio">portfolio</a></li>
-                <li><a href="#" id="blog">blog</a></li>
-                <li><a href="#" id="contact">contact</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
           </nav> 
         </div> 
 
 <!-- /////////////////////      End Navigation   /////////////////////    -->
         
-        <div class="row about pages">
+        <div id="about" class="row pages">
         <div class="large-12 columns">
         
             <header class="category_header">
@@ -83,7 +88,7 @@
 <!-- /////////////////////      End ABout      /////////////////////    -->
 
 <!-- /////////////////////      Start Porfolio  /////////////////////    -->
-        <div class="row portfolio pages">
+        <div id="portfolio" class="row pages">
         <div class="large-12 columns text-center">
 
           <header class="category_header">
@@ -150,7 +155,7 @@
 <!--//////////////////////////////////////////////// End Experience \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 <!-- /////////////////////      Start BLog     /////////////////////    -->
     
-        <div class="row blog pages">
+        <div id="blog" class="row pages">
         <div class="large-12 columns text-center">
 
             <header class="category_header">
@@ -217,7 +222,7 @@
 <!-- /////////////////////      End Blog     /////////////////////    -->    
 <!-- /////////////////////      Start Contact     /////////////////////    -->
 
-        <div class="row contact pages">
+        <div id="contact" class="row pages">
         <div class="large-12 columns text-center">
 
             <header class="category_header">
@@ -239,9 +244,13 @@
         </div>
   </div>
 
-
     <script>
-      $(document).foundation();
+        $('#subMenu a').click(function() {
+          var subMenuId = $(this).attr("href");
+          $("body").animate({scrollTop: $(subMenuID).offset().top}, 'slow');  
+          return false;
+        });
+
     </script>
   </body>
 </html>
