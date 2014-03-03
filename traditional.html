@@ -10,34 +10,20 @@
     <link rel="stylesheet" href="css/slimbox2.css" />
     <link href='http://fonts.googleapis.com/css?family=Average+Sans|Nunito' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/slimbox2.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="js/jquery.smint.js"></script>
-    <script type="text/javascript">
-        $(document).ready( function() {
-          $('.subMenu').smint({
-            'scrollSpeed' : 1000
-        });
-      });
-
-
-    </script>
-    <script type="text/javascript" src="http://jblacher.tumblr.com/api/read/json"></script> 
   </head>
 
   <body>
 
     <!-- /////////////////////      Start Navigation     /////////////////////    -->
     
-          <nav class="contain-to-grid fixed subMenu">    
+        <nav class="contain-to-grid fixed subMenu">  
               <ul>
-                <li><a href="index.html" id="about">about</a></li>
-                <li><a href="index.html" id="portfolio">portfolio</a></li>
-                <li><a href="index.html" id="blog">blog</a></li>
-                <li><a href="index.html" id="contact">contact</a></li>
-              </ul>
-          </nav> 
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav> 
 
 <!-- /////////////////////      End Navigation   /////////////////////    -->
 <!-- ////////////////////////////////// Row 1 /////////////////////////////////////// -->
@@ -71,9 +57,9 @@
 
 <!-- ///////////////////////////////// End Row 2 ////////////////////////////////////// -->
 
-        <footer>
+        
 <!-- ///////////////////////////////// Bottom Nav ///////////////////////////////////// -->
-      
+        <footer>
           <nav class="medium-12 large-12 columns bottomNav text-right">   
               <ul>
                 <li><a href="index.html" id="home">Home</a></li>
@@ -85,17 +71,12 @@
                 <li><a href="traditional.html" id="traditional">Traditional</a></li>
             </ul>
           </nav> 
+        </footer>
 
 <!-- ///////////////////////////////// End Bottom Nav ///////////////////////////////////// -->
-</footer>
 
-
-
-<script>
-$("#toTheTop").click(function(){
-          $("html, body").animate({ scrollTop: 0 }, "slow");
-})
-</script>
+    <script type="text/javascript" src="js/slimbox2.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
   </body>
 </html>
