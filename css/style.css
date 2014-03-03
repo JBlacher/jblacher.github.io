@@ -485,16 +485,6 @@ footer {
 	max-width: 100%;
 }
 
-.UX_pics2 {
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 10px;
-	max-width: 100%;
-}
-
-.UX_pics2 img {
-	padding: 20px 20px 20px 0;
-}
 
 
 .UX_summary  {
@@ -551,8 +541,7 @@ footer {
 	box-shadow:2px 2px 1px #101010;
 }
 
-
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:920px) {
 /*   Home Page   */
 	#wrapper {
 		text-align: center;
@@ -571,7 +560,7 @@ footer {
 
 	.about_container {
 		text-align:center;	
-		min-width: 320px;	
+		min-width: 300px;	
 	}
 
 	.about_pic {
@@ -580,7 +569,11 @@ footer {
 
 	.summary {
 		text-align:left;
-		min-width: 340px;
+		min-width: 300px;
+		padding:1%;
+	}
+	.ux_summary {
+		text-align: center;
 		padding:1%;
 	}
 
@@ -590,50 +583,92 @@ footer {
 	}
 
 
-}
-
-
-/*  UX Page   */
 
 /*  Interactive Page   */
 
-.project_container {
-	min-width: 320px;
-}
+	.project_container {
+		min-width: 300px;
+	}
 
-.page_pics {
-	min-width: 320px;
-	text-align: center;
-	vertical-align: top;
-	padding-right: 10px;
-}
+	.page_pics {
+		min-width: 300px;
+		text-align: center;
+		vertical-align: top;
+		padding-right: 10px;
+	}
 
-.page_pics2 {
-	min-width: 320px;
-	text-align: center;
-	vertical-align: top;
-	padding-left: 0px;
-}
+	.page_summary {
+		padding:0 5px 0 5px;
+	}
 
-.page_summary {
-	padding:0;
-}
-.page_summary2 {
-	padding:0;
-}
 
-.page_pics {
-	min-width: 320px;
-	text-align: center;
+	.bottomNav li{
+		display: block;
+		text-align: center;
+		padding: 5px 0 5px 0;
+	}
 }
 
 
-.bottomNav {
-	text-align: left;
-	padding: 15px;
-}
-/*  Illustration Page   */
+
+
+
+@media only screen and (min-width:920px) {
+/*   Home Page   */
+	#wrapper {
+		text-align: center;
+	}
+
+	.subMenu {
+		padding-left: 5%;	
+		text-align: right;
+	}
+
+	.subMenu li {
+
+		padding-left:8%;	
+	}
+
+	.about_container {
+		text-align:center;	
+		min-width: 300px;	
+	}
+
+	.about_pic {
+		padding: 2%;
+	}
+
+	.summary {
+		text-align:left;
+		min-width: 300px;
+		padding:1%;
+	}
+
+	.category_header_text {
+		padding:1%;
+	}
+
+
 
 /*  Interactive Page   */
 
-/*  Illustration Page   */
+	.project_container {
+		min-width: 300px;
+	}
+
+	.page_pics {
+		min-width: 300px;
+		text-align: center;
+		vertical-align: top;
+		padding-right: 10px;
+	}
+
+	.page_summary {
+		padding:0;
+	}
+
+	.bottomNav {
+		text-align: left;
+		padding: 15px 25px 0 5px;
+	}
+}
