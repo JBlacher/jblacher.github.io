@@ -72,14 +72,12 @@ footer {
 /* ----------------- Navigation ------------------- */
 .subMenu {
 	display: inline-block;
-	top:0;
-	left: 0;
 	position: fixed;
 	text-align:right;
-	background:url(../img/nav_bar.png) repeat fixed;
+	background:url(../img/nav_bar.png) repeat-x;
 	width: 100%;
 	z-index:5;
-	padding: 10px 50px 20px 0;
+	padding: 10px 50px 50px 0;
 }
 
 .subMenu ul {
@@ -560,12 +558,10 @@ footer {
 		text-align: center;
 	}
 
-	.fixed {
-		text-align: center;
-	}
 	.subMenu {
 		text-align: center;	
 		padding-left: 5%;	
+		text-align: center;
 	}
 
 	.subMenu li {
