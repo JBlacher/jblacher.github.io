@@ -572,8 +572,24 @@ footer {
 		min-width: 300px;
 		padding:1%;
 	}
-	.ux_summary {
+
+	.UX_pics img {
 		text-align: center;
+		min-width: 300px;
+	}
+	
+	.UX_pics2 img {
+		text-align: center;
+		padding:5px 0 5px 0;
+		min-width: 300px;
+	}
+
+	.UX_summary {
+		text-align: left;
+		min-width: 300px;
+		padding-left:0;
+		padding-right:0;
+
 	}
 
 	.category_header_text {
