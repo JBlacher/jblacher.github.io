@@ -541,7 +541,7 @@ footer {
 	box-shadow:2px 2px 1px #101010;
 }
 
-@media only screen and (max-width:920px) {
+@media (min-width: 920px) and (orientation: landscape) {
 /*   Home Page   */
 	#wrapper {
 		text-align: center;
@@ -594,6 +594,94 @@ footer {
 
 	.category_header_text {
 		text-align: center;
+		padding:1%;
+	}
+
+
+
+/*  Interactive Page   */
+
+	.project_container {
+		min-width: 300px;
+	}
+
+	.page_pics {
+		min-width: 300px;
+		text-align: center;
+		vertical-align: top;
+		padding-right: 10px;
+	}
+
+	.page_summary {
+		padding:0 5px 0 5px;
+	}
+	
+	.bottomNav {
+		text-align: center;
+		padding-left: 25px;
+	}
+
+	.bottomNav li{
+		display: block;
+		padding:5px 0 5px 0;
+	}
+}
+
+
+@media (min-width: 920px) and (orientation: portrait) {
+/*   Home Page   */
+	#wrapper {
+		text-align: center;
+	}
+
+	.subMenu {
+		text-align: center;	
+		padding-left: 5%;	
+		text-align: center;
+	}
+
+	.subMenu li {
+		font-size: 90%;
+		padding-left:8%;	
+	}
+
+	.about_container {
+		text-align:center;	
+		min-width: 300px;	
+	}
+
+	.about_pic {
+		padding: 2%;
+	}
+
+	.summary {
+		text-align:left;
+		min-width: 300px;
+		padding:1%;
+	}
+
+	.UX_pics img {
+		text-align: center;
+		min-width: 300px;
+	}
+	
+	.UX_pics2 img {
+		text-align: center;
+		padding:5px 0 5px 0;
+		min-width: 300px;
+	}
+
+	.UX_summary {
+		text-align: left;
+		min-width: 300px;
+		padding-left:0;
+		padding-right:0;
+
+	}
+
+	.category_header_text {
+		text-align: center;
+		font-size: 80%;
 		padding:1%;
 	}
 
