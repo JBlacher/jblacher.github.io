@@ -581,11 +581,12 @@ footer {
 	.summary {
 		text-align:left;
 		min-width: 340px;
-		padding:0;
+		padding:1%;
 	}
 
 	.category_header_text {
 		text-align: center;
+		padding:1%;
 	}
 
 
