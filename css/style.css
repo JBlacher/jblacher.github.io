@@ -186,11 +186,12 @@ footer {
 
 
 .page_pics img {
-	vertical-align: text-top;
+	vertical-align: top;
 }
 
 .page_summary  {
 	display: inline-block;
+	vertical-align: top;
 	font-family: 'Average Sans', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 500px;
@@ -272,7 +273,7 @@ footer {
 	font-family:'Nunito', Helvetica, Arial, sans-serif;
 	font-size:150%;
 	color:#505050;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	padding:25px 0 20px 0px;
 	text-align: left;
 }
