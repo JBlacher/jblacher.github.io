@@ -17,7 +17,7 @@ html {
 
 body {
 	line-height:1.2;
-	font-family: "Average", Helvetica, Arial, serif;
+	font-family: "Fjalla+One", Helvetica, Arial, serif;
 	font-size:1em;
 	margin:0 auto;
 	width: 100%;
@@ -192,7 +192,7 @@ footer {
 .page_summary  {
 	display: inline-block;
 	vertical-align: top;
-	font-family: 'Average', Helvetica, Arial, serif;
+	font-family: 'Lato', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 500px;
 }
@@ -221,7 +221,7 @@ footer {
 
 .summary {
 	display:inline-block;
-	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
+	font-family:'Lato', Helvetica, Arial, sans-serif;
 	font-weight:bold;
 	vertical-align:top;
 	max-width: 60%;
@@ -237,7 +237,6 @@ footer {
 	font-size:200%;
 	line-height: 100%;
 	color: #fff;
-	background-color: #EAA508;
 	padding:10px 5px;
 }
 /* ----------------- End About Page ------------------- */
@@ -260,7 +259,8 @@ footer {
 
 .portfolio_category_header_text {
 	color:#505050;
-	font-family:'Average', Helvetica, Arial, serif;
+	font-family:'Fjalla+One', Helvetica, Arial, serif;
+	font-size: 150%;
 	font-weight: bold;
 }
 
@@ -463,7 +463,7 @@ footer {
 
 }
 .contact p {
-	font-family:'Average', Helvetica, Arial, serif;
+	font-family:'Lato', Helvetica, Arial, serif;
 	font-weight: bold;
 	text-align:center;
 	display:inline;
@@ -493,7 +493,7 @@ footer {
 .UX_summary  {
 	display: inline-block;
 	padding-left: 50px;
-	font-family: 'Average', Helvetica, Arial, serif;
+	font-family: 'Lato', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 700px;
 	line-height: 125%;
@@ -516,7 +516,7 @@ footer {
 
 .requirements {
 	position: relative;
-	font-family: 'Average', Helvetica, Arial, serif;
+	font-family: 'Lato', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 600px;
 	margin-left: 25px;
@@ -529,7 +529,7 @@ footer {
 
 #toTheTop {
 	display: inline-block;
-	font-family: 'Average', Helvetica, Arial, serif;
+	font-family: 'Lato', Helvetica, Arial, serif;
 	color: white;
 	background-color: black;
 	padding: 5px;
