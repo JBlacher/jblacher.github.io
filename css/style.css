@@ -17,7 +17,7 @@ html {
 
 body {
 	line-height:1.2;
-	font-family: "Average Sans", Helvetica, Arial, serif;
+	font-family: "Average", Helvetica, Arial, serif;
 	font-size:1em;
 	margin:0 auto;
 	width: 100%;
@@ -44,7 +44,7 @@ html {
 }
 
 h3 {
-	font-family: 'Nunito',Arial, Helvetica,sans-serif;
+	font-family: 'Fjalla+One',Arial, Helvetica,sans-serif;
 	font-size: 200%
 
 }
@@ -137,7 +137,7 @@ footer {
 
 .category_header_text {
 	display:block;
-	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
 	font-size:250%;
 	color:Gray;
 	text-transform:uppercase;
@@ -192,7 +192,7 @@ footer {
 .page_summary  {
 	display: inline-block;
 	vertical-align: top;
-	font-family: 'Average Sans', Helvetica, Arial, serif;
+	font-family: 'Average', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 500px;
 }
@@ -221,7 +221,7 @@ footer {
 
 .summary {
 	display:inline-block;
-	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
 	font-weight:bold;
 	vertical-align:top;
 	max-width: 60%;
@@ -233,7 +233,7 @@ footer {
 
 .welcome {
 	text-transform: uppercase;
-	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
 	font-size:200%;
 	line-height: 100%;
 	color: #fff;
@@ -260,7 +260,7 @@ footer {
 
 .portfolio_category_header_text {
 	color:#505050;
-	font-family:'Average Sans', Helvetica, Arial, serif;
+	font-family:'Average', Helvetica, Arial, serif;
 	font-weight: bold;
 }
 
@@ -270,7 +270,7 @@ footer {
 }
 
 .experience {
-	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
 	font-size:150%;
 	color:#505050;
 	text-transform: uppercase;
@@ -316,7 +316,7 @@ footer {
 
 .faq p {
 	vertical-align: middle;
-	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	font-family: "Fjalla+One", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	color: white;
 }
@@ -418,7 +418,7 @@ footer {
 
 
 
- .education_container {
+.education_container {
 	display:block;
 	background:url(../img/about_background.jpg) no-repeat center center;
 	background-size: cover;
@@ -435,7 +435,7 @@ footer {
 }
 .education_summary {
 	display:inline-block;
-	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
 	font-weight:bold;
 	vertical-align:text-top;
 	max-width: 80%;
@@ -451,7 +451,7 @@ footer {
 .touch {
 	clear: both;
 	color:black;
-	font-family:'Nunito', Helvetica, Arial, sans-serif;
+	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
 	font-size:120%;
 	text-transform:uppercase;
 	padding-bottom: 25px;
@@ -463,7 +463,7 @@ footer {
 
 }
 .contact p {
-	font-family:'Average Sans', Helvetica, Arial, serif;
+	font-family:'Average', Helvetica, Arial, serif;
 	font-weight: bold;
 	text-align:center;
 	display:inline;
@@ -485,12 +485,15 @@ footer {
 	max-width: 100%;
 }
 
+.UX_pics2 img{
+	padding: 3px 3px 3px 3px;
 
+}
 
 .UX_summary  {
 	display: inline-block;
 	padding-left: 50px;
-	font-family: 'Average Sans', Helvetica, Arial, serif;
+	font-family: 'Average', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 700px;
 	line-height: 125%;
@@ -502,13 +505,18 @@ footer {
 }
 
 .UX_title {
-	font-family: "Nunito", Helvetica, Arial, sans-serif;
-	font-size:24px;
+	text-transform: uppercase;
+	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
+	font-size:200%;
+	line-height: 100%;
+	color: #fff;
+	background-color: #EAA508;
+	padding:10px 5px;
 }
 
 .requirements {
 	position: relative;
-	font-family: 'Average Sans', Helvetica, Arial, serif;
+	font-family: 'Average', Helvetica, Arial, serif;
 	font-weight: bold;
 	max-width: 600px;
 	margin-left: 25px;
@@ -521,7 +529,7 @@ footer {
 
 #toTheTop {
 	display: inline-block;
-	font-family: 'Average Sans', Helvetica, Arial, serif;
+	font-family: 'Average', Helvetica, Arial, serif;
 	color: white;
 	background-color: black;
 	padding: 5px;
