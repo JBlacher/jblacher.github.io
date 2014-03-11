@@ -209,7 +209,7 @@ footer {
 	max-width: 100%;
 }
 
-.about_pic {
+.about_pic, .blog_pic {
 	display:inline-block;
 	padding:20px 0 0 20px;
 	max-width: 100%;
@@ -260,7 +260,7 @@ footer {
 	font-weight: bold;
 }
 
-.portPic1, .portPic2, .portPic3, .portPic4, .portPic5, .portPic6 {
+.portPic1, .portPic2, .portPic3, .portPic4, .portPic5 {
 	padding-top: 1%;
 	max-width: 100%;
 }
@@ -302,13 +302,6 @@ footer {
 
 }
 
-.box1, .box2, .box3, .box4, .box5 {
-	display: block;
-	width: 15%;
-	background-color: #626262;
-	height: 150px;
-	margin:10px;
-}
 
 .faq p {
 	vertical-align: middle;
@@ -316,8 +309,6 @@ footer {
 	font-size: 24px;
 	color: white;
 }
-
-
 
 .view {
 	display: inline-block;
@@ -412,35 +403,23 @@ footer {
    transform: translateX(300px);
   }
 
-
-
-.education_container {
-	display:block;
+.blog_panel {
+	display:inline-block;
 	background:url(../img/about_background.jpg) no-repeat center center;
 	background-size: cover;
 	max-width: 100%;
 }
 
-.education_pic {
+.blog_summary {
 	display:inline-block;
-	padding:10px 0 0 20px;
-}
-
-.education_pic img{
-	max-width: 90%;
-}
-.education_summary {
-	display:inline-block;
-	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
+	font-family:'Lato', Helvetica, Arial, sans-serif;
 	font-weight:bold;
-	vertical-align:text-top;
-	max-width: 80%;
+	max-width: 60%;
 	min-width: 30%;
 	line-height:120%;
-	padding:25px 0 0 40px;
+	padding:10px 10px 25px 25px;
 	color:#FFF;
 }
-
 
 /* ----------------- End Blog Page ------------------- */
 /* ----------------- Start Contact Page ------------------- */
@@ -482,7 +461,7 @@ footer {
 }
 
 .UX_pics2 img{
-	padding: 3px 3px 3px 3px;
+	padding: 20px 3px 20px 3px;
 
 }
 
