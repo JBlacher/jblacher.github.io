@@ -55,7 +55,8 @@ video {
 	background-color: black;
 }
 
-footer {
+#footer {
+	vertical-align: bottom;
 	width: 100%;
 }
 
@@ -144,7 +145,8 @@ footer {
 	position:relative;
 	background-color:#FFF;
 	width:100%;
-	padding-bottom:50px;
+	padding:20px 0 20px 0;
+	margin-bottom: 40px;
 }
 
 #about {
@@ -171,8 +173,8 @@ footer {
 }
 
 .project_container {
-	background:url(../img/project_container.jpg) no-repeat center center;
-	background-size:cover;
+	background:url(../img/about_background.jpg) no-repeat center center;
+	background-size: cover;
 }
 
 .page_pics {
@@ -190,6 +192,7 @@ footer {
 	vertical-align: top;
 	font-family: 'Lato', Helvetica, Arial, serif;
 	font-weight: bold;
+	color:#FFF;
 	max-width: 500px;
 }
 
@@ -209,7 +212,7 @@ footer {
 	max-width: 100%;
 }
 
-.about_pic, .blog_pic {
+.about_pic {
 	display:inline-block;
 	padding:20px 0 0 20px;
 	max-width: 100%;
@@ -233,6 +236,7 @@ footer {
 	font-size:200%;
 	line-height: 100%;
 	color: #fff;
+
 	padding:10px 5px;
 }
 /* ----------------- End About Page ------------------- */
@@ -260,7 +264,7 @@ footer {
 	font-weight: bold;
 }
 
-.portPic1, .portPic2, .portPic3, .portPic4, .portPic5 {
+.portPic1, .portPic2, .portPic3, .portPic4, .portPic5, .portPic6 {
 	padding-top: 1%;
 	max-width: 100%;
 }
@@ -302,6 +306,15 @@ footer {
 
 }
 
+#box1, #box2, #box3, #box4, #box5 {
+	display: inline-block;
+	width: 15%;
+	height: 150px;
+}
+.box_container div{
+	margin:10px;
+	width:100%;
+}
 
 .faq p {
 	vertical-align: middle;
@@ -310,117 +323,53 @@ footer {
 	color: white;
 }
 
-.view {
-	display: inline-block;
-   width: 190px;
-   height: 138px;
-   border: 10px solid #fff;
-   overflow: hidden;
-   position: relative;
-   text-align: center;
-   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
-   -moz-box-shadow: 1px 1px 2px #e6e6e6;
-   box-shadow: 1px 1px 2px #e6e6e6;
-   cursor: default;
-   background: #fff url(../images/bgimg.jpg) no-repeat center center;
-}
-.view .mask,.view .content {
-   width: 190px;
-   height: 138px;
-   position: absolute;
-   overflow: hidden;
-   top: 0;
-   left: 0;
-}
-.view img {
-   display: block;
-   position: relative;
-}
-.view h2 {
-   text-transform: uppercase;
-   color: #fff;
-   position: relative;
-   font-size: 14px;
-   padding: 10px 20px 10px 0px;
-   background: rgba(0, 0, 0, 0.8);
-   margin: 40px 0 0 0;
-}
-
-
-.view-fifth img {
-   -webkit-transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
-   -o-transition: all 0.3s ease-in-out;
-   -ms-transition: all 0.3s ease-in-out;
-   transition: all 0.3s ease-in-out;
-}
-.view-fifth .mask {
-   background-color: rgba(146,96,91,0.3);
-   -webkit-transform: translateX(-300px);
-   -moz-transform: translateX(-300px);
-   -o-transform: translateX(-300px);
-   -ms-transform: translateX(-300px);
-   transform: translateX(-300px);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
-   -webkit-transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
-   -o-transition: all 0.3s ease-in-out;
-   -ms-transition: all 0.3s ease-in-out;
-   transition: all 0.3s ease-in-out;
-}
-.view-fifth h2 {
-   background: rgba(255, 255, 255, 0.5);
-   color: #000;
-   -webkit-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
-   -moz-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
-   box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
-}
-.view-fifth p {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   color: #333;
-   -webkit-transition: all 0.2s linear;
-   -moz-transition: all 0.2s linear;
-   -o-transition: all 0.2s linear;
-   -ms-transition: all 0.2s linear;
-   transition: all 0.2s linear;
-}
-.view-fifth:hover .mask {
-   -webkit-transform: translateX(0px);
-   -moz-transform: translateX(0px);
-   -o-transform: translateX(0px);
-   -ms-transform: translateX(0px);
-   transform: translateX(0px);
-}
-.view-fifth:hover img {
-   -webkit-transform: translateX(300px);
-   -moz-transform: translateX(300px);
-   -o-transform: translateX(300px);
-   -ms-transform: translateX(300px);
-   transform: translateX(300px);
-  }
-
-.blog_panel {
+.blog_container {
 	display:inline-block;
+	max-width: 100%;
+	padding:20px;
 	background:url(../img/about_background.jpg) no-repeat center center;
 	background-size: cover;
+}
+
+.blog_pic {
+	display:inline-block;
+	padding:0px 0 0 10px;
 	max-width: 100%;
+}
+
+.blog_welcome {
+	text-transform: uppercase;
+	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
+	font-size:200%;
+	line-height: 100%;
+	color: #fff;
+	padding:0 0 10px 5px;
 }
 
 .blog_summary {
 	display:inline-block;
 	font-family:'Lato', Helvetica, Arial, sans-serif;
 	font-weight:bold;
+	vertical-align:top;
 	max-width: 60%;
 	min-width: 30%;
 	line-height:120%;
-	padding:10px 10px 25px 25px;
+	padding:0 0 0px 40px;
 	color:#FFF;
 }
 
+.blog_artists_list {
+	position: relative;
+	font-family: 'Lato', Helvetica, Arial, serif;
+	font-weight: bold;
+	max-width: 600px;
+	margin-left: 25px;
+	list-style-type: none;
+}
+
+.blog_artists_list li {
+	line-height: 150%;
+}
 /* ----------------- End Blog Page ------------------- */
 /* ----------------- Start Contact Page ------------------- */
 .touch {
@@ -453,15 +402,18 @@ footer {
 /* ----------------- End Contact Page ------------------- */
 /* ----------------- Start UX Page ------------------- */
 
-.UX_pics {
+
+.UX_pics img{
 	display: inline-block;
 	vertical-align: top;
-	padding: 20px 0 20px 0;
+	margin: 20px 0 20px 0;
 	max-width: 100%;
+	border: 1px solid black;
 }
 
 .UX_pics2 img{
-	padding: 20px 3px 20px 3px;
+	margin: 3px 3px 3px 3px;
+	border: 2px solid black;
 
 }
 
@@ -485,7 +437,6 @@ footer {
 	font-size:200%;
 	line-height: 100%;
 	color: #fff;
-	background-color: #EAA508;
 	padding:10px 5px;
 }
 
@@ -499,7 +450,7 @@ footer {
 }
 
 .requirements li {
-	line-height: 175%;
+	line-height: 150%;
 }
 
 #toTheTop {
@@ -523,6 +474,8 @@ footer {
 	-o-box-shadow:2px 2px 1px #101010;
 	box-shadow:2px 2px 1px #101010;
 }
+
+
 
 @media only screen and (max-width:920px) {
 /*   Home Page   */
