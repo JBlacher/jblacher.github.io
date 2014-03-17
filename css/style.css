@@ -319,7 +319,7 @@ video {
 		vertical-align:top;
 		font-weight:bold;
 		max-width:500px;
-		margin-left: 20px;
+		margin: 0 0 10px 20px;
 	}
 
 	.page_summary li {
