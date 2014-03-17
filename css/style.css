@@ -62,7 +62,7 @@ video {
 		max-width:100%;
 	}
 
-	.requirements li, .UX_summary li {
+	.UX_requirements li, .UX_summary li {
 		margin: 1em 0;
 		color:#303030;
 	} 
@@ -107,6 +107,7 @@ video {
 	.subMenu a:hover {
 		color:#f90;
 	}
+
 /*Bottom Navigation*/
 
 	.bottomNav {
@@ -251,7 +252,7 @@ video {
 	}
 
 	.experience_pic,.page_header_container {
-		text-align:center
+		text-align:center;
 	}
 
 /*Home Page Blog Section*/
@@ -413,6 +414,11 @@ video {
 		max-width:600px;
 		margin-left:25px;
 		list-style-type:disc;
+		margin: 1em 0;
+	}
+
+	.requirements li {
+		margin: 1em 0;
 	}
 
 	#toTheTop {
