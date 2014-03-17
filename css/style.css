@@ -8,18 +8,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 html {
-	overflow: auto;	
+	overflow:auto;
 }
 
 body {
-	line-height:1.2;
-	font-family: "Fjalla+One", Helvetica, Arial, serif;
+	line-height:125%;
+	font-family:"Lato",Helvetica,Arial,serif;
 	font-size:1em;
+	color: #fff;
 	margin:0 auto;
-	width: 100%;
-	height: 100%;
-	background: url(../img/img_header_background.jpg) no-repeat center center fixed;
-	background-size: contain;
+	width:100%;
+	height:100%;
+	background:url(../img/img_header_background.jpg) no-repeat center center fixed;
+	background-size:contain;
 }
 
 blockquote,q {
@@ -38,11 +39,9 @@ table {
 html {
 	overflow-x:hidden;
 }
-
 h3 {
-	font-family: 'Lato',Arial, Helvetica,sans-serif;
-	font-size: 200%
-
+	font-size:200%;
+	line-height: 125%;
 }
 
 ol,ul,.subMenu ul {
@@ -50,516 +49,471 @@ ol,ul,.subMenu ul {
 }
 
 video {
-	padding-left: 75px;
-	padding-right: 75px;
-	background-color: black;
+	padding-left:75px;
+	padding-right:75px;
+	background-color:black;
 }
 
-#footer {
-	vertical-align: bottom;
-	width: 100%;
-}
-
-
-
-#wrapper {
-	max-width: 100%
-}
-
-/* ----------------- Navigation ------------------- */
-.subMenu {
-	display: inline-block;
-	position: fixed;
-	text-align:right;
-	background:url(../img/nav_bar.png) repeat-x;
-	width: 100%;
-	z-index:5;
-	padding: 10px 50px 50px 0;
-}
-
-.subMenu ul {
-	white-space:nowrap
-}
-
-.subMenu li {
-	display:inline-block;
-	font-size:125%;
-	font-weight:bold;
-	padding:0 2% 0 3%;
-}
-
-.subMenu li a {
-	text-decoration:none;
-	color:#fff;
-}
-
-.subMenu a:hover {
-	color: #FF9900;
-}
-
-/* ----------------- End Navigation ------------------- */
-/* ----------------- End Bottom Navigation ------------------- */
-
-.bottomNav {
-	text-align: center;
-	background-color: #303030;
-	width:100%;
-	z-index:5;
-	padding: 10px 0px 20px 0;
-}
-
-.bottomNav li {
-	display:inline;
-	font-size:100%;
-	font-weight:bold;
-	padding-right:50px;
-}
-
-.bottomNav li a {
-	text-decoration:none;
-	color:#fff;
-}
-
-.bottomNav a:hover {
-	color: #909090;
-}
-/* ----------------- End Bottom Navigation ------------------- */
-/* ----------------- Start Page Headers ------------------- */
-.category_header {
-	margin-top: 10px;
-	display:block;
-	text-align:left;
-	padding:45px 0 25px 10px;
-}
-
-.category_header_text {
-	display:block;
-	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
-	font-size:250%;
-	color:Gray;
-	text-transform:uppercase;
-}
-/* ----------------- End Page Headers ------------------- */
-/* ----------------- Start Page Structure and Position ------------------- */
-.pages {
-	position:relative;
-	background-color:#FFF;
-	width:100%;
-	padding:20px 0 20px 0;
-	margin-bottom: 40px;
-}
-
-#about {
-	position:relative;
-	top:600px;
-}
-
-#portfolio {
-	position:relative;
-	top:1200px;
-}
-
-#blog {
-	position:relative;
-	top:2400px;
-}
-
-#contact {
-	position:relative;
-	top:3000px;
-	width:100%;
-	line-height:150%;
-	text-align:left;
-}
-
-.project_container {
-	background:url(../img/about_background.jpg) no-repeat center center;
-	background-size: cover;
-}
-
-.page_pics {
-	display: inline-block;	
-	max-width: 100%;
-}
-
-
-.page_pics img {
-	vertical-align: top;
-}
-
-.page_summary  {
-	display: inline-block;
-	vertical-align: top;
-	font-family: 'Lato', Helvetica, Arial, serif;
-	font-weight: bold;
-	color:#FFF;
-	max-width: 500px;
-}
-
-
-.page_summary li {
-	padding: 4px;
-	line-height: 1.2em;
-}
-
-
-/* ----------------- End Page Structure and Positioning ------------------- */
-/* ----------------- Start About Page ------------------- */
-.about_container {
-	display:block;
-	background:url(../img/about_background.jpg) no-repeat center center;
-	background-size: cover;
-	max-width: 100%;
-}
-
-.about_pic {
-	display:inline-block;
-	padding:20px 0 0 20px;
-	max-width: 100%;
-}
-
-.summary {
-	display:inline-block;
-	font-family:'Lato', Helvetica, Arial, sans-serif;
-	font-weight:bold;
-	vertical-align:top;
-	max-width: 60%;
-	min-width: 30%;
-	line-height:120%;
-	padding:25px 0 0 40px;
-	color:#FFF;
-}
-
-.welcome {
-	text-transform: uppercase;
-	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
-	font-size:200%;
-	line-height: 100%;
-	color: #fff;
-
-	padding:10px 5px;
-}
-/* ----------------- End About Page ------------------- */
-/* ----------------- Start Portfolio Page ------------------- */
-
-.portfolio_category_pic {
-	display:inline-block;
-	position:relative;
-	opacity: 0.5;
-}
-
-.portfolio_category_pic:hover {
-	opacity: 0.9;
-	-webkit-transition:1s;
-	-moz-transition: 1s;
-	-o-transition: 1s;
-	box-transition: 1s;
-	
-}
-
-.portfolio_category_header_text {
-	color:#505050;
-	font-family:'Fjalla+One', Helvetica, Arial, serif;
-	font-size: 150%;
-	font-weight: bold;
-}
-
-.portPic1, .portPic2, .portPic3, .portPic4, .portPic5, .portPic6 {
-	padding-top: 1%;
-	max-width: 100%;
-}
-
-.experience {
-	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
-	font-size:150%;
-	color:#505050;
-	text-transform: uppercase;
-	padding:25px 0 20px 0px;
-	text-align: left;
-}
-
-.experience_pic,.page_header_container {
-	text-align:center;
-}
-/* ----------------- End Portfolio Page ------------------- */
-/* ----------------- Start Blog Page ------------------- */
-
-.blog_interest {
-	padding: 30px 0;
-}
-
-.interest li {
-	display: inline;
-}
-
-.faq {
-	max-width: 100%;
-}
-
-.faq ul {
-	width: 100%;
-	text-align: center;
-}
-
-.faq div{
-	float: left;
-
-}
-
-#box1, #box2, #box3, #box4, #box5 {
-	display: inline-block;
-	width: 15%;
-	height: 150px;
-}
-.box_container div{
-	margin:10px;
-	width:100%;
-}
-
-.faq p {
-	vertical-align: middle;
-	font-family: "Fjalla+One", Helvetica, Arial, sans-serif;
-	font-size: 24px;
-	color: white;
-}
-
-.blog_container {
-	display:inline-block;
-	max-width: 100%;
-	padding:20px;
-	background:url(../img/about_background.jpg) no-repeat center center;
-	background-size: cover;
-}
-
-.blog_pic {
-	display:inline-block;
-	padding:0px 0 0 10px;
-	max-width: 100%;
-}
-
-.blog_welcome {
-	text-transform: uppercase;
-	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
-	font-size:200%;
-	line-height: 100%;
-	color: #fff;
-	padding:0 0 10px 5px;
-}
-
-.blog_summary {
-	display:inline-block;
-	font-family:'Lato', Helvetica, Arial, sans-serif;
-	font-weight:bold;
-	vertical-align:top;
-	max-width: 60%;
-	min-width: 30%;
-	line-height:120%;
-	padding:0 0 0px 40px;
-	color:#FFF;
-}
-
-.blog_artists_list {
-	position: relative;
-	font-family: 'Lato', Helvetica, Arial, serif;
-	font-weight: bold;
-	max-width: 600px;
-	margin-left: 25px;
-	list-style-type: none;
-}
-
-.blog_artists_list li {
-	line-height: 150%;
-}
-/* ----------------- End Blog Page ------------------- */
-/* ----------------- Start Contact Page ------------------- */
-.touch {
-	clear: both;
-	color:black;
-	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
-	font-size:120%;
-	text-transform:uppercase;
-	padding-bottom: 25px;
-}
-
-.contact_container {
-	background:url(../img/about_background.jpg) no-repeat center center;
-	background-size: cover;
-
-}
-.contact p {
-	font-family:'Lato', Helvetica, Arial, serif;
-	font-weight: bold;
-	text-align:center;
-	display:inline;
-	padding:20px 0 10px 150px;
-}
-
-.social,.social li {
-	display:inline;
-	list-style:none;
-	padding: 25px;
-}
-/* ----------------- End Contact Page ------------------- */
-/* ----------------- Start UX Page ------------------- */
-
-
-.UX_pics img{
-	display: inline-block;
-	vertical-align: top;
-	margin: 20px 0 20px 0;
-	max-width: 100%;
-	border: 1px solid black;
-}
-
-.UX_pics2 img{
-	margin: 3px 3px 3px 3px;
-	border: 2px solid black;
-
-}
-
-.UX_summary  {
-	display: inline-block;
-	padding-left: 50px;
-	font-family: 'Lato', Helvetica, Arial, serif;
-	font-weight: bold;
-	max-width: 700px;
-	line-height: 125%;
-}
-
-.UX_summary li {
-	padding: 4px;
-	line-height: 125%;
-}
-
-.UX_title {
-	text-transform: uppercase;
-	font-family:'Fjalla+One', Helvetica, Arial, sans-serif;
-	font-size:200%;
-	line-height: 100%;
-	color: #fff;
-	padding:10px 5px;
-}
-
-.requirements {
-	position: relative;
-	font-family: 'Lato', Helvetica, Arial, serif;
-	font-weight: bold;
-	max-width: 600px;
-	margin-left: 25px;
-	list-style-type: disc;
-}
-
-.requirements li {
-	line-height: 150%;
-}
-
-#toTheTop {
-	display: inline-block;
-	font-family: 'Lato', Helvetica, Arial, serif;
-	color: white;
-	background-color: black;
-	padding: 5px;
-	
-	-webkit-box-shadow:2px 2px 1px #101010;
-	-moz-box-shadow:2px 2px 1px #101010;
-	-o-box-shadow:2px 2px 1px #101010;
-	box-shadow:2px 2px 1px #101010;
-}
-
-#toTheTop:hover {
-	display: inline-block;
-	background-color: blue;
-	-webkit-box-shadow:2px 2px 1px #101010;
-	-moz-box-shadow:2px 2px 1px #101010;
-	-o-box-shadow:2px 2px 1px #101010;
-	box-shadow:2px 2px 1px #101010;
-}
+/*common structure*/
+	#wrapper,.about_container,.blog_container,.project_container,.page_summary,.blog_welcome,.blog_summary,.social {
+		min-width:300px;
+		max-width:100%;
+	}
+
+/*common font*/
+	.category_header_text,.welcome,.experience, .portfolio_category_header_text, .touch, .blog_welcome, .UX_title {
+		font-family:'Fjalla+One',Helvetica,Arial,sans-serif;
+	}
+
+
+/*Top Navigation*/
+
+
+	.subMenu {
+		display:inline-block;
+		position:fixed;
+		text-align:right;
+		background:url(../img/nav_bar.png) repeat-x;
+		width:100%;
+		z-index:5;
+		padding:10px 50px 50px 0;
+
+	}
+
+	.subMenu ul {
+		white-space:nowrap;
+		color: #fff;
+	}
+
+	.subMenu li {
+		display:inline-block;
+		font-size:125%;
+		font-weight:bold;
+		padding:0 2% 0 3%;
+	}
+
+	.subMenu li a {
+		text-decoration:none;
+		color:#fff;
+    }
+
+	.subMenu a:hover {
+		color:#f90;
+	}
+/*Bottom Navigation*/
+
+	.bottomNav {
+		text-align:center;
+		background-color:#303030;
+		width:100%;
+		z-index:5;
+		padding:10px 0 20px 0;
+	}
+
+	.bottomNav li {
+		display:inline;
+		font-size:100%;
+		font-weight:bold;
+		padding-right:50px;
+	}
+
+	.bottomNav li a {
+		text-decoration:none;
+		color: #fff;
+	}
+
+	.bottomNav a:hover {
+		color:#909090;
+	}
+
+	#footer {
+		vertical-align:bottom;
+		width:100%;
+	}
+
+/*page structure*/
+
+	.pages, #about, #portfolio, #blog, #contact {
+	 	position: relative;
+	 }
+
+	.pages {
+		background-color:#FFF;
+		width:100%;
+		padding:20px 0 20px 0;
+		margin-bottom:40px;
+	}
+
+	#about {
+		top:600px;
+	}
+
+	#portfolio {
+		top:1200px;
+	}
+
+	#blog {
+		top:2400px;
+	}
+
+	#contact {
+		top:3000px;
+	}
+
+	.category_header {
+		margin-top:10px;
+		display:block;
+		text-align:left;
+		padding:45px 0 25px 10px;
+	}
+
+	.category_header_text {
+		display:block;
+		font-size:250%;
+		color:Gray;
+		text-transform:uppercase;
+	}
+
+	.category_header_text, .welcome, .blog_welcome {
+		line-height: 125%;
+	}
+
+/*Home Page About Section*/
+
+	.about_container {
+		display:block;
+		background:url(../img/about_background.jpg) no-repeat center center;
+		background-size:cover;
+	}
+
+
+	.about_pic {
+		display:inline-block;
+		padding:20px 0 0 20px;
+		max-width:100%
+	}
+
+	.summary {
+		display:inline-block;
+		font-weight:bold;
+		vertical-align:top;
+		max-width:60%;
+		min-width:300px;
+		padding:25px 0 0 40px;
+	}
+
+	.welcome {
+		color:#fff;
+		text-transform:uppercase;
+		font-size:200%;
+		padding:10px 5px;
+	}
+
+/*Home Page Portfolio Section*/
+
+	.portfolio_category_pic {
+		display:inline-block;
+		position:relative;
+		opacity:.5;
+	}
+
+	.portfolio_category_pic:hover {
+		opacity:.9;
+		-webkit-transition:1s;
+		-moz-transition:1s;
+		-o-transition:1s;
+	}
+
+	.portfolio_category_header_text {
+		color:#505050;
+		font-size:150%;
+		font-weight:bold;
+	}
+
+	.portPic1,.portPic2,.portPic3,.portPic4,.portPic5,.portPic6 {
+		padding-top:1%;
+		max-width:100%;
+	}
+
+	.experience {
+		font-size:150%;
+		color:#505050;
+		text-transform:uppercase;
+		padding:25px 0 20px 0;
+		text-align:left;
+	}
+
+	.experience_pic,.page_header_container {
+		text-align:center
+	}
+
+/*Home Page Blog Section*/
+
+	#box1,#box2,#box3,#box4,#box5 {
+		display:inline-block;
+		margin:10px;
+		width:100%
+	}
+
+	.box_container li {
+		display:inline-block;
+		padding:10px 5px 5px 5px;
+	}
+
+/*Home Page Contact Section*/
+
+	.contact_container {
+		background:url(../img/about_background.jpg) no-repeat center center;
+		background-size:cover;
+	}
+
+	.contact p {
+		font-weight:bold;
+		text-align:center;
+		display:inline;
+		padding:20px 0 10px 150px;
+	}
+
+	.social {
+		display:block;
+	}
+
+	.social li {
+		display:inline-block;
+		list-style:none;
+		padding:10px;
+	}
+
+	.keep_in_touch {
+		color:black;
+		font-size:150%;
+		text-transform:uppercase;
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+
+/*Portfolio Page Section*/
+
+	.project_container {
+		background:url(../img/about_background.jpg) no-repeat center center;
+		background-size:cover;
+	}
+
+	.page_pics {
+		display:inline-block;
+		max-width:100%;
+		padding: 20px;
+	}
+
+
+	.page_summary {
+		display:inline-block;
+		vertical-align:top;
+		font-weight:bold;
+		max-width:500px;
+		margin-left: 20px;
+	}
+
+	.page_summary li {
+		padding:4px;
+	}
+
+/*Blog Page Section*/
+
+	.blog_container {
+		display:block;
+		padding:20px;
+		background:url(../img/about_background.jpg)no-repeat center center;
+		background-size:cover;
+	}
+
+	.blog_interest {
+		padding:30px 0;
+	}
+
+	.interest li {
+		display:inline;
+	}
+
+	.blog_pic {
+		display:inline-block;
+		padding:0 0 0 20px;
+		max-width:100%;
+	}
+
+	.blog_welcome {
+		text-transform:
+		uppercase;
+		font-size:200%;
+		padding:0 0 10px 5px;
+		color:#fff;
+	}
+
+	.blog_summary {
+		display:inline-block;
+		font-weight:bold;
+		vertical-align:top;
+		padding:0 0 0 40px;
+		max-width:60%;
+	}
+
+	.blog_artists_list {
+		position:relative;
+		font-weight:bold;
+		max-width:600px;
+		margin-left:25px;
+		list-style-type:none;
+		line-height: 200%;
+	}
+
+/*UX Page Section*/
+
+	.UX_pics img {
+		display:inline-block;
+		vertical-align:top;
+		margin:20px 0 20px 0;
+		max-width:100%;
+		border:1px solid black;
+	}
+
+	.UX_pics2 img {margin:3px 3px 3px 3px;border:2px solid black;
+	}
+
+	.UX_summary {
+		display:inline-block;
+		padding-left:50px;
+		font-weight:bold;
+		max-width:700px;
+	}
+
+	.UX_summary li { 
+		padding:4px;
+	}
+
+	.UX_title {
+		text-transform:uppercase;
+		font-size:200%;
+		padding:10px 5px;
+	}
+
+	.requirements {
+		position:relative;
+		font-weight:bold;
+		max-width:600px;
+		margin-left:25px;
+		list-style-type:disc;
+	}
+
+	#toTheTop {
+		display:inline-block;
+		color:white;
+		background-color:black;
+		padding:5px;
+		-webkit-box-shadow:2px 2px 1px #101010;
+		-moz-box-shadow:2px 2px 1px #101010;
+		-o-box-shadow:2px 2px 1px #101010;
+		box-shadow:2px 2px 1px #101010;
+	}
+
+	#toTheTop:hover {
+		display:inline-block;
+		background-color:blue;
+		-webkit-box-shadow:2px 2px 1px #101010;
+		-moz-box-shadow:2px 2px 1px #101010;
+		-o-box-shadow:2px 2px 1px #101010;
+		box-shadow:2px 2px 1px #101010;
+	}
 
 
 
 @media only screen and (max-width:920px) {
-/*   Home Page   */
 
-
-	.subMenu {
-		text-align: center;	
-		padding-left: 5%;	
-		text-align: center;
-	}
-
-	.subMenu li {
-		font-size: 90%;
-		padding-left:8%;	
-	}
-
-	.about_container {
-		text-align:center;	
-		min-width: 300px;	
-	}
-
-	.about_pic {
-		padding: 2%;
-	}
-
-	.summary {
-		text-align:left;
-		min-width: 300px;
-		padding:1%;
-	}
-
-	.UX_pics img {
-		text-align: center;
-		min-width: 300px;
-	}
-	
-	.UX_pics2 img {
-		text-align: center;
-		padding:5px 0 5px 0;
-		min-width: 300px;
-	}
-
-	.UX_summary {
-		text-align: left;
-		min-width: 300px;
-		padding-left:0;
-		padding-right:0;
-
-	}
-
-	.category_header_text {
-		font-size: 200%;
-		text-align: center;
-		padding:1%;
-	}
-
-
-
-/*  Interactive Page   */
-
-
-	.project_container {
-		min-width: 300px;
-	}
-
-	.page_pics {
-		min-width: 300px;
-		text-align: center;
-		vertical-align: top;
-		padding-right: 10px;
-	}
-
-	.page_summary {
-		padding:0 5px 0 5px;
-	}
-	
-	.bottomNav {
-		text-align: center;
-		padding-left: 25px;
-	}
-
-	.bottomNav li{
-		display: block;
-		padding:5px 0 5px 0;
-	}
+.subMenu {
+	text-align:center;
+	padding-left:5%;
 }
 
+.subMenu li {
+	font-size:90%;
+	padding-left:8%;
+}
+
+.about_container {
+	text-align:center;
+}
+
+.about_pic{
+	padding:2%;
+}
+
+.summary{
+	text-align:left;
+	min-width:300px;
+	padding:1%;
+}
+
+.UX_pics img {
+	text-align:center;
+	min-width:300px;
+}
+
+.UX_pics2 img {
+	text-align:center;
+	padding:5px 0 5px 0;
+	min-width:300px
+}
+
+.UX_summary {
+	text-align:left;
+	min-width:300px;
+	padding-left:0;
+	padding-right:0;
+}
+
+.UX_title {
+	text-align:center;
+}
+
+.category_header_text {
+	font-size:200%;
+	text-align:center;
+	padding:1%;
+}
+
+.about_container,.blog_container,.project_container,.page_summary,.blog_welcome,.blog_summary,.social {
+	padding:5px;
+}
+
+.welcome,.blog_welcome{
+	text-align:center
+}
+
+.page_pics {
+	min-width:300px;
+	text-align:center;
+	vertical-align:top;
+}
+
+.page_summary {
+	padding:0 5px 0 5px;
+}
+
+.blog_pic {
+	padding:0;
+}
+
+.blog_artists_list {
+	text-align:center;
+}
+
+.bottomNav {
+	text-align:center;
+	padding-left:25px;
+}
+
+.bottomNav li {
+	display:block;
+	padding:5px 0 5px 0;
+}
+
+}
