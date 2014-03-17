@@ -54,11 +54,18 @@ video {
 	background-color:black;
 }
 
+
+
 /*common structure*/
 	#wrapper,.about_container,.blog_container,.project_container,.page_summary,.blog_welcome,.blog_summary,.social {
 		min-width:300px;
 		max-width:100%;
 	}
+
+	.requirements li, .UX_summary li {
+		margin: 1em 0;
+		color:#303030;
+	} 
 
 /*common font*/
 	.category_header_text,.welcome,.experience, .portfolio_category_header_text, .touch, .blog_welcome, .UX_title {
@@ -376,7 +383,9 @@ video {
 		border:1px solid black;
 	}
 
-	.UX_pics2 img {margin:3px 3px 3px 3px;border:2px solid black;
+	.UX_pics2 img {
+		margin:3px 3px 3px 3px;
+		border:2px solid black;
 	}
 
 	.UX_summary {
@@ -384,6 +393,7 @@ video {
 		padding-left:50px;
 		font-weight:bold;
 		max-width:700px;
+		color:#505050;
 	}
 
 	.UX_summary li { 
@@ -394,6 +404,7 @@ video {
 		text-transform:uppercase;
 		font-size:200%;
 		padding:10px 5px;
+		color:#505050;
 	}
 
 	.requirements {
