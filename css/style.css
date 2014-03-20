@@ -67,6 +67,10 @@ video {
 		color:#303030;
 	} 
 
+	ul {
+		list-style:inside;
+	}
+
 /*common font*/
 	.category_header_text,.welcome,.experience, .portfolio_category_header_text, .touch, .blog_welcome, .UX_title {
 		font-family:'Fjalla+One',Helvetica,Arial,sans-serif;
