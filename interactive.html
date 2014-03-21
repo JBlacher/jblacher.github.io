@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/slimbox2.css" />
+    <link rel="stylesheet" href="css/fancybox.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Lato|Fjalla+One' rel='stylesheet' type='text/css'/>
   </head>
 
@@ -35,11 +35,14 @@
 
             <section class="project_container text-center">
               <div class="large-6 page_pics">
-                <a href="./img/IA_Img_01.jpg" data-rel="lightboxIA1"><img src="./img/IA_Img_01.jpg" alt="IA picture 1" width="580" height="267"></a>
-                    <a href="./img/IA_Img_02.jpg" data-rel="lightboxIA1"></a>
-                    <a href="./img/IA_Img_03.jpg" data-rel="lightboxIA1"></a>
-                    <a href="./img/IA_Img_04.jpg" data-rel="lightboxIA1"></a>
-                    <a href="./img/IA_Img_05.jpg" data-rel="lightboxIA1"></a>
+                <a class="fancygallery" href="./img/IA_Img_01.jpg" rel="galleryIA1"><img src="./img/IA_Img_01.jpg" alt="IA picture 01" width="580" height="267"></a>
+                <div style="display:none">
+                    <a class="fancygallery" href="./img/IA_Img_02.jpg" rel="galleryIA1"></a>
+                    <a class="fancygallery" href="./img/IA_Img_03.jpg" rel="galleryIA1"></a>                
+                    <a class="fancygallery" href="./img/IA_Img_04.jpg" rel="galleryIA1"></a>
+                    <a class="fancygallery" href="./img/IA_Img_05.jpg" rel="galleryIA1"></a>
+                    <a class="fancygallery" href="./img/IA_Img_06.jpg" rel="galleryIA1"></a>
+                </div>              
               </div>
 
               <div class="large-6 page_summary text-left">
@@ -60,13 +63,15 @@
 
             <section class="project_container text-center">
               <div class="large-6 page_pics">
-                <a href="./img/IA_Img_07.jpg" data-rel="lightboxIA2"> <img src="./img/IA_Img_07.jpg" alt="IA picture 7" width="580" height="267"></a>
-                    <a href="./img/IA_Img_08.jpg" data-rel="lightboxIA2"></a>
-                    <a href="./img/IA_Img_09.jpg" data-rel="lightboxIA2"></a>
-                    <a href="./img/IA_Img_10.jpg" data-rel="lightboxIA2"></a>
-                    <a href="./img/IA_Img_11.jpg" data-rel="lightboxIA2"></a>
-                    <a href="./img/IA_Img_12.jpg" data-rel="lightboxIA2"></a>
-                    <a href="./img/IA_Img_13.jpg" data-rel="lightboxIA2"></a>
+                <a class="fancygallery" href="./img/IA_Img_07.jpg" rel="galleryIA2"><img src="./img/IA_Img_07.jpg" alt="IA picture 07" width="580" height="267"></a>
+                <div style="display:none">
+                    <a class="fancygallery" href="./img/IA_Img_08.jpg" rel="galleryIA2"></a>
+                    <a class="fancygallery" href="./img/IA_Img_09.jpg" rel="galleryIA2"></a>                
+                    <a class="fancygallery" href="./img/IA_Img_10.jpg" rel="galleryIA2"></a>
+                    <a class="fancygallery" href="./img/IA_Img_11.jpg" rel="galleryIA2"></a>
+                    <a class="fancygallery" href="./img/IA_Img_12.jpg" rel="galleryIA2"></a>
+                    <a class="fancygallery" href="./img/IA_Img_13.jpg" rel="galleryIA2"></a>
+                </div>              
               </div>
   
 
@@ -100,9 +105,16 @@
 <!-- ///////////////////////////////// End Bottom Nav ///////////////////////////////////// -->
 
   <!-- JavaScript-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <script type="text/javascript" src="js/slimbox2.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fancygallery").fancybox();
+    });
+    </script>
+
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
   </body>

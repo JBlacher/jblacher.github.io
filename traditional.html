@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/slimbox2.css" />
+    <link rel="stylesheet" href="css/fancybox.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Lato|Fjalla+One' rel='stylesheet' type='text/css'>
   </head>
 
@@ -35,7 +35,7 @@
         </header>
             <section class="project_container">
               <div class="large-6 page_pics">
-                <a href="./img/TRAD_Img_01.jpg" data-rel="lightboxTRA1"><img src="./img/TRAD_Img_01.jpg" alt="lightboxTRA1" width="580" height="267"></a>          
+                <a class="fancygallery" href="./img/TRAD_Img_01.jpg" rel="lightboxTRA1"><img src="./img/TRAD_Img_01.jpg" alt="lightboxTRA1" width="580" height="267"></a>          
               </div>
 
               <div class="large-6 page_summary text-left">
@@ -75,9 +75,16 @@
 <!-- ///////////////////////////////// End Bottom Nav ///////////////////////////////////// -->
 
   <!-- JavaScript-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <script type="text/javascript" src="js/slimbox2.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fancygallery").fancybox();
+    });
+    </script>
+
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
   </body>
