@@ -261,11 +261,6 @@ video {
 
 /*Home Page Blog Section*/
 
-	#box1,#box2,#box3,#box4,#box5 {
-		display:inline-block;
-		margin:10px;
-		width:100%
-	}
 
 	.box_container li {
 		display:inline-block;
