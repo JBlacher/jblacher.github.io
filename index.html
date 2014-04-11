@@ -2,76 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content=" Chicago, UX/UI design, Graphic design, front-end developer, designer, 3d modelling and animation, HTML5, CSS">
-    <meta name="description" content="The James Blacher Experience is a personal visual expression of my journey through the world of design ">
-    <meta name="author" content="James Blacher">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content=" Chicago, UX/UI design, Graphic design, front-end developer, designer, 3d modelling and animation, HTML5, CSS"/>
+    <meta name="description" content="The James Blacher Experience is a personal visual expression of my journey through the world of design "/>
+    <meta name="author" content="James Blacher"/>
     <title>The James Blacher Experience</title>
 
     <!-- Stylesheet / CSS and fonts-->
-    <link rel="stylesheet" href="css/foundation.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slimbox2.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato|Fjalla+One' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="css/slimbox2.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans%7CPT+Ubuntu" rel="stylesheet" type="text/css"/>
+
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
   </head>
 
   <body>
   <div id="wrapper">
 
-    <!-- /////////////////////      Start Navigation      /////////////////////    -->  
-
-        <nav class="contain-to-grid fixed subMenu">  
-              <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#blog">blog</a></li>
-                <li><a href="#contact">contact</a></li>
+    <!-- /////////////////////      Start Navigation      /////////////////////    --> 
+     
+            <ul class="navigation">
+              <li><a href="#about">about</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#blog">blog</a></li>
+              <li><a href="#contact">contact</a></li>
             </ul>
-        </nav> 
+     
 
 <!-- /////////////////////      End Navigation   /////////////////////    -->
 <!-- /////////////////////      Start About Section   /////////////////////    -->    
 
-        <div id="about" class="row pages">
-        <div class="large-12 columns">
+        <section id="about" class="row">
         
-            <header class="category_header">
-                <h2 class="category_header_text">About</h2>
-            </header>
+            <h2 class="category_header_text">About</h2>
+         
+            <article class="about_container">
 
-        <div class="large-12 about_container">
+                  <figure class="about_pic">
+                    <img src="./img/jblacher_profile_1.jpg" alt="profile picture 1" width="400" height="400">
+                  </figure>
 
-              <div class="large-4 about_pic">
-                <img src="./img/jblacher_profile_1.jpg" alt="profile picture 1" width="340" height="340">
-              </div>
-
-              <div class="large-8 summary">
-                <h2 class="welcome">Welcome To My Portfolio</h2>
-                <br />
-                <p>As a visual designer living and working in Chicago, IL, my adventure through the world of traditional and digital design has given me experience in the areas of 3d modeling/animation, interactive, print, web, illustration, and most recently UX/UI and front-end development. While I have specific programs that I prefer, I can be given any media tool and find a way to be creative with it to visually communicate with others. I am able to quickly adapt to a company's key softwares. The ability to draw with pencil and paper will always be my greatest asset and the deeper I dive into the digital realm, the more ways I find to use traditional drawing skills. </p><br />
-
-                <p>I love to collaborate with other designers and developers for the mutual exchange in skills as I tend to absorb skills at a rapid rate. My primary focus is visual design but I have gained more than enough all-around skills through personal projects and through startup culture "figure-it-out-type" situations to fill different roles in the front-end development of a project.</p>
-                <br />
-              </div>
-        </div>    
-        </div>
-        </div>
+                  <ul class="about_words">
+                    <li class="hello">Hello!</li>
+                    <li class="name">My name is <span class="james"> James.</span></li>
+                    <li class="love">I love to<span class="tasks"> visualize, illustrate, animate, and code</span></li>
+                    <li class="awesome">awesome</li>
+                    <li class="things">things with other <span class="creative">creative</span><br /><span class="people">people.</span></li>
+                  </ul>
+            </article>    
+        </section>
     
 <!-- /////////////////////      End ABout    /////////////////////    -->
 
-<!-- /////////////////////      Start Porfolio  /////////////////////    -->
+<!-- /////////////////////      Start Portfolio  /////////////////////    -->
 
-        <div id="portfolio" class="row pages">
-        <div class="large-12 columns text-center">
+        <section id="portfolio" class="row">
 
-          <header class="category_header">
             <h2 class="category_header_text">Portfolio</h2>
-          </header>
 
           <article class="portfolio_pics_container">
-            <div class="portfolio_category_pic portPic1">
+            <div id="portPic1" class="portfolio_category_pic">
               <a href="UX.html"><img src="./img/thumb_img_portfolio_UX.jpg" alt="portfolio picture 1" width="385" height="385"></a>
 
               <h3 class="portfolio_category_header_text text-left">UX/UI Design</h3>
@@ -79,7 +75,7 @@
 
 <!--////////////////////////////////////////////////Interactive Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
-            <div class="portfolio_category_pic portPic2">
+            <div id="portPic2" class="portfolio_category_pic">
               <a href="interactive.html"><img src="./img/thumb_img_portfolio_IA.jpg" alt="portfolio picture 2" width="385" height="385"></a>
 
               <h3 class="portfolio_category_header_text text-left">Interactive</h3>
@@ -87,7 +83,7 @@
 
 <!--////////////////////////////////////////////////Illustration Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
-            <div class="portfolio_category_pic portPic3">
+            <div id="portPic3" class="portfolio_category_pic">
               <a href="illustration.html"><img src="./img/thumb_img_portfolio_ILL.jpg" alt="Illustration picture 1" width="385" height="385"></a>
 
 
@@ -97,21 +93,21 @@
 <!--//////////////////////////////////////////////// Video  Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
 
-            <div class="portfolio_category_pic portPic4">
+            <div id="portPic4" class="portfolio_category_pic">
               <a href="video.html"><img src="./img/thumb_img_portfolio_VIDEOS.jpg" alt="Logo picture 1" width="385" height="385"></a>
 
               <h3 class="portfolio_category_header_text text-left">Videos</h3>
             </div>
 
 <!--////////////////////////////////////////////////Web Developments Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-            <div class="portfolio_category_pic portPic5">
+            <div id="portPic5" class="portfolio_category_pic">
               <a href="development.html"><img src="./img/thumb_img_portfolio_WEB.jpg" alt="web_image_1" width="385" height="385"></a>
 
               <h3 class="portfolio_category_header_text text-left">Web Development</h3>
             </div>
           
 <!--////////////////////////////////////////////////Traditional Photos\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-            <div class="portfolio_category_pic portPic6">
+            <div id="portPic6" class="portfolio_category_pic">
               <a href="traditional.html"><img src="./img/thumb_img_portfolio_TRAD.jpg" alt="Traditional picture 1" width="385" height="385"></a>
 
               <h3 class="portfolio_category_header_text text-left">Traditional</h3>
@@ -120,21 +116,19 @@
 <!--//////////////////////////////////////////////// Start Experience \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
             <h2 class="experience">Experience</h2>
-            <div class="experience_pic">
-              <img src="./img/experience.jpg" alt="Software and Experience">
+
+
+            <div class="experience_container">
+              <img src="./img/experience.jpg" alt="Software and Experience"/>
             </div>
 
-        </div>
-        </div>
+        </section>
 <!--//////////////////////////////////////////////// End Experience \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 <!-- //////////////////////////////////////////////  Start BLog     ///////////////////////////////////////    -->
 
-        <div id="blog" class="row pages">
-        <div class="large-12 columns text-center">
-
-            <header class="category_header">
-                <h2 class="category_header_text">Blog</h2>
-            </header>
+        <section id="blog" class="row">
+           
+            <h2 class="category_header_text">Blog</h2>
 
             <article class="page_header_container">
                 <div class="blog_pic">              
@@ -142,10 +136,10 @@
                 </div> 
 
                   <hr />
-                    <h3>5 things to know about James Blacher</h3>
+                    <h3 style="font-size:1.85em;color:#505050">5 things to know about James Blacher</h3>
                   <hr />
 
-                <ul class="large-12 columns box_container text-center">
+                <ul class="box_container">
 
                   <li><a href="education.html"><img src="./img/blog_point_1.png" alt="point 1"></a></li>
 
@@ -156,36 +150,30 @@
                   <li><a href="design.html"><img src="./img/blog_point_4.png" alt="point 4"></a></li>
 
                   <li><a href="science.html"><img src="./img/blog_point_5.png" alt="point 5"></a></li>
-                </ul>     
-              </article>
+                </ul>      
+            </article>
                
-        </div>   
-        </div>    
+        </section>      
 
 
 <!-- /////////////////////////////////////////////      End Blog     //////////////////////////////////////    -->    
 <!-- //////////////////////////////////////////////      Start Contact     ////////////////////////////////    -->
 
-        <div id="contact" class="row pages">
-        <div class="large-12 columns text-center">
+        <section id="contact" class="row">
 
-            <header class="category_header">
               <h2 class="category_header_text">Contact</h2>
-            </header>
 
-
-
-            <div class="large-12 columns text-center">
+            <article class="contact_container">
                 <h3 class="keep_in_touch">Keep in touch with me</h3>
                     <ul class="social">
                       <li><a href="https://twitter.com/JamesBlacher"><img src="./img/icon_twt.png" alt="twitter link" width="50" height="50"></a></li>
                       <li><a href="http://www.linkedin.com/in/jblacher"><img src="./img/icon_link.png" alt="LinkedIn link" width="50" height="50"></a></li>
                       <li><a href="mailto:jblacher@gmail.com"><img src="./img/icon_email.png" alt="email link" width="50" height="50"></a></li>
                     </ul>
-            </div>
+            </article>
 
-        </div>
-        </div>
+        </section>
+       
   </div>
 
     <!-- JavaScript-->

@@ -4,63 +4,67 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The James Blacher Experience</title>
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Stylesheet / CSS and fonts-->
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="css/slimbox2.css"/>
     <link rel="stylesheet" href="css/fancybox.css" type="text/css" media="screen" />
-    <link href='http://fonts.googleapis.com/css?family=Lato|Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans%7CPT+Ubuntu" rel="stylesheet" type="text/css"/>
+
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
   </head>
 
   <body>
+  <div id="wrapper">
 
     <!-- /////////////////////      Start Navigation     /////////////////////    -->
     
-        <nav class="contain-to-grid fixed subMenu">  
-              <ul>
-                <li><a href="index.html#about">about</a></li>
-                <li><a href="index.html#portfolio">portfolio</a></li>
-                <li><a href="index.html#blog">blog</a></li>
-                <li><a href="index.html#contact">contact</a></li>
+            <ul class="navigation">
+              <li><a href="index.html#about">about</a></li>
+              <li><a href="index.html#portfolio">portfolio</a></li>
+              <li><a href="index.html#blog">blog</a></li>
+              <li><a href="index.html#contact">contact</a></li>
             </ul>
-        </nav> 
         
 <!-- /////////////////////      End Navigation   /////////////////////    -->
 <!-- ////////////////////////////////// Row 1 /////////////////////////////////////// -->
-<div class="row pages">
-<div class="large-12 columns text-center">
+  <div class="row">
 
-        
-        <header class="category_header">
+
             <h2 class="category_header_text">Traditional</h2>
-        </header>
+
+
             <section class="project_container">
-              <div class="large-6 page_pics">
-                <a class="fancygallery" href="./img/TRAD_Img_01.jpg" rel="lightboxTRA1"><img src="./img/TRAD_Img_01.jpg" alt="lightboxTRA1" width="580" height="267"></a>          
-              </div>
+              <div class="page_pics">
+                <a class="fancygallery" href="./img/TRAD_Img_01.jpg" data-fancybox-group="lightboxTRA1"><img src="./img/TRAD_Img_01.jpg" alt="lightboxTRA1" width="580" height="267"></a>          
+              </div>            
+         
+  
 
-              <div class="large-6 page_summary text-left">
-                <h2 class="welcome">Trail of Tears</h2>
+              <div class="page_summary">
+                <h2 class="project_title">Institute of Packaging Professionals</h2>
+               
+                <p>I love working with traditional media because it allows you to have a physical interaction and enacts emotions that you cant get from digital art.</p>
+
+                <p style="color:yellow">Click the photo to view more.</p>
                 
-                <p>I love working with traditional media because it allows you to have a physical interaction and enacts emotions that you cant get from digital art.</p><br />
+                <p>Media: Pastels and Charcoal</p>              
+              </div>               
+            </section>
 
-                <p>Media: Pastels and Charcoal</p>
-              </div>    
-          </section>
-</div>
-</div>
-    
+  </div>
 
 <!-- ///////////////////////////////// End Row 1 ////////////////////////////////////// -->
-
-
-
-<!-- ///////////////////////////////// End Row 2 ////////////////////////////////////// -->
-
         
 <!-- ///////////////////////////////// Bottom Nav ///////////////////////////////////// -->
         <footer>
-          <nav class="medium-12 large-12 columns bottomNav text-center">   
-              <ul>
+              <ul class="bottomNav">
                 <li><a href="index.html" id="home">Home</a></li>
                 <li><a href="UX.html" id="UX">UX/UI</a></li>
                 <li><a href="interactive.html" id="interactive">Interactive</a></li>
@@ -69,8 +73,9 @@
                 <li><a href="development.html" id="development">Development</a></li>
                 <li><a href="traditional.html" id="traditional">Traditional</a></li>
             </ul>
-          </nav> 
         </footer>
+
+  </div>
 
 <!-- ///////////////////////////////// End Bottom Nav ///////////////////////////////////// -->
 

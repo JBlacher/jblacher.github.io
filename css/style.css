@@ -1,51 +1,41 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-	border:0;
-	font-size:100%;
-	font:inherit;
-	vertical-align:baseline;
-	margin:0;
-	padding:0;
-}
 
-html {
-	overflow:auto;
-}
-
-body {
-	line-height:125%;
-	font-family:"Lato",Helvetica,Arial,serif;
-	font-size:1em;
-	color: #fff;
-	margin:0 auto;
-	width:100%;
-	height:100%;
-	background:url(../img/img_header_background.jpg) no-repeat center center fixed;
-	background-size:contain;
-}
-
-blockquote,q {
-	quotes:none;
-}
-
-blockquote:before,blockquote:after,q:before,q:after {
-	content:none;
-}
-
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
 
 html {
 	overflow-x:hidden;
 }
-h3 {
-	font-size:200%;
-	line-height: 125%;
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	background: #000;
+	background:url(../img/img_header_background.jpg) no-repeat center center fixed;
+	background-size:contain;
+	text-align: center;
+	width:100%;
+	height:100%;
 }
 
-ol,ul,.subMenu ul {
-	list-style:none;
+h2, h3 {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+}
+
+p {
+	text-align: justify;
+	color: white;
+	line-height: 16px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: inside;
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }
 
 video {
@@ -54,110 +44,76 @@ video {
 	background-color:black;
 }
 
+/* End Basic Elements */
+
+/* Start Basic Structure */
+
+#wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+
+} 
+
+.panel, .row, .about_container, .blog_container, .box_container, .experience_container,.project_container, .page_summary, .contact_container {
+	display: block;
+	max-width: 100%;
+	text-align: center;
+}
+
+ .row {
+ 	background-color: #fff;
+ 	margin: 2.5% 0;
+ 	padding: 1.25%;
+}
+
+/* End Basic Structure */
+
+/* Start Navigation*/
+
+.navigation {
+	width: 100%;
+	max-width: 100%;
+	position: fixed;
+	text-align: right;
+	padding:10px 50px 22px 0;
+	background:url(../img/nav_bar.png) repeat-x;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	margin-top: 0;
+	height: auto;
+}
+
+.navigation li {
+	display: inline;
+	padding: 0 2% 0 3%;
+	font-size: 125%;
+	font-weight: 700;
+	list-style: none;
+}
+
+.navigation a {
+	color: #fff;
+
+}
+
+.navigation a:hover {
+	color:#f90;
+}
+
+/* End Navigation*/
 
 
-/*common structure*/
-	#wrapper,.about_container,.blog_container,.project_container,.page_summary,.blog_welcome,.blog_summary,.social {
-		min-width:300px;
-		max-width:100%;
-	}
+/* Start Panel Structure */
 
-	.UX_requirements li, .UX_summary li {
-		margin: 1em 0;
-		color:#303030;
-	} 
-
-	ul {
-		list-style:inside;
-	}
-
-/*common font*/
-	.category_header_text,.welcome,.experience, .portfolio_category_header_text, .touch, .blog_welcome, .UX_title {
-		font-family:'Fjalla+One',Helvetica,Arial,sans-serif;
-	}
-
-
-/*Top Navigation*/
-
-
-	.subMenu {
-		display:inline-block;
-		position:fixed;
-		text-align:right;
-		background:url(../img/nav_bar.png) repeat-x;
-		width:100%;
-		z-index:5;
-		padding:10px 50px 50px 0;
-
-	}
-
-	.subMenu ul {
-		white-space:nowrap;
-		color: #fff;
-	}
-
-	.subMenu li {
-		display:inline-block;
-		font-size:125%;
-		font-weight:bold;
-		padding:0 2% 0 3%;
-	}
-
-	.subMenu li a {
-		text-decoration:none;
-		color:#fff;
-    }
-
-	.subMenu a:hover {
-		color:#f90;
-	}
-
-/*Bottom Navigation*/
-
-	.bottomNav {
-		text-align:center;
-		background-color:#303030;
-		width:100%;
-		z-index:5;
-		padding:10px 0 20px 0;
-	}
-
-	.bottomNav li {
-		display:inline;
-		font-size:100%;
-		font-weight:bold;
-		padding-right:50px;
-	}
-
-	.bottomNav li a {
-		text-decoration:none;
-		color: #fff;
-	}
-
-	.bottomNav a:hover {
-		color:#909090;
-	}
-
-	#footer {
-		vertical-align:bottom;
-		width:100%;
-	}
-
-/*page structure*/
-
-	.pages, #about, #portfolio, #blog, #contact {
+ #about, #portfolio, #blog, #contact {
 	 	position: relative;
+	 	display: block;
 	 }
 
-	.pages {
-		background-color:#FFF;
-		width:100%;
-		padding:20px 0 20px 0;
-		margin-bottom:40px;
-	}
-
 	#about {
-		top:600px;
+		top:500px;
 	}
 
 	#portfolio {
@@ -172,65 +128,139 @@ video {
 		top:3000px;
 	}
 
-	.category_header {
-		margin-top:10px;
-		display:block;
-		text-align:left;
-		padding:45px 0 25px 10px;
-	}
 
 	.category_header_text {
+		font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 		display:block;
-		font-size:250%;
-		color:Gray;
-		text-transform:uppercase;
+		font-size: 250%;
+		color: #606060;
+		text-transform: uppercase;
+		text-align: left;
+		padding: 10px 0 5px 10px;
+
 	}
 
-	.category_header_text, .welcome, .blog_welcome {
-		line-height: 125%;
-	}
+/* End Panel Structure */
 
-/*Home Page About Section*/
+/* Start About Panel */
 
 	.about_container {
-		display:block;
-		background:url(../img/about_background.jpg) no-repeat center center;
-		background-size:cover;
+		display: block;
+		background: url(../img/about_background.jpg) no-repeat center center;
+		background-size: cover;
+		padding: 0 10px 10px 10px;
 	}
-
 
 	.about_pic {
-		display:inline-block;
-		padding:20px 0 0 20px;
-		max-width:100%
+		display: inline-block;
+		padding: 20px 0 0 0px;
+		max-width: 100%;
 	}
 
-	.summary {
+	.about_words {
 		display:inline-block;
 		font-weight:bold;
 		vertical-align:top;
-		max-width:60%;
-		min-width:300px;
-		padding:25px 0 0 40px;
+		max-width: 700px;
+		padding:0px 0 0 40px;
+		list-style: none;
 	}
 
-	.welcome {
-		color:#fff;
-		text-transform:uppercase;
-		font-size:200%;
-		padding:10px 5px;
+	.hello {
+		font-size: 9.00em;
+		font-family: "Ubuntu",Helvetica,Arial,sans-serif;
+		color: white;
+		padding: 0 0 0 100px;
+		line-height: 1em;
 	}
 
-/*Home Page Portfolio Section*/
+
+	.name {
+		font-size: 2.500em;
+		font-family: "Open sans",Helvetica,Arial,sans-serif;
+		color: #a0a0a0;
+	}
+
+	.james {
+		font-size: 2.5em;
+		font-family: "Ubuntu",Helvetica,Arial,sans-serif;
+		color:#f90;
+		line-height: .5em;
+	}
+
+	.love {
+		font-size: 1.02em;
+		font-family: "Ubuntu",Helvetica,Arial,sans-serif;
+		line-height: 1em;
+		padding:20px 0 0 50px;
+		color:#a0a0a0;
+	}
+
+	.tasks {
+		font-size: 1.5em;
+		font-family: "Ubuntu",Helvetica,Arial,sans-serif;
+		line-height: 0.5em;
+		color: white;
+	}
+
+
+	.awesome {
+		font-size: 6.250em;
+		font-family: "Ubuntu",Helvetica,Arial,sans-serif;
+		color:#f90;
+		line-height: 0.5em;
+		padding:10px 0 0px 80px;
+	}
+
+
+	.things {
+		font-size: 1em;
+		font-family: "Open Sans",Helvetica,Arial,sans-serif;
+		color: #a0a0a0;
+		line-height: 1em;
+		padding: 10px 0 0 170px;
+	}
+
+	.creative {
+		font-size: 2.85em;
+		font-family: "Ubuntu",Helvetica,Arial,sans-serif;
+		color:#f90;
+		line-height: 1em;
+	}
+
+	.people {
+		font-size: 2.4em;
+		font-family: "Ubuntu",Helvetica,Arial,sans-serif;
+		color:white;
+		line-height: 1em;
+		padding:0 0 0 70px;
+	}
+
+	.hello, .james, .awesome, .creative {
+		text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+	}
+
+	.hello:hover, .james:hover, .awesome:hover, .creative:hover {
+		text-shadow: 10px 10px 2px rgba(10, 10, 10, .5);
+		margin: -2px 0 0 0; 
+
+		-webkit-transition:.5s;
+		-moz-transition:.5s;
+		-o-transition:.5s;
+	}
+
+/* End About Panel */
+
+/* Start Portfolio Panel */
 
 	.portfolio_category_pic {
 		display:inline-block;
 		position:relative;
-		opacity:.5;
+		opacity: 0.5;
 	}
 
 	.portfolio_category_pic:hover {
-		opacity:.9;
+		opacity: 0.9;
 		-webkit-transition:1s;
 		-moz-transition:1s;
 		-o-transition:1s;
@@ -240,9 +270,10 @@ video {
 		color:#505050;
 		font-size:150%;
 		font-weight:bold;
+		text-transform: uppercase;
 	}
 
-	.portPic1,.portPic2,.portPic3,.portPic4,.portPic5,.portPic6 {
+	#portPic1,#portPic2,#portPic3,#portPic4,#portPic5,#portPic6 {
 		padding-top:1%;
 		max-width:100%;
 	}
@@ -255,16 +286,27 @@ video {
 		text-align:left;
 	}
 
-	.experience_pic,.page_header_container {
-		text-align:center;
-	}
-
 /*Home Page Blog Section*/
 
+	.box_container {
+		padding:0;
+	}
 
 	.box_container li {
 		display:inline-block;
-		padding:10px 5px 5px 5px;
+		padding: 0px 5px 5px 5px;
+	}
+
+	.box_container img {
+		margin: 2px 0;
+
+		-webkit-transition: margin 0.5s ease-out; 
+		-moz-transition: margin 0.5s ease-out; 
+		-o-transition: margin 0.5s ease-out;
+	}
+
+	.box_container img:hover {
+		margin: -15px 0; 
 	}
 
 /*Home Page Contact Section*/
@@ -283,6 +325,7 @@ video {
 
 	.social {
 		display:block;
+		padding:0;
 	}
 
 	.social li {
@@ -291,34 +334,135 @@ video {
 		padding:10px;
 	}
 
-	.keep_in_touch {
-		color:black;
-		font-size:150%;
+	.keep_in_touch  {
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+		color:white;
+		font-size: 3em;
+		text-align: center;
 		text-transform:uppercase;
 		padding-top:50px;
 		padding-bottom:50px;
 	}
 
+/* End Portfolio Panel */
+
+/*UX Page Section*/
+
+
+	.UX_pics img {
+		display:inline-block;
+		vertical-align:top;
+		margin:20px 0 20px 0;
+		max-width:100%;
+		border:1px solid black;
+	}
+
+	.UX_pics2 img {
+		margin:3px 3px 3px 3px;
+		border:2px solid black;
+		height: 100%;
+		max-width:100%;
+	}
+
+	.UX_summary {
+		display:block;
+		text-align: justify;
+		font-weight:bold;
+		width: 100%;
+		max-width:700px;
+		color:#505050;
+		margin: 0 auto;
+	}
+
+	.UX_summary p{ 
+		color:#505050;
+		line-height: 125%;
+		padding:0 4px;
+	}
+
+	.UX_summary li { 
+		padding:4px;
+	}
+
+	.UX_title {
+		text-transform:uppercase;
+		font-size:200%;
+		padding:5px 0 5px 0;
+		color:#505050;
+	}
+
+	.requirements {
+		font-weight:bold;
+		width: 100%;
+		max-width:58.3333333%;
+		list-style-type:disc;
+		line-height: 125%;
+	}
+
+	#toTheTop {
+		display:inline-block;
+		color:white;
+		background-color:black;
+		padding:5px;
+
+		-webkit-box-shadow:2px 2px 1px #101010;
+		-moz-box-shadow:2px 2px 1px #101010;
+		-o-box-shadow:2px 2px 1px #101010;
+		box-shadow:2px 2px 1px #101010;
+	}
+
+	#toTheTop:hover {
+		display:inline-block;
+		background-color:blue;
+
+		-webkit-box-shadow:2px 2px 1px #101010;
+		-moz-box-shadow:2px 2px 1px #101010;
+		-o-box-shadow:2px 2px 1px #101010;
+		box-shadow:2px 2px 1px #101010;
+	}
+
 /*Portfolio Page Section*/
 
 	.project_container {
+		display:block;
+		padding:20px;
 		background:url(../img/about_background.jpg) no-repeat center center;
 		background-size:cover;
 	}
 
+	.project_title {
+		font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+		font-size: 2.250em;
+		color:#f90;
+		font-weight: 400;
+		text-align: left;
+		line-height: 100%;
+		text-transform: uppercase;
+		vertical-align: text-top;
+	}
+
 	.page_pics {
 		display:inline-block;
-		max-width:100%;
+		max-width:60%;
 		padding: 20px;
 	}
 
 
 	.page_summary {
 		display:inline-block;
-		vertical-align:top;
 		font-weight:bold;
-		max-width:500px;
-		margin: 0 0 10px 20px;
+		vertical-align:top;
+		margin: -15px 0 0 0;
+		padding:0 0 0 40px;
+		max-width:40%;
+	}
+
+	.page_summary p {
+		font-family:"Open Sans", Helvetica, Arial, sans-serif;
+		color:#fff;
+		font-weight:bold;
+		line-height: 125%;
+		text-align: justify;
 	}
 
 	.page_summary li {
@@ -344,24 +488,30 @@ video {
 
 	.blog_pic {
 		display:inline-block;
-		padding:0 0 0 20px;
 		max-width:100%;
+		vertical-align: middle;
+		padding: 20px;
 	}
 
-	.blog_welcome {
-		text-transform:
-		uppercase;
-		font-size:200%;
-		padding:0 0 10px 5px;
-		color:#fff;
+	.blog_pic2 {
+		display:inline-block;
+		width: 300px;
+		max-width:50%;
+		padding: 20px;
+		text-align: left;
 	}
 
 	.blog_summary {
 		display:inline-block;
 		font-weight:bold;
 		vertical-align:top;
+		margin: -15px 0 0 0;
 		padding:0 0 0 40px;
 		max-width:60%;
+	}
+
+	.blog_summary p {
+		line-height: 125%;
 	}
 
 	.blog_artists_list {
@@ -373,163 +523,45 @@ video {
 		line-height: 200%;
 	}
 
-/*UX Page Section*/
-
-	.UX_pics img {
-		display:inline-block;
-		vertical-align:top;
-		margin:20px 0 20px 0;
-		max-width:100%;
-		border:1px solid black;
+	.blog_requirements {
+		color: white;
+		text-align: left;
 	}
 
-	.UX_pics2 img {
-		margin:3px 3px 3px 3px;
-		border:2px solid black;
+	.blog_requirements li {
+		line-height: 125%;
+		padding: 5px 0;
 	}
 
-	.UX_summary {
-		display:inline-block;
-		padding-left:50px;
-		font-weight:bold;
-		max-width:700px;
-		color:#505050;
-	}
-
-	.UX_summary li { 
-		padding:4px;
-	}
-
-	.UX_title {
-		text-transform:uppercase;
-		font-size:200%;
-		padding:10px 5px;
-		color:#505050;
-	}
-
-	.requirements {
-		position:relative;
-		font-weight:bold;
-		max-width:600px;
-		margin-left:25px;
-		list-style-type:disc;
-		margin: 1em 0;
-	}
-
-	.requirements li {
-		margin: 1em 0;
-	}
-
-	#toTheTop {
-		display:inline-block;
-		color:white;
-		background-color:black;
-		padding:5px;
-		-webkit-box-shadow:2px 2px 1px #101010;
-		-moz-box-shadow:2px 2px 1px #101010;
-		-o-box-shadow:2px 2px 1px #101010;
-		box-shadow:2px 2px 1px #101010;
-	}
-
-	#toTheTop:hover {
-		display:inline-block;
-		background-color:blue;
-		-webkit-box-shadow:2px 2px 1px #101010;
-		-moz-box-shadow:2px 2px 1px #101010;
-		-o-box-shadow:2px 2px 1px #101010;
-		box-shadow:2px 2px 1px #101010;
-	}
-
-
-
-@media only screen and (max-width:920px) {
-
-	.subMenu {
-		text-align:center;
-		padding-left:5%;
-	}
-
-	.subMenu li {
-		font-size:90%;
-		padding-left:8%;
-	}
-
-	.about_container {
-		text-align:center;
-	}
-
-	.about_pic{
-		padding:2%;
-	}
-
-	.summary{
-		text-align:left;
-		min-width:300px;
-		padding:1%;
-	}
-
-	.UX_pics img {
-		text-align:center;
-		min-width:300px;
-	}
-
-	.UX_pics2 img {
-		text-align:center;
-		padding:5px 0 5px 0;
-		min-width:300px
-	}
-
-	.UX_summary {
-		text-align:left;
-		min-width:300px;
-		padding-left:0;
-		padding-right:0;
-	}
-
-	.UX_title {
-		text-align:center;
-	}
-
-	.category_header_text {
-		font-size:200%;
-		text-align:center;
-		padding:1%;
-	}
-
-	.about_container,.blog_container,.project_container,.page_summary,.blog_welcome,.blog_summary,.social {
-		padding:5px;
-	}
-
-	.welcome,.blog_welcome{
-		text-align:center
-	}
-
-	.page_pics {
-		min-width:300px;
-		text-align:center;
-		vertical-align:top;
-	}
-
-	.page_summary {
-		padding:0 5px 0 5px;
-	}
-
-	.blog_pic {
-		padding:0;
-	}
-
-	.blog_artists_list {
-		text-align:center;
-	}
+/*Bottom Navigation*/
 
 	.bottomNav {
+		width: 100%;
+		max-width: 1200px;
 		text-align:center;
-		padding-left:25px;
+		background-color:#303030;
+		width:100%;
+		z-index:5;
+		padding:10px 0 10px 0;
 	}
 
 	.bottomNav li {
-		display:block;
-		padding:5px 0 5px 0;
+		display:inline;
+		font-size:100%;
+		font-weight:bold;
+		padding: 0 25px 0 25px;
 	}
 
-}
+	.bottomNav li a {
+		text-decoration:none;
+		color: #fff;
+	}
+
+	.bottomNav a:hover {
+		color:#909090;
+	}
+
+	#footer {
+		vertical-align:bottom;
+		width:100%;
+	}

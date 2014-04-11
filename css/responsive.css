@@ -1,0 +1,247 @@
+@media only screen and (max-width:480px) {
+
+	#wrapper {
+		max-width:480px;
+	}
+
+	ul {
+	list-style: outside;
+	}
+
+	.navigation {
+		text-align:center;
+	}
+
+	.navigation li {
+		font-size:90%;
+		padding-left:5%;
+	}
+
+	.bottomNav {
+		text-align:center;
+	}
+
+	.bottomNav li {
+		display:block;
+		padding:5px 0 5px 0;
+	}
+
+	.category_header_text {
+		text-align: center;
+	}
+
+	.about_container {
+		text-align:center;
+	}
+
+	.about_pic {
+		margin: 0;
+	}
+
+	.about_words {
+		padding: 0;
+		max-width: 480px;
+	}
+
+	.summary {
+		margin-top: 20px;
+		line-height: 16px;
+	}
+
+
+	.hello {
+		margin-top: 10px;
+		font-size: 6.00em;
+		padding: 0;
+	}
+
+	.name {
+		font-size: 1.00em;
+	}
+
+	.james {
+		font-size: 3.313em;
+	}
+
+	.love {
+		font-size: 1em;
+		line-height: 24px;
+		padding: 0;
+	}
+
+	.tasks {
+		font-size: 1.25em;
+	}
+
+	.things {
+		font-size: 1em;
+		padding: 0;
+	}
+
+	.awesome {
+		font-size: 4em;
+		padding:0;
+	}
+
+	.creative {
+		font-size: 2.25em;
+	}
+
+	.people {
+		font-size: 1.5em;
+	}
+
+	.UX_summary p {
+		text-align:left;
+
+	}
+
+	.UX_title {
+		text-align:center;
+	}
+
+	.requirements ul {
+		text-align: left;
+	}
+
+	.requirements li {
+		text-align: left;
+	}
+
+
+	.project_title {
+		text-align: center;
+	}
+
+	.page_pics {
+		padding: 0;
+	}
+
+	video {
+		max-width: 100%;
+	}
+
+	.page_pics {
+		padding: 0;
+	}
+
+	.page_summary {
+		padding:0 5px 0 5px;
+		text-align: left;
+		max-width: 100%;
+	}
+
+	.page_summary p {
+		line-height: 125%;
+		text-align: left;
+	}
+
+	.blog_pic {
+		padding: 0;
+	}
+
+	.blog_pic2 {
+		padding: 0;
+	}
+
+	.blog_summary {
+		padding:0;
+		text-align: left;
+		max-width: 100%;
+	}
+
+	.blog_summary p {
+		line-height: 125%;
+		text-align: left;
+	}
+
+}
+
+@media only screen and (max-width:575px) {
+
+	.navigation {
+		text-align:center;
+	}
+
+	.love {
+		padding: 0;
+	}
+
+	.awesome {
+		padding: 0;
+	}
+
+	.page_pics {
+		max-width: 100%;
+	}
+
+	.blog_summary p {
+		text-align: left;
+	}
+
+	.requirements li {
+	text-align: left;
+	}
+
+	video {
+		padding: 0;
+	}
+
+}
+
+@media only screen and (max-width:984px) {
+
+	#wrapper {
+		max-width:984px;
+	}
+
+	.navigation {
+		text-align:center;
+	}
+
+	.about_container {
+		text-align:center;
+	}
+
+	.about_pic {
+		margin: 0;
+	}
+
+	.about_words {
+		text-align: center;
+		padding: 0;
+	}
+	.hello {
+		padding: 0;
+	}	
+
+	.page_pics {
+		padding:0;
+		max-width: 100%;
+	}
+
+	.blog_summary p {
+		text-align: left;
+	}
+
+
+}
+
+@media only screen and (max-width:1158px) {
+	.hello {
+		padding: 0;
+	}
+
+	.things {
+		padding: 0;
+	}
+
+	.page_pics {
+		max-width: 100%;
+	}
+
+	.page_summary {
+		max-width: 75%;
+	}
+
+}

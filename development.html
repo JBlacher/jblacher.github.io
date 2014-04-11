@@ -4,92 +4,100 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The James Blacher Experience</title>
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Stylesheet / CSS and fonts-->
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="css/slimbox2.css"/>
     <link rel="stylesheet" href="css/fancybox.css" type="text/css" media="screen" />
-    <link href='http://fonts.googleapis.com/css?family=Lato|Fjalla+One' rel='stylesheet' type='text/css'/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans%7CPT+Ubuntu" rel="stylesheet" type="text/css"/>
+
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
   </head>
 
   <body>
+  <div id="wrapper">
 
     <!-- /////////////////////      Start Navigation     /////////////////////    -->
     
-        <nav class="contain-to-grid fixed subMenu">  
-              <ul>
-                <li><a href="index.html#about">about</a></li>
-                <li><a href="index.html#portfolio">portfolio</a></li>
-                <li><a href="index.html#blog">blog</a></li>
-                <li><a href="index.html#contact">contact</a></li>
+            <ul class="navigation">
+              <li class="current"><a href="index.html#about">about</a></li>
+              <li><a href="index.html#portfolio">portfolio</a></li>
+              <li><a href="index.html#blog">blog</a></li>
+              <li><a href="index.html#contact">contact</a></li>
             </ul>
-        </nav> 
-          
+        
 <!-- /////////////////////      End Navigation   /////////////////////    -->
 <!-- ////////////////////////////////// Row 1 /////////////////////////////////////// -->
-<div class="row pages">
-<div class="large-12 columns text-center">
+  <div class="row">
 
         
-        <header class="category_header">
+
             <h2 class="category_header_text">Web Development</h2>
-        </header>
+
+
             <section class="project_container">
-              <div class="large-6 page_pics">
-                <a class="fancygallery" href="./img/WEB_Img_01.jpg" rel="galleryWEB1"><img src="./img/WEB_Img_01.jpg" alt="WEB picture 01" width="580" height="267"></a>
+              <div class="page_pics">
+                <a class="fancygallery" href="./img/WEB_Img_01.jpg" data-fancybox-group="galleryWEB1"><img src="./img/WEB_Img_01.jpg" alt="WEB picture 01" width="580" height="267"></a>
                 <div style="display:none">
-                    <a class="fancygallery" href="./img/WEB_Img_02.jpg" rel="galleryWEB1"></a>
-                    <a class="fancygallery" href="./img/WEB_Img_03.jpg" rel="galleryWEB1"></a>
-                    <a class="fancygallery" href="./img/WEB_Img_04.jpg" rel="galleryWEB1"></a>
-                    <a class="fancygallery" href="./img/WEB_Img_05.jpg" rel="galleryWEB1"></a>
-                </div>
+                    <a class="fancygallery" href="./img/WEB_Img_02.jpg" data-fancybox-group="galleryWEB1"></a>
+                    <a class="fancygallery" href="./img/WEB_Img_03.jpg" data-fancybox-group="galleryWEB1"></a>
+                    <a class="fancygallery" href="./img/WEB_Img_04.jpg" data-fancybox-group="galleryWEB1"></a>
+                    <a class="fancygallery" href="./img/WEB_Img_05.jpg" data-fancybox-group="galleryWEB1"></a>
+                </div>       
               </div>
 
-              <div class="large-8 page_summary text-left">
-                <h2 class="welcome">Dent Recon Website</h2>
-                <br />
-                <p>The original promotional website for the startup company Dent Recon before they opened their doors to highlight a few of the services that they provide. Click the photo to view more.</p><br />
+              <div class="page_summary">
+                <h2 class="project_title">Dent Recon</h2>
+          
+                <p>The original promotional website for the startup company Dent Recon before they opened their doors to highlight a few of the services that they provide.</p> 
 
-                              <p>Programs: Photoshop, Illustrator, HTML/CSS/JQUERY</p>
-              </div>    
+                <p style="color:yellow">Click the photo to view more.</p>
+
+                <p>Programs: Photoshop, Illustrator, HTML/CSS/JQUERY</p>
+              </div>              
           </section>
-</div>
-</div>
+  </div>
     
 
 <!-- ///////////////////////////////// End Row 1 ////////////////////////////////////// -->
 <!-- //////////////////////////////// Start Row 2 ///////////////////////////////////// -->
-<div class="row pages">
-<div class="large-12 columns text-center">
+  <div class="row">
+
 
             <section class="project_container">
-
-              <div class="large-6 page_pics">
-                <a class="fancygallery" href="./img/WEB_Img_07.jpg" rel="galleryWEB2"><img src="./img/WEB_Img_07.jpg" alt="WEB picture 07" width="580" height="267"></a>
+              <div class="page_pics">
+                <a class="fancygallery" href="./img/WEB_Img_07.jpg" data-fancybox-group="galleryWEB2"><img src="./img/WEB_Img_07.jpg" alt="WEB picture 07" width="580" height="267"></a>
                 <div style="display:none">
-                  <a class="fancygallery" href="./img/WEB_Img_08.jpg" rel="galleryWEB2"></a>
+                  <a class="fancygallery" href="./img/WEB_Img_08.jpg" data-fancybox-group="galleryWEB2"></a>
                 </div>
-              </div>
+              </div>              
+  
 
-              <div class="large-8 page_summary text-left">
-                <h2 class="welcome">Total Recon Website</h2>
-                <br />
-                <p>This project was for Total Recon, a small car reconditioning company that wanted to promote its talents to the dealership world. The different areas of repair were show cased by one video animation of a technician doing their job which faded and looped over ten seconds of time on the left, and four static pictures are displayed on the right. The client was looking for a design that was outside of the basic corporate style design.</p><br /> 
+              <div class="page_summary">
+                <h2 class="project_title">Total Recon</h2>
+               
+                <p>This project was for Total Recon, a small car reconditioning company that wanted to promote its talents to the dealership world. The different areas of repair were show cased by one video animation of a technician doing their job which faded and looped over ten seconds of time on the left, and four static pictures are displayed on the right. The client was looking for a design that was outside of the basic corporate style design.</p>
 
-                <p>Programs: Photoshop, Illustrator, Flash</p>             
-              </div>  
+                <p style="color:yellow">Click the photo to view more.</p>
 
+                <p>Programs: Photoshop, Illustrator, Flash</p>  
+              
+              </div>               
             </section>
 
-</div>
-</div>
+  </div>
 
 <!-- ///////////////////////////////// End Row 2 ////////////////////////////////////// -->
-
         
 <!-- ///////////////////////////////// Bottom Nav ///////////////////////////////////// -->
         <footer>
-          <nav class="medium-12 large-12 columns bottomNav text-center">   
-              <ul>
+              <ul class="bottomNav">
                 <li><a href="index.html" id="home">Home</a></li>
                 <li><a href="UX.html" id="UX">UX/UI</a></li>
                 <li><a href="interactive.html" id="interactive">Interactive</a></li>
@@ -98,11 +106,11 @@
                 <li><a href="development.html" id="development">Development</a></li>
                 <li><a href="traditional.html" id="traditional">Traditional</a></li>
             </ul>
-          </nav> 
         </footer>
+  </div>
 <!-- ///////////////////////////////// End Bottom Nav ///////////////////////////////////// -->
 
-<!-- JavaScript-->
+  <!-- JavaScript-->
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -111,7 +119,6 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $(".fancygallery").fancybox ({
-        loop: 'stop',
         openEffect: 'elastic',
         closeEffect: 'elastic',
         nextEffect: 'fade',
@@ -121,5 +128,6 @@
     </script>
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    
   </body>
 </html>
