@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
-    <link rel="stylesheet" href="css/slimbox2.css"/>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans%7CPT+Ubuntu" rel="stylesheet" type="text/css"/>
 
     <!--[if lt IE 9]>
@@ -35,7 +34,7 @@
       <section class="row">
 
         
-
+      <a name="Top"></a>
             <h2 class="category_header_text">UX/UI Contextmedia</h2>
 
 
@@ -455,7 +454,7 @@
                <p>We as designers, would have never been able to pinpoint ourselves some of the things that would be considered valuable or the features that would set our website apart from every other website marketed to the terminally ill. For some of us, this was the first project that we've ever been associated that was not about promoting a product or creating a service, but was centered around the social impact of helping people and making the proper and relevant information available for everyone.</p> 
 
                 <div id="toTheTop">
-                  <h5><a href="UX">To the Top</a></h5> 
+                  <h5><a href="#Top">To the Top</a></h5> 
                 </div>
               </div>
 
@@ -478,9 +477,29 @@
     </div>
     <!-- JavaScript-->
 
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script> 
+      <script>
+          $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+
+      </script>    
 
   </body>
 </html>
