@@ -244,4 +244,8 @@
 		max-width: 75%;
 	}
 
+	.project_title {
+		text-align: center;
+	}
+
 }
