@@ -369,15 +369,21 @@ video {
 		text-align: justify;
 		font-weight:bold;
 		width: 100%;
-		max-width:700px;
+		max-width:600px;
 		color:#505050;
 		margin: 0 auto;
 	}
 
-	.UX_summary p{ 
+	.UX_summary p { 
 		color:#505050;
 		line-height: 125%;
 		padding:0 4px;
+
+	}
+
+	.UX_summary ul { 
+		width: 100%;
+		max-width:600px;
 	}
 
 	.UX_summary li { 
@@ -389,6 +395,7 @@ video {
 		font-size:200%;
 		padding:5px 0 5px 0;
 		color:#505050;
+		text-align: center;
 	}
 
 	.requirements {
