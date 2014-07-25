@@ -33,7 +33,7 @@ $headersep = (!isset( $uself ) || ($uself == 0)) ? "\r\n" : "\n" ;
    
 // =======================================================================
 // Insert your information and correct link paths here
-$mailto = 'info@skyconsultingchicago.com' ;
+$mailto = 'jblacher@gmail.com' ;
 $from = "Sky Chicago Consulting Formmail" ;
 $formurl = "formmail-page.php" ;
 $errorurl = "errorpage.php" ;
