@@ -185,7 +185,6 @@ Swatch colors
 
 		.slide-image {
 			max-width: 100%;
-
 		}
 	/* Lists */
 			ul.default
@@ -293,15 +292,16 @@ Swatch colors
 
 		.process-lists li {
 			color: #606060;
-			margin-bottom: 20px;
 			background: transparent url(../images/bullet.png) no-repeat 0 50%; 
-			padding-left: 40px; 
 		}
 
 		.list-features li {
-			margin-bottom: 25px;
 			background: transparent url(../images/bullet2.png) no-repeat 0 50%; 
-			padding-left: 40px; 
+		}
+
+		.process-lists li, .list-features li {
+			margin-bottom: 25px;
+			padding-left: 40px;
 		}
 
 		.actions ul {

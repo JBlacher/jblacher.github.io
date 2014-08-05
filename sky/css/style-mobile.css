@@ -87,15 +87,3 @@
 				font-size: 1.25em;
 			}
 
-@media (max-width: 500px) and (orientation: portrait) { 
-	#header {
-		background: url('../images/header-mobile-portrait.jpg');
-	}
- }
-
-@media (max-width: 500px) and (orientation: landscape) { 
-	#header
-	{
-		background: url('../images/header-mobile-landscape.jpg');
-	}
- }
