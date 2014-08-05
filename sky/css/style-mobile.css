@@ -23,6 +23,7 @@
 			margin: 0 0 1.5em 0 !important;
 		}
 
+
 	/* Buttons */
 
 		.button
@@ -35,37 +36,15 @@
 
 	/* Lists */
 
-		ul.icons
-		{
-		}	
-		
-			ul.icons li
-			{
-				padding-left: 0.35em;
-			}
-
-		ul.actions
-		{
+		.process-lists li {
+			font-size: 95%;
 		}
 
-			ul.actions li
-			{
-				display: block;
-				margin: 1em 0 1em 0;
-			}
-	
-		ul.menu
-		{
+		.list-features li {
+			font-size: 95%;
 		}
 
-			ul.menu li
-			{
-				border: 0;
-				padding: 0;
-				display: block;
-				margin: 1em 0 1em 0;
-			}
-	
+
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
@@ -107,3 +86,4 @@
 			{
 				font-size: 1.25em;
 			}
+

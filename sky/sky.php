@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['num1']) && !isset($_SESSION['num2'])) {
+$_SESSION['num1'] = rand(1,5);
+$_SESSION['num2'] = rand(1,5);
+}
+?>
 <!DOCTYPE HTML>
 
 <html>
@@ -30,10 +37,69 @@
 	<script src="js/skel.min.js"></script>
 	<script src="js/init.js"></script>
 	<script src="js/modernizr.js"></script>
-	<script src="js/hisrc.js"></script>
 
 	<script type="text/javascript">
+$(document).ready(function() {
+  $.validator.addMethod("nourl", function(value, element) {
+    return !/http\:\/\/|www\.|link\=|url\=/.test(value);
+  }, "No URL's");
 
+  $("form").validate({
+    rules: {
+      company: {
+        required: true
+      },
+      contact: {
+        required: true
+      },
+      phone: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      address: {
+        required: true
+      },
+      city: {
+        required: true
+      },
+      state: {
+        required: true
+        maxlength: 2,
+      },
+      zip: {
+        required: true
+        maxlength: 5,
+      },
+      comments: {
+        required: true,
+        minlength: 4,
+        nourl: true
+      },
+      captcha: {
+        required: true,
+        remote: {
+          url: "validation-captcha-page.php",
+          type: "post"
+        }
+      }
+    },
+    messages: {
+		company: "Please enter a company name",
+		contact: "Please enter a contact person",
+		phone: "Please enter a phone number",
+		email: "Please enter an valid email address",
+		address: "Please enter an address",
+		city: "Please enter a city",
+		state: "Please enter a state",
+		zip: "Please enter a zipcode",
+		messages:,
+		captcha: "That is incorrect"
+		}
+  });
+});
 </script>
 <!--End Javascript -->
 
@@ -57,45 +123,25 @@
 			</section>
 			
 		<!-- First -->
-			<section id="first" class="main dark">
-				<div class="content">
-					<header>
-						<div class="container">
-							<h2>Sky Consulting Clients and Partners</h2>
-						</div>
-					</header>
-
-					<!-- list --> 
+			<section id="first" class="main">
+				<header class="content dark">
 					<div class="container">
-						<div class="content">
-							<div class="row">
-								<div class="12u">
 
-									<div class="container">
-										<div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
-									    <div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
-									    <div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
-									    <div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
-									    <div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
-				      				</div>
-								
-									<div class="row">
-										<div class="12u">
-											<footer>
-												<a href="#second" class="button scrolly about">More About Us</a>
-											</footer>
-											<br>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<h2>Sky Consulting Clients and Partners</h2>
+
+						<div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
+					    <div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
+					    <div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
+					    <div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
+					    <div class="partners"><img src="./images/partner-placeholder.jpg" alt=""></div>
+      
+      					<footer>
+							<a href="#about" class="button scrolly about">More about us</a>
+						</footer>
+						
 					</div>
-				</div>
-				
+				</header>
 			</section>
-
-	<!-- about -->
 
 			<section id="about" class="4u">
 
@@ -115,6 +161,9 @@
 
 					<p>Sky Consulting expands on the Dent Recon experience by creating or transforming reconditioning facilities that caters to the specialized needs of individual client.</p>
 
+					
+				
+				
 			</section>
 
 		<!-- Second -->
@@ -125,232 +174,179 @@
 						<header>
 							<div class="container">
 								<h2>&quot;Sky&quot; is the Limit</h2>
+								
+								<p>Sky Consulting creates simplicity for your automotive reconditioning process by providing streamlined organization to your fingertips</p>
 							</div>
 						</header>
 
-						<div class="container">
-							<p>Sky Consulting creates simplicity for your automotive reconditioning process by providing streamlined organization to your fingertips</p>		
-
-							<!-- image - Mission Graphic -->
-							<div id="mission-cars">
-								<img src="./images/img-mission-graphic.png" alt="mission-graphic" />
-							</div>
-						</div>
+					<!-- image - Mission Graphic -->
+						<div id="mission-cars"><img src="./images/img-mission-graphic.png" alt="mission-graphic"></div>
+	
 					</div>
 				</div>
 			</section>
 
 		<!-- Third -->
-			<section id="third" class="main dark">
-				<div class="content ">
+			<section id="third" class="main">
+				<header class="content dark">
 					<div class="container">
-							
-						<header>
-							<div class="container">
-								<h2>We make it easy for you to get started.</h2>
-							</div>
-						</header>
 
-						<div class="container">
-							<p>Continue though this simplethe process and let Sky Consulting Chicago handle the hard work while you continue to run the important aspects of your business.</p>		
-						</div>
+						<h2>We make it easy for you to get started. </h2>
+
+						<p>Follow the process and let Sky Consulting Chicago handle the hard work while you continue to run the important aspects of your business.</p>
 					</div>
-				</div>
+				</header>
 			</section>
 
 		<!-- Fourth -->
 			<section id="fourth" class="main">
-				<div class="content style2">
-					<header>
-						<div class="container">
-							<h2>We call you to get the basics...</h2>
-						</div>
-					</header>
-
-					<!-- list --> 
+				<header>
 					<div class="container">
-						<div class="content style2">
-							<div class="row">
-								<div class="6u">
-										
-									<header>
-										<h3><span style="color: #05A1D7">Free</span> 15 Minute Phone Call</h3>
-									</header>
-									
+						<h2>We call you to get the basics...</h2>
+					</div>
+				</header>
+				<div class="content style2">
+					<div class="container">
+						<div class="row">
+							<div class="6u">
+								<section>
+									<h3><span style="color: #05A1D7">Free</span> 15 Minute Phone Call</h3>
+
 									<ul id="list-process-01" class="process-lists">
-										<li>Estimate is generated prior to phone call through the online query.</li>
-										<li>Brainstorm the pros, cons, goals for the existing facility.</li>
-										<li>Create an individualized automated platform that is tailor-made for each partner.</li>
+									        <li>Estimate is generated prior to phone call through the online query.</li>
+									        <li>Brainstorm the pros, cons, goals for the existing facility.</li>
+									        <li>Create an individualized automated platform that is tailor-made for each partner.</li>
 									</ul>
-								
-									<div class="row">
-										<div class="12u">
-											<footer class="process-button">
-												<a href="#fifth" class="button scrolly process">Explore Features</a>
-											</footer>
-										</div>
-									</div>
+								</section>
 							</div>
-							
-							<!-- picture -->
-								<div class="6u">		
+
+							<div class="6u">
+								<div class="row no-collapse">
 									<video autoplay loop poster="mobile-phone.png" id="mobile-phone">
-										<source src="./videos/mobile-phone.oggtheora" type="video/ogg">
-										<source src="./videos/mobile-phone.mp4" type="video/mp4">
+									    <source src="./videos/mobile-phone.oggtheora" type="video/ogg">
+									    <source src="./videos/mobile-phone.mp4" type="video/mp4">
 									</video>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
-				
 			</section>
+
+			<hr>
 
 		<!-- Fifth -->
 
 		<section id="fifth" class="main">
-				<div class="content style2">
-					<header>
-						<div class="container">
-							<h2>We evaluate your existing facility...</h2>
-						</div>
-					</header>
-
-					<!-- list --> 
+				<header>
 					<div class="container">
-						<div class="content style2">
-							<div class="row">
-								<div class="6u">
-										
+						<h2>We evaluate your existing facility...</h2>
+					</div>
+				</header>
+				<div class="content style2">
+					<div class="container">
+						<div class="row">
+							<div class="6u">
+
+								<section>
 									<header>
 										<h3>Onsite Visit</h3>
 									</header>
-									
-									<ul class="process-lists">
-										<li>Analyze the current facility for capacity, through-put, workflow and current services.</li>
+
+									<ul id="list-process-02" class="process-lists">
+								        <li>Analyze the current facility for capacity, through-put, workflow and current services.</li>
 								        <li>Analyze the compliance of federal and local EPA standards.</li>
 								        <li>Analyze facility for construction and modernization.</li> 
-									</ul>
-								
-									<div class="row">
-										<div class="12u">
-											<footer class="process-button">
-												<a href="#sixth" class="button scrolly process">The Plan</a>
-											</footer>
-										</div>
-									</div>
+								    </ul>
+
+								</section>
 							</div>
-							
-							<!-- picture -->
-								<div class="6u">		
+
+								<div class="6u">
 									<div class="row no-collapse">
-										<div class="slide-image"><img src="./images/explorer.png" alt="auto reconditioning"/></div>
+										<div class="slide-image"><img src="./images/explorer.png" alt=""></div>
 									</div>
 								</div>
-							</div>
+
 						</div>
 					</div>
 				</div>
-				
 			</section>
 
+			<hr>
+
 		<!-- Sixth -->	
-
-		<section id="sixth" class="main">
-				<div class="content style2">
-					<header>
-						<div class="container">
-							<h2>We map out the plan...</h2>
-						</div>
-					</header>
-
-					<!-- list --> 
+			<section id="sixth" class="main">
+				<header>
 					<div class="container">
-						<div class="content style2">
-							<div class="row">
-								<div class="6u">
-										
+						<h2>We map out the plan...</h2>
+					</div>
+				</header>
+
+				<div class="content style2">
+					<div class="container">
+						<div class="row">
+							<div class="6u">
+								<section>			
 									<header>
 										<h3>Formal Proposal</h3>
 									</header>
-									
-									<ul class="process-lists">
-										<li>Create a complete business model.</li>
+
+									<ul id="list-process-03" class="process-lists">
+								        <li>Create a complete business model.</li>
 								        <li>Build a detailed timeline to completion.</li>
 								        <li>Generate a final estimate for the entire process.</li> 
-									</ul>
-								
-									<div class="row">
-										<div class="12u">
-											<footer class="process-button">
-												<a href="#seventh" class="button scrolly process">Plan Execution</a>
-											</footer>
-										</div>
-									</div>
+								    </ul>
+								</section>
 							</div>
-							
-							<!-- picture -->
-								<div class="6u">		
-									<div class="row no-collapse">
-										<div class="slide-image"><img src="./images/graphic-process-03.jpg" alt="" /></div>
+
+							<div class="6u">
+								<div class="row no-collapse">
+									<div class="slide-image"><img src="./images/graphic-process-03.jpg" alt="">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
 			</section>
 
+			<hr>
+
 		<!-- Seventh -->
-
-		<section id="seventh" class="main">
-				<div class="content style2">
-					<header>
-						<div class="container">
-							<h2>We execute the plan...</h2>
-						</div>
-					</header>
-
-					<!-- list --> 
+			<section id="seventh" class="main">
+				<header>
 					<div class="container">
-						<div class="content style2">
-							<div class="row">
-								<div class="6u">
-										
-									<header>
-										<h3>Project Execution</h3>
-									</header>
-									
-									<ul class="process-lists">
-										<li>Receive a core team of Head of Product, IT Specialist, Recruiter and Trainer.</li>
+						<h2>We execute the plan...</h2>
+					</div>
+				</header>
+
+				<div class="content style5">
+					<div class="container">
+						<div class="row">
+							<div class="6u">
+								<section>
+									<h3>Project Execution</h3>
+									<ul id="list-process-04" class="process-lists">
+								        <li>Receive a core team of Head of Product, IT Specialist, Recruiter and Trainer.</li>
 								        <li>Oversee the facility construction and upgrades.</li>
 								        <li>Manage recruitment and training of new hires.</li> 
 								        <li>Supply KPI report card with new services in place.</li> 
-									</ul>
-								
-									<div class="row">
-										<div class="12u">
-											<footer class="process-button">
-												<a href="#eighth" class="button scrolly process">Explore Features</a>
-											</footer>
-										</div>
-									</div>
+								      </ul>
+								</section>
 							</div>
-							
-							<!-- picture -->
-								<div class="6u">		
-									<div class="row no-collapse">
-										<div class="slide-image"><img src="./images/graphic-process-04.jpg" alt=""/></div>
-									</div>
+
+							<div class="6u">
+								<div class="row no-collapse">
+									<div class="slide-image"><img src="./images/graphic-process-04.jpg" alt=""></div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
-				
-			</section>
-
+			</section>	
 
 		<!-- Eighth -->
 
@@ -396,17 +392,17 @@
 
 					<div class="content style4 featured">
 						<div class="container small">
-							<form method="get" name="contact_form" action="formmail-page.php">
+							<form method="post" name="contact_form" action="form-mail.php">
 								
 								<div class="row half">
-									<div class="6u"><input type="text" id="company" class="text" placeholder="Company Name" /></div>
-									<div class="6u"><input type="text" id="contact" class="text" placeholder="Contact Person" /></div>
-									<div class="6u"><input type="tel" id="phone" class="text" placeholder="Phone" /></div>
-									<div class="6u"><input type="email" id="email" class="text" placeholder="Email" /></div>
-									<div class="6u"><input type="text" id="address" class="text" placeholder="Address" /></div>
-									<div class="6u"><input type="text" id="city" class="text" placeholder="City" /></div>
-									<div class="6u"><input type="text" id="state" class="text" placeholder="State" /></div>
-									<div class="6u"><input type="text" id="zip" class="text" placeholder="Zip" /></div>
+									<div class="6u"><input type="text" id="company" placeholder="Company Name" /></div>
+									<div class="6u"><input type="text" id="contact" placeholder="Contact Person" /></div>
+									<div class="6u"><input type="tel" id="phone" placeholder="Phone" /></div>
+									<div class="6u"><input type="email" id="email" placeholder="Email" /></div>
+									<div class="6u"><input type="text" id="address" placeholder="Address" /></div>
+									<div class="6u"><input type="text" id="city" placeholder="City" /></div>
+									<div class="6u"><input type="text" id="state" placeholder="State" /></div>
+									<div class="6u"><input type="text" id="zip" placeholder="Zip" /></div>
 								</div>
 
 								<div class="row half">
@@ -451,7 +447,7 @@
 			$("#about").fadeIn(100).animate({marginRight: "0px"},100),
 			$(".close-about").fadeIn(300),
 			$(".site").animate({"left": - (navwidth - 30)}, 370);
-	  	});
+	  });
 		
 	
 		
@@ -461,24 +457,8 @@
 			$(".close-about").fadeOut(400),
 			$(".site").animate({"left": 0}, 500);
 		});
-
-
-		var navwidth = ($("#fifth").width());
-			$(".process").click(function() {
-			$("#fifth").fadeIn(100).animate({marginRight: "0px"},100),
-			$(".site").animate({"left": - (navwidth - 30)}, 370);
-	  	});
-			var navwidth = ($("#sixth").width());
-			$(".process").click(function() {
-			$("#sixth").fadeIn(100).animate({marginRight: "0px"},100),
-			$(".site").animate({"left": - (navwidth - 30)}, 370);
-	  	});
-			var navwidth = ($("#seventh").width());
-			$(".process").click(function() {
-			$("#seventh").fadeIn(100).animate({marginRight: "0px"},100),
-			$(".site").animate({"left": - (navwidth - 30)}, 370);
-	  	});
 	});
+
 
 </script>
 
