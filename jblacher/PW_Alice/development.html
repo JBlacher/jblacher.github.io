@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The James Blacher Experience</title>
+
+    <!-- Stylesheet / CSS and fonts-->
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="css/fancybox.css" type="text/css" media="screen" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="dist/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+  <div id="wrapper">
+
+    <!-- /////////////////////      Start Navigation     /////////////////////    -->
+    
+            <ul class="navigation">
+              <li class="current"><a href="index.html#about">about</a></li>
+              <li><a href="index.html#portfolio">portfolio</a></li>
+              <li><a href="index.html#blog">blog</a></li>
+              <li><a href="index.html#contact">contact</a></li>
+            </ul>
+        
+<!-- /////////////////////      End Navigation   /////////////////////    -->
+<!-- ////////////////////////////////// Row 1 /////////////////////////////////////// -->
+  <div class="row">
+
+        
+
+            <h2 class="category_header_text">Web Development</h2>
+
+
+            <article class="project_container">
+              <section class="page_pics">
+                <a class="fancygallery" href="./img/WEB_Img_01.jpg" data-fancybox-group="galleryWEB1"><img src="./img/WEB_Img_01.jpg" alt="WEB picture 01" width="580" height="267"></a>
+                <div style="display:none">
+                    <a class="fancygallery" href="./img/WEB_Img_02.jpg" data-fancybox-group="galleryWEB1"></a>
+                    <a class="fancygallery" href="./img/WEB_Img_03.jpg" data-fancybox-group="galleryWEB1"></a>
+                    <a class="fancygallery" href="./img/WEB_Img_04.jpg" data-fancybox-group="galleryWEB1"></a>
+                    <a class="fancygallery" href="./img/WEB_Img_05.jpg" data-fancybox-group="galleryWEB1"></a>
+                </div>       
+              </section>
+
+              <section class="page_summary">
+                <h2 class="project_title">Dent Recon</h2>
+          
+                <p>The original promotional website for the startup company Dent Recon before they opened their doors to highlight a few of the services that they provide.</p> 
+
+                <p style="color:yellow">Click the photo to view more.</p>
+
+                <p>Programs: Photoshop, Illustrator, HTML/CSS/JQUERY</p>
+              </section>              
+          </article>
+  </div>
+    
+
+<!-- ///////////////////////////////// End Row 1 ////////////////////////////////////// -->
+<!-- //////////////////////////////// Start Row 2 ///////////////////////////////////// -->
+  <div class="row">
+
+
+            <article class="project_container">
+              <section class="page_pics">
+                <a class="fancygallery" href="./img/WEB_Img_07.jpg" data-fancybox-group="galleryWEB2"><img src="./img/WEB_Img_07.jpg" alt="WEB picture 07" width="580" height="267"></a>
+                <div style="display:none">
+                  <a class="fancygallery" href="./img/WEB_Img_08.jpg" data-fancybox-group="galleryWEB2"></a>
+                </div>
+              </section>              
+  
+
+              <section class="page_summary">
+                <h2 class="project_title">Total Recon</h2>
+               
+                <p>This project was for Total Recon, a small car reconditioning company that wanted to promote its talents to the dealership world. The different areas of repair were show cased by one video animation of a technician doing their job which faded and looped over ten seconds of time on the left, and four static pictures are displayed on the right. The client was looking for a design that was outside of the basic corporate style design.</p>
+
+                <p style="color:yellow">Click the photo to view more.</p>
+
+                <p>Programs: Photoshop, Illustrator, Flash</p>  
+              
+              </section>               
+            </article>
+
+  </div>
+
+<!-- ///////////////////////////////// End Row 2 ////////////////////////////////////// -->
+        
+<!-- ///////////////////////////////// Bottom Nav ///////////////////////////////////// -->
+        <footer>
+              <ul class="bottomNav">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="UX.html" id="UX">UX/UI</a></li>
+                <li><a href="interactive.html" id="interactive">Interactive</a></li>
+                <li><a href="illustration.html" id="illustration">Illustration</a></li>
+                <li><a href="video.html" id="video">Video</a></li>
+                <li><a href="development.html" id="development">Development</a></li>
+                <li><a href="traditional.html" id="traditional">Traditional</a></li>
+            </ul>
+        </footer>
+  </div>
+<!-- ///////////////////////////////// End Bottom Nav ///////////////////////////////////// -->
+
+  <!-- JavaScript-->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fancygallery").fancybox ({
+        openEffect: 'elastic',
+        closeEffect: 'elastic',
+        nextEffect: 'fade',
+        prevEffect: 'fade'
+    });
+    });
+    </script>
+
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    
+  </body>
+</html>
